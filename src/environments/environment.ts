@@ -7,7 +7,7 @@ export const environment = {
     //    {{telephone}}, {{typeEvenement}}, {{dateEvenement}}, {{message}}
     // 4. Copier vos identifiants ci-dessous
     serviceId:  'VOTRE_SERVICE_ID',   // ex: 'service_abc123'
-    templateId: 'VOTRE_TEMPLATE_ID', // ex: 'template_xyz456'
-    publicKey:  'VOTRE_PUBLIC_KEY',  // ex: 'aBcDeFgHiJkLmNoP'
+    templateId: 'template_0gt4hao', // ex: 'template_xyz456'
+    publicKey:  'ojuaOjPVg3B6q1oG9',  // ex: 'aBcDeFgHiJkLmNoP'
   }
 };

@@ -706,74 +706,70 @@
   "OFFICIANTE": {
     "HERO": {
       "EYEBROW": "Officiante de cérémonie · Bretagne & Monde",
-      "TITLE1": "Des cérémonies écrites",
-      "TITLE2": "pour vous ressembler",
-      "DESC": "L'Événement Peter célèbre vos moments de vie les plus précieux avec des cérémonies laïques personnalisées, rédigées et animées avec sincérité, émotion et élégance."
+      "TITLE1": "Faites de votre journée",
+      "TITLE2": "un moment inoubliable",
+      "DESC": "Cherchez-vous à rendre votre mariage, votre renouvellement de vœux, un baptême ou toute autre célébration encore plus significative et mémorable ? Ne cherchez pas plus loin !"
     },
     "INTRO": {
-      "EYEBROW": "Notre rôle",
-      "TITLE": "Bien plus qu'une animatrice — votre voix le temps d'un instant",
-      "P1": "Le rôle d'une <strong>officiante de cérémonie</strong> est de mettre des mots sur ce que vous ressentez. Lors de votre première rencontre, nous prenons le temps d'apprendre à vous connaître — vos histoires, vos émotions, ce qui vous définit — pour construire ensemble un discours qui vous ressemble à 100 %.",
-      "P2": "Chaque cérémonie est unique. Pas de texte générique, pas de script recyclé : tout est rédigé sur mesure, relu avec vous, ajusté jusqu'à ce que chaque mot soit juste.",
+      "EYEBROW": "Notre service",
+      "TITLE": "Officiante de cérémonie personnalisée",
+      "P1": "Faites de votre journée spéciale un moment inoubliable avec notre service d'officiante de cérémonie personnalisée !",
+      "P2": "Que vous rêviez d'une cérémonie intime ou fastueuse, traditionnelle ou non confessionnelle, nous sommes là pour créer une expérience qui vous ressemble parfaitement et touche le cœur de chacun de vos invités.",
       "P3": "Basée à Rennes, nous officions partout en Bretagne et à l'international.",
       "IMG_ALT": "Officiante de cérémonie"
     },
     "CEREMONIES": {
-      "EYEBROW": "Pour chaque moment de vie",
-      "TITLE": "Les cérémonies que nous célébrons",
+      "EYEBROW": "Pourquoi nous choisir",
+      "TITLE": "Ce qui nous distingue",
       "ITEMS": [
         {
-          "icon": "💍",
-          "title": "Mariage & PACS laïque",
-          "desc": "Une cérémonie laïque d'union profondément personnalisée, avec vœux, lectures, musiques et rituels choisis ensemble. Le plus beau jour de votre vie, raconté avec vos mots."
+          "icon": "✨",
+          "title": "Personnalisation totale",
+          "desc": "Chaque cérémonie que nous créons est unique et réfléchie, reflétant vos valeurs, vos croyances et votre amour. Nous travaillons en étroite collaboration avec vous pour façonner chaque détail selon vos désirs."
         },
         {
           "icon": "🔄",
-          "title": "Renouvellement de vœux",
-          "desc": "Après 5, 10, 20 ans… renouveler ses vœux est un acte d'amour fort. Nous créons une cérémonie émouvante qui célèbre votre chemin parcouru ensemble."
+          "title": "Flexibilité et adaptabilité",
+          "desc": "Que vous rêviez d'une cérémonie traditionnelle, moderne, spirituelle ou non confessionnelle, nous sommes là pour répondre à vos besoins. Notre objectif est de créer une expérience qui vous ressemble."
         },
         {
-          "icon": "👶",
-          "title": "Naissance & baptême civil",
-          "desc": "Accueillez votre enfant dans votre famille avec une belle célébration laïque, entourés de vos proches. Un moment de joie et d'amour à graver dans les mémoires."
-        },
-        {
-          "icon": "🕯️",
-          "title": "Cérémonie d'obsèques",
-          "desc": "Un hommage digne, sincère et personnalisé pour honorer la mémoire d'un être cher. Nous travaillons main dans la main avec la famille pour créer un dernier au revoir à la hauteur de la personne disparue."
+          "icon": "💛",
+          "title": "Émotion et connexion",
+          "desc": "Nous croyons en l'importance de créer un lien avec vous et vos invités. Notre présence chaleureuse et bienveillante ajoutera une touche spéciale à chaque moment de votre journée."
         }
       ]
     },
     "METHODE": {
-      "EYEBROW": "Comment ça se passe",
-      "TITLE": "De la rencontre à la cérémonie",
+      "EYEBROW": "Nos prestations",
+      "TITLE": "Ce que notre service comprend",
       "STEPS": [
         {
           "num": "01",
-          "title": "La rencontre",
-          "desc": "Un premier échange en visio ou en personne pour apprendre à vous connaître, comprendre vos attentes et votre histoire."
+          "title": "Consultation personnalisée",
+          "desc": "Nous discuterons de vos préférences, de vos idées et de votre budget pour créer une expérience sur mesure."
         },
         {
           "num": "02",
-          "title": "La rédaction",
-          "desc": "Nous rédigeons votre discours sur mesure, relisons ensemble et ajustons jusqu'à ce que chaque mot soit juste."
+          "title": "Conception créative",
+          "desc": "Nous élaborerons un concept unique qui reflète votre style et votre personnalité."
         },
         {
           "num": "03",
-          "title": "La répétition",
-          "desc": "Une répétition sur place ou à distance pour valider le déroulé, le timing et les détails logistiques."
+          "title": "Coordination complète",
+          "desc": "Nous nous occupons de tous les détails logistiques, de la planification à la mise en œuvre."
         },
         {
           "num": "04",
-          "title": "La cérémonie",
-          "desc": "Le grand jour : nous animons votre cérémonie avec naturel, chaleur et professionnalisme, pour un moment inoubliable."
+          "title": "Jour J",
+          "desc": "Nous serons présentes afin d'installer tous les éléments décoratifs choisis au préalable, et nous nous assurerons du bon déroulé de votre cérémonie."
         }
       ]
     },
     "CTA": {
-      "EYEBROW": "Parlons de votre cérémonie",
-      "TITLE1": "Créons ensemble",
-      "TITLE2": "un moment inoubliable",
+      "EYEBROW": "Planifions votre cérémonie de rêve",
+      "TITLE1": "Contactez-nous",
+      "TITLE2": "dès aujourd'hui",
+      "PRICING": "À partir de 500 € · Prix sur devis",
       "TEXT": "Chaque cérémonie est unique. Contactez-nous pour en discuter et recevoir un devis personnalisé.",
       "BTN": "Nous contacter"
     },
