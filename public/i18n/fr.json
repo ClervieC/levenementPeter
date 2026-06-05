@@ -178,6 +178,7 @@
         "Coordination le Jour J : accueil, timing, gestion des imprévus",
         "Conseil en décoration et design de mariage"
       ],
+      "DESIGN_NOTE": "Envie d'une décoration sur mesure ? Découvrez notre page",
       "DESIGN_LINK": "Design & Décoration"
     },
     "ZONE": {
@@ -1097,12 +1098,16 @@
     "SERVICES_TITLE": "Prestations",
     "CONTACT_TITLE": "Contact",
     "SERVICE_MARIAGE": "Organisation de mariage",
+    "SERVICE_OFFICIANTE": "Officiante de cérémonie",
     "SERVICE_DECO": "Décoration mariage",
-    "SERVICE_FLORAL": "Design floral",
-    "SERVICE_SEM": "Séminaires d'entreprise",
-    "SERVICE_CORP": "Événements corporate",
-    "SERVICE_OBSEQUES": "Obsèques & cérémonies",
     "SERVICE_FETES": "Fêtes & célébrations",
+    "SERVICE_OBSEQUES": "Obsèques & cérémonies",
+    "SERVICE_SEM": "Séminaires d'entreprise",
+    "SERVICE_EV_INTERNE": "Événement interne",
+    "SERVICE_IMAGE_MARQUE": "Image de marque",
+    "SERVICE_EV_MARKETING": "Événement marketing",
+    "SERVICE_FLORAL": "Design floral",
+    "SERVICE_CORP": "Événements corporate",
     "ADDRESS": "Rennes, France",
     "HOURS": "Lun–Ven : 9h–18h30 · Sam : 10h–17h",
     "COPYRIGHT": "© {{year}} L'Événement Peter — Agence événementielle basée à Rennes. Tous droits réservés.",
@@ -1111,6 +1116,11 @@
     "LOGO_ALT": "L'Événement Peter — Agence événementielle",
     "SOCIAL_INSTAGRAM": "Instagram",
     "SOCIAL_FACEBOOK": "Facebook"
+  },
+  "NOT_FOUND": {
+    "TITLE": "Page introuvable",
+    "DESC": "La page que vous recherchez n'existe pas ou a été déplacée. Retournez à l'accueil pour continuer votre navigation.",
+    "CTA": "Retour à l'accueil"
   },
   "HEADER": {
     "LOGO_ALT": "L'Événement Peter — Agence événementielle",

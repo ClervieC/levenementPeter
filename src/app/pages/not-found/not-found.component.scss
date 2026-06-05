@@ -1,0 +1,35 @@
+.not-found {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__code {
+    font-family: var(--font-serif);
+    font-size: clamp(6rem, 20vw, 12rem);
+    font-weight: 300;
+    line-height: 1;
+    color: var(--color-gold);
+    opacity: 0.35;
+    letter-spacing: 0.05em;
+  }
+
+  h1 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: var(--color-text-light);
+    max-width: 420px;
+    line-height: 1.75;
+  }
+}

@@ -4,6 +4,7 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
           http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <!-- Pages principales -->
   <url>
     <loc>https://levenement-peter.vercel.app/</loc>
     <lastmod>2026-06-05</lastmod>
@@ -11,6 +12,7 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- Particulier -->
   <url>
     <loc>https://levenement-peter.vercel.app/mariage</loc>
     <lastmod>2026-06-05</lastmod>
@@ -26,10 +28,61 @@
   </url>
 
   <url>
+    <loc>https://levenement-peter.vercel.app/officiante-ceremonie</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://levenement-peter.vercel.app/fetes-celebrations</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://levenement-peter.vercel.app/obseques</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Professionnel -->
+  <url>
     <loc>https://levenement-peter.vercel.app/seminaires</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://levenement-peter.vercel.app/evenement-interne</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://levenement-peter.vercel.app/image-de-marque</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://levenement-peter.vercel.app/evenement-marketing</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Galerie & À propos -->
+  <url>
+    <loc>https://levenement-peter.vercel.app/galerie</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <url>
@@ -44,6 +97,21 @@
     <lastmod>2026-06-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- Légal -->
+  <url>
+    <loc>https://levenement-peter.vercel.app/mentions-legales</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://levenement-peter.vercel.app/politique-de-confidentialite</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>

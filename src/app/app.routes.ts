@@ -76,5 +76,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/politique-confidentialite/politique-confidentialite.component').then(m => m.PolitiqueConfidentialiteComponent),
     title: "Politique de Confidentialité | L'Événement Peter"
   },
-  { path: '**', redirectTo: '' }
+  {
+    path: '404',
+    loadComponent: () => import('./pages/not-found/not-found.component').then(m => m.NotFoundComponent),
+    title: "Page introuvable | L'Événement Peter"
+  },
+  { path: '**', redirectTo: '/404' }
 ];

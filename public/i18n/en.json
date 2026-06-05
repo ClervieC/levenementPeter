@@ -178,6 +178,7 @@
         "On-the-day coordination: welcome, timing, handling of any issues",
         "Advice on wedding decoration and design"
       ],
+      "DESIGN_NOTE": "Looking for bespoke decoration? Discover our page",
       "DESIGN_LINK": "Design & Decoration"
     },
     "ZONE": {
@@ -1097,12 +1098,16 @@
     "SERVICES_TITLE": "Services",
     "CONTACT_TITLE": "Contact",
     "SERVICE_MARIAGE": "Wedding planning",
+    "SERVICE_OFFICIANTE": "Ceremony officiant",
     "SERVICE_DECO": "Wedding decoration",
-    "SERVICE_FLORAL": "Floral design",
-    "SERVICE_SEM": "Corporate seminars",
-    "SERVICE_CORP": "Corporate events",
-    "SERVICE_OBSEQUES": "Funerals & ceremonies",
     "SERVICE_FETES": "Parties & celebrations",
+    "SERVICE_OBSEQUES": "Funerals & ceremonies",
+    "SERVICE_SEM": "Corporate seminars",
+    "SERVICE_EV_INTERNE": "Internal events",
+    "SERVICE_IMAGE_MARQUE": "Brand image",
+    "SERVICE_EV_MARKETING": "Marketing events",
+    "SERVICE_FLORAL": "Floral design",
+    "SERVICE_CORP": "Corporate events",
     "ADDRESS": "Rennes, France",
     "HOURS": "Mon–Fri: 9am–6:30pm · Sat: 10am–5pm",
     "COPYRIGHT": "© {{year}} L'Événement Peter — Event planning agency based in Rennes. All rights reserved.",
@@ -1111,6 +1116,11 @@
     "LOGO_ALT": "L'Événement Peter — Event planning agency",
     "SOCIAL_INSTAGRAM": "Instagram",
     "SOCIAL_FACEBOOK": "Facebook"
+  },
+  "NOT_FOUND": {
+    "TITLE": "Page not found",
+    "DESC": "The page you are looking for does not exist or has been moved. Return to the homepage to continue browsing.",
+    "CTA": "Back to homepage"
   },
   "HEADER": {
     "LOGO_ALT": "L'Événement Peter — Event planning agency",
