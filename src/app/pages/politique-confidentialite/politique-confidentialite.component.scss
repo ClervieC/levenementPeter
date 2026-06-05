@@ -1,0 +1,96 @@
+.legal-content {
+  max-width: 820px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.legal-block {
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--color-gray-light);
+  }
+
+  p {
+    line-height: 1.85;
+    margin-bottom: 0.8rem;
+    color: var(--color-charcoal);
+    &:last-child { margin-bottom: 0; }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+
+    li {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--color-charcoal);
+      line-height: 1.65;
+      padding-left: 1rem;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.6em;
+        width: 4px;
+        height: 1px;
+        background: var(--color-gold);
+      }
+
+      strong { font-weight: 500; color: var(--color-black); }
+      a { color: var(--color-gold-dark); text-decoration: underline; text-underline-offset: 3px; }
+    }
+  }
+
+  a {
+    color: var(--color-gold-dark);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color var(--ease);
+    &:hover { color: var(--color-gold); }
+  }
+
+  em { color: var(--color-gray); font-size: 0.88rem; }
+}
+
+.data-table {
+  border: 1px solid var(--color-gray-light);
+  margin-block: 1.2rem;
+  font-size: 0.88rem;
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1.2fr 1.5fr 1fr;
+    border-bottom: 1px solid var(--color-gray-light);
+    &:last-child { border-bottom: none; }
+
+    span {
+      padding: 0.75rem 1rem;
+      color: var(--color-charcoal);
+      font-weight: 300;
+      border-right: 1px solid var(--color-gray-light);
+      &:last-child { border-right: none; }
+    }
+
+    &--header span {
+      background: var(--color-cream);
+      font-weight: 600;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-charcoal);
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+      span { border-right: none; border-bottom: 1px solid var(--color-gray-light); &:last-child { border-bottom: none; } }
+    }
+  }
+}

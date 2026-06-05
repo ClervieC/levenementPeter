@@ -1,0 +1,99 @@
+<section class="page-hero">
+  <div class="container">
+    <span class="section-eyebrow">Séminaires &amp; Événements Corporate · Bretagne &amp; Rennes</span>
+    <h1>Séminaires &amp; Événements d'Entreprise<br><em>en Bretagne</em></h1>
+    <span class="gold-line" style="margin-block:1.5rem"></span>
+    <p>
+      L'Événement Peter conçoit et organise vos événements professionnels en Bretagne. Séminaires, team-building, conventions, soirées d'entreprise : des expériences mémorables qui dynamisent vos équipes.
+    </p>
+  </div>
+</section>
+
+<!-- Intro -->
+<section class="section section--cream">
+  <div class="container sem-intro">
+    <div>
+      <span class="section-eyebrow">Événements professionnels</span>
+      <h2>Votre Agence Événementielle d'Entreprise en Bretagne</h2>
+      <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
+      <p>
+        Organiser un <strong>séminaire en Bretagne</strong> ou à Rennes, c'est offrir à vos collaborateurs un cadre exceptionnel et une expérience qui les marque durablement. L'Événement Peter met son expertise et son réseau de partenaires locaux au service de vos événements professionnels.
+      </p>
+      <p style="margin-top:1rem">
+        De la recherche du lieu idéal à la coordination le jour J, en passant par la restauration, les activités et la logistique, nous prenons en charge l'intégralité de votre événement d'entreprise en Bretagne.
+      </p>
+      <p style="margin-top:1rem">
+        La Bretagne offre un cadre unique : châteaux, domaines maritimes, centres de congrès modernes à Rennes, espaces nature… Nous sélectionnons le lieu parfait pour vos objectifs et votre budget.
+      </p>
+    </div>
+    <div class="image-placeholder" aria-hidden="true">
+      <span class="section-eyebrow" style="margin:0">Séminaire en Bretagne</span>
+    </div>
+  </div>
+</section>
+
+<!-- Types d'événements -->
+<section class="section" aria-labelledby="types-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Nos événements</span>
+      <h2 id="types-title">Tous Types d'Événements Professionnels</h2>
+      <span class="gold-line"></span>
+    </div>
+    <div class="types-grid">
+      @for (t of types; track t.title) {
+        <div class="type-card">
+          <span class="type-card__icon">{{ t.icon }}</span>
+          <h3>{{ t.title }}</h3>
+          <p>{{ t.desc }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Notre méthode -->
+<section class="section section--dark" aria-labelledby="methode-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Notre approche</span>
+      <h2 id="methode-title">Une Organisation Rigoureuse, de A à Z</h2>
+      <span class="gold-line"></span>
+    </div>
+    <div class="methode-steps">
+      <div class="step">
+        <div class="step__num">01</div>
+        <h3>Définition des objectifs</h3>
+        <p>Nous analysons vos enjeux, votre culture d'entreprise et vos attentes pour proposer un événement aligné avec vos objectifs stratégiques.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">02</div>
+        <h3>Recherche du lieu</h3>
+        <p>Grâce à notre réseau en Bretagne, nous sélectionnons les meilleurs lieux disponibles à Rennes et dans toute la région selon vos critères.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">03</div>
+        <h3>Conception du programme</h3>
+        <p>Création d'un programme sur mesure : horaires, animations, restauration, transport, hébergement. Chaque détail est anticipé.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">04</div>
+        <h3>Coordination le Jour J</h3>
+        <p>Notre équipe est présente le jour de votre événement pour orchestrer chaque prestataire et vous permettre de vous concentrer sur vos participants.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container" style="text-align:center">
+    <span class="section-eyebrow">Parlons de votre projet</span>
+    <h2>Organisons votre prochain<br>séminaire en Bretagne</h2>
+    <span class="gold-line" style="margin-block:1.5rem"></span>
+    <p style="max-width:520px;margin-inline:auto;margin-bottom:2rem">
+      Date, nombre de participants, type d'événement, budget… Partagez-nous votre brief et recevez une proposition détaillée dans les 48 heures.
+    </p>
+    <a routerLink="/contact" class="btn btn--gold">Demander un devis</a>
+  </div>
+</section>

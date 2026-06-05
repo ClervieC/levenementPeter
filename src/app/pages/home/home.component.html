@@ -1,0 +1,153 @@
+<!-- ===== HERO ===== -->
+<section class="hero" aria-label="Bienvenue chez L'Événement Peter">
+  <div class="hero__bg"></div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content container">
+    <span class="section-eyebrow hero__eyebrow">Agence Événementielle · Bretagne &amp; Rennes</span>
+    <h1 class="hero__title">
+      L'Événement<br>
+      <em>Peter</em>
+    </h1>
+    <p class="hero__subtitle">
+      Wedding Planner · Décoration Mariage · Séminaires · Obsèques<br>
+      Un service haut de gamme et sur mesure, en Bretagne
+    </p>
+    <div class="hero__cta">
+      <a routerLink="/mariage" class="btn btn--gold">Nos Mariages</a>
+      <a routerLink="/contact" class="btn btn--outline">Demander un devis</a>
+    </div>
+  </div>
+  <div class="hero__scroll">
+    <div class="hero__scroll-line"></div>
+    <span>Découvrir</span>
+  </div>
+</section>
+
+<!-- ===== INTRO ===== -->
+<section class="intro section section--cream">
+  <div class="container intro__inner">
+    <div class="intro__text">
+      <span class="section-eyebrow">Notre philosophie</span>
+      <h2>Une agence qui donne vie à vos idées</h2>
+      <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
+      <p>
+        L'Événement Peter est votre partenaire événementiel de confiance pour organiser un mariage inoubliable en Bretagne. Basée à Rennes, notre agence est entièrement consacrée à la création d'expériences mémorables pour les couples, les entreprises et toutes les familles qui nous font confiance.
+      </p>
+      <p style="margin-top:1rem">
+        Notre équipe travaille avec passion, expertise et engagement pour vous offrir un service haut de gamme, entièrement personnalisé. Vous choisir L'Événement Peter, c'est vous donner la certitude que chaque détail sera géré à la perfection.
+      </p>
+      <a routerLink="/a-propos" class="btn btn--outline-dark" style="margin-top:2rem">Notre histoire</a>
+    </div>
+    <div class="intro__image" aria-hidden="true">
+      <div class="intro__image-placeholder">
+        <span class="section-eyebrow" style="margin:0">Photo de l'équipe</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services section" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Ce que nous faisons</span>
+      <h2 id="services-title">Nos Prestations Événementielles</h2>
+      <span class="gold-line"></span>
+    </div>
+
+    <div class="services__grid">
+      @for (s of services; track s.title) {
+        <article class="service-card">
+          <div class="service-card__icon">
+            @if (s.icon === 'rings') {
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="8" cy="12" r="5"/><circle cx="16" cy="12" r="5"/></svg>
+            }
+            @if (s.icon === 'flower') {
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            }
+            @if (s.icon === 'briefcase') {
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="12"/><path d="M2 12h20"/></svg>
+            }
+            @if (s.icon === 'candle') {
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M9 2s1 2 1 4-2 4-2 4 4-1 4-4-3-4-3-4z"/><rect x="7" y="10" width="10" height="12" rx="1"/><path d="M7 16h10"/></svg>
+            }
+          </div>
+          <h3 class="service-card__title">{{ s.title }}</h3>
+          <p class="service-card__desc">{{ s.desc }}</p>
+          <a [routerLink]="s.link" class="service-card__link">
+            {{ s.label }}
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+          </a>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ===== ZONE GÉOGRAPHIQUE – SEO local ===== -->
+<section class="zone section section--dark" aria-labelledby="zone-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Notre zone d'intervention</span>
+      <h2 id="zone-title">Mariages &amp; Événements en Bretagne</h2>
+      <span class="gold-line"></span>
+    </div>
+    <p class="zone__intro">
+      L'Événement Peter intervient dans toute la <strong>Bretagne</strong> pour organiser vos mariages, séminaires et événements. Basée à <strong>Rennes</strong>, notre agence couvre l'ensemble de la région : Ille-et-Vilaine, Morbihan, Finistère, Côtes-d'Armor.
+    </p>
+    <ul class="zone__list" aria-label="Villes couvertes">
+      @for (z of zones; track z) {
+        <li class="zone__item">{{ z }}</li>
+      }
+    </ul>
+    <p class="zone__note">
+      Vous êtes hors Bretagne ? <a routerLink="/contact">Contactez-nous</a>, nous étudions chaque demande avec plaisir.
+    </p>
+  </div>
+</section>
+
+<!-- ===== POURQUOI NOUS ===== -->
+<section class="why section section--cream" aria-labelledby="why-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Pourquoi nous choisir</span>
+      <h2 id="why-title">L'Excellence à Chaque Étape</h2>
+      <span class="gold-line"></span>
+    </div>
+    <div class="why__grid">
+      <div class="why__item">
+        <div class="why__number">01</div>
+        <h3>Sur mesure</h3>
+        <p>Chaque événement est unique. Nous construisons votre projet de A à Z selon vos envies, votre budget et votre personnalité.</p>
+      </div>
+      <div class="why__item">
+        <div class="why__number">02</div>
+        <h3>Expertise locale</h3>
+        <p>Ancrés en Bretagne, nous connaissons les meilleurs prestataires, lieux et tendances de la région pour un mariage ou un événement parfait.</p>
+      </div>
+      <div class="why__item">
+        <div class="why__number">03</div>
+        <h3>Sérénité totale</h3>
+        <p>Nous gérons chaque détail pour que vous profitiez pleinement de votre journée sans stress ni imprévu. Votre tranquillité est notre priorité.</p>
+      </div>
+      <div class="why__item">
+        <div class="why__number">04</div>
+        <h3>Haut de gamme</h3>
+        <p>Un réseau de partenaires sélectionnés, une attention permanente aux finitions et une esthétique soignée pour un résultat d'exception.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA FINAL ===== -->
+<section class="cta section section--dark" aria-label="Prendre contact">
+  <div class="container cta__inner">
+    <span class="section-eyebrow">Commençons ensemble</span>
+    <h2 class="cta__title">Prêt(e) à créer votre<br><em>événement inoubliable ?</em></h2>
+    <span class="gold-line" style="margin-block:2rem"></span>
+    <p class="cta__text">
+      Mariage en Bretagne, séminaire à Rennes, décoration sur mesure… Partagez-nous votre projet et recevez une proposition personnalisée.
+    </p>
+    <a routerLink="/contact" class="btn btn--gold">Nous Contacter</a>
+  </div>
+</section>

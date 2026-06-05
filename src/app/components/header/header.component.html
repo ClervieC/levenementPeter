@@ -1,0 +1,56 @@
+<header class="header" [class.header--scrolled]="scrolled()">
+  <div class="header__inner container">
+
+    <!-- Logo -->
+    <a routerLink="/" class="header__logo" (click)="closeMenu()">
+      <img src="/logo.jpg" alt="L'Événement Peter – Agence événementielle Bretagne" class="header__logo-img">
+    </a>
+
+    <!-- Navigation desktop -->
+    <nav class="header__nav" aria-label="Navigation principale">
+      @for (item of navItems; track item.path) {
+        <a
+          [routerLink]="item.path"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+          class="header__nav-link"
+        >{{ item.label }}</a>
+      }
+    </nav>
+
+    <!-- CTA -->
+    <a routerLink="/contact" class="header__cta btn btn--gold" (click)="closeMenu()">
+      Nous Contacter
+    </a>
+
+    <!-- Burger -->
+    <button
+      class="header__burger"
+      [class.open]="menuOpen()"
+      (click)="toggleMenu()"
+      aria-label="Menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="header__mobile" [class.open]="menuOpen()">
+    <nav>
+      @for (item of navItems; track item.path) {
+        <a
+          [routerLink]="item.path"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+          class="header__mobile-link"
+          (click)="closeMenu()"
+        >{{ item.label }}</a>
+      }
+      <a routerLink="/contact" class="btn btn--gold" style="margin-top:1.5rem" (click)="closeMenu()">
+        Nous Contacter
+      </a>
+    </nav>
+  </div>
+</header>

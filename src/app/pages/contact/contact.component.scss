@@ -1,0 +1,129 @@
+.page-hero em { font-style: italic; color: var(--color-gold); }
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 6rem;
+  align-items: start;
+
+  @media (max-width: 900px) { grid-template-columns: 1fr; gap: 4rem; }
+}
+
+.contact-form-wrap {
+  h2 { margin-bottom: 0; }
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+
+  @media (max-width: 600px) { grid-template-columns: 1fr; }
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.submit-btn {
+  margin-top: 0.5rem;
+  width: 100%;
+  max-width: 280px;
+
+  &:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+}
+
+.success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  border: 1px solid var(--color-gold-light);
+  background: var(--color-cream);
+  gap: 1rem;
+
+  svg { color: var(--color-gold); }
+  h3  { font-size: 1.6rem; }
+  p   { font-size: 0.95rem; max-width: 400px; }
+}
+
+/* Infos contact */
+.contact-info {
+  h2 { margin-bottom: 0; }
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+
+  li {
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--color-gold-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gold);
+  }
+
+  strong {
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-gray);
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+
+  p, a {
+    font-size: 0.93rem;
+    font-weight: 300;
+    color: var(--color-charcoal);
+    line-height: 1.6;
+  }
+
+  a {
+    transition: color var(--ease);
+    &:hover { color: var(--color-gold); }
+  }
+
+  small {
+    font-size: 0.82rem;
+    color: var(--color-gray);
+  }
+}
+
+.form-error {
+  margin-top: 1rem;
+  font-size: 0.88rem;
+  color: #c0392b;
+  line-height: 1.6;
+}
+
+.contact-note {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  border-left: 2px solid var(--color-gold);
+  background: var(--color-cream);
+
+  p {
+    font-size: 0.88rem;
+    font-style: italic;
+    color: var(--color-gray);
+    line-height: 1.7;
+  }
+}
