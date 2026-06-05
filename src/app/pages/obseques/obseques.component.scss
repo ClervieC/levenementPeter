@@ -1,0 +1,103 @@
+.page-hero em { font-style: italic; color: var(--color-gold); }
+
+/* Intro */
+.obseques-intro {
+  max-width: 860px;
+  margin-inline: auto;
+
+  p {
+    line-height: 1.9;
+    margin-top: 1.2rem;
+    font-size: 0.97rem;
+  }
+
+  &__note {
+    margin-top: 1.8rem !important;
+    font-style: italic;
+    color: var(--color-black);
+    font-weight: 500;
+  }
+}
+
+/* Services grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  @media (max-width: 900px) { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 560px) { grid-template-columns: 1fr; }
+}
+
+.service-card {
+  padding: 2.4rem 2rem;
+  border: 1px solid var(--color-gray-light);
+  transition: border-color var(--ease), box-shadow var(--ease);
+  text-align: center;
+
+  &:hover {
+    border-color: var(--color-gold-light);
+    box-shadow: 0 6px 30px rgba(0,0,0,0.07);
+  }
+
+  &__icon {
+    display: block;
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  &__title {
+    font-size: 1.05rem;
+    margin-bottom: 0.9rem;
+    color: var(--color-black);
+  }
+
+  &__desc {
+    font-size: 0.88rem;
+    line-height: 1.75;
+    color: var(--color-text-light);
+  }
+}
+
+/* Engagement section */
+.engagements-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 0.5rem;
+
+  @media (max-width: 640px) { grid-template-columns: 1fr; }
+}
+
+.engagement-item {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+
+  &__icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(201,168,68,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gold);
+  }
+
+  &__text {
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+      color: var(--color-white);
+    }
+    p {
+      font-size: 0.88rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.65);
+    }
+  }
+}
+
+h2 em { font-style: italic; color: var(--color-gold); }

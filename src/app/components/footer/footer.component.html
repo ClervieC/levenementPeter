@@ -3,15 +3,15 @@
 
     <div class="footer__col footer__col--brand">
       <div class="footer__logo">
-        <img src="/logo.jpg" alt="L'Événement Peter" class="footer__logo-img">
+        <img src="/logo.jpg" alt="{{ 'FOOTER.LOGO_ALT' | translate }}" class="footer__logo-img">
       </div>
       <p class="footer__tagline">{{ 'FOOTER.TAGLINE' | translate }}</p>
       <p class="footer__english-spoken">{{ 'FOOTER.ENGLISH_SPOKEN' | translate }}</p>
       <div class="footer__social">
-        <a href="https://www.instagram.com/levenementpeter/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <a href="https://www.instagram.com/levenementpeter/" target="_blank" rel="noopener noreferrer" aria-label="{{ 'FOOTER.SOCIAL_INSTAGRAM' | translate }}">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
         </a>
-        <a href="https://www.facebook.com/people/L%C3%89v%C3%A9nement-Peter/61563176357505/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <a href="https://www.facebook.com/people/L%C3%89v%C3%A9nement-Peter/61563176357505/" target="_blank" rel="noopener noreferrer" aria-label="{{ 'FOOTER.SOCIAL_FACEBOOK' | translate }}">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
         </a>
       </div>
@@ -21,9 +21,8 @@
       <h3 class="footer__heading">{{ 'FOOTER.NAV_TITLE' | translate }}</h3>
       <ul class="footer__links">
         <li><a routerLink="/">{{ 'NAV.HOME' | translate }}</a></li>
-        <li><a routerLink="/mariage">{{ 'NAV.MARIAGE' | translate }}</a></li>
-        <li><a routerLink="/design-decoration">{{ 'NAV.DESIGN' | translate }}</a></li>
-        <li><a routerLink="/seminaires">{{ 'NAV.SEMINAIRES' | translate }}</a></li>
+        <li><a routerLink="/mariage">{{ 'NAV.PARTICULIER' | translate }}</a></li>
+        <li><a routerLink="/seminaires">{{ 'NAV.PROFESSIONNEL' | translate }}</a></li>
         <li><a routerLink="/a-propos">{{ 'NAV.APROPOS' | translate }}</a></li>
         <li><a routerLink="/contact">{{ 'NAV.CONTACT' | translate }}</a></li>
       </ul>
@@ -34,10 +33,9 @@
       <ul class="footer__links">
         <li><a routerLink="/mariage">{{ 'FOOTER.SERVICE_MARIAGE' | translate }}</a></li>
         <li><a routerLink="/design-decoration">{{ 'FOOTER.SERVICE_DECO' | translate }}</a></li>
-        <li><a routerLink="/design-decoration">{{ 'FOOTER.SERVICE_FLORAL' | translate }}</a></li>
         <li><a routerLink="/seminaires">{{ 'FOOTER.SERVICE_SEM' | translate }}</a></li>
-        <li><a routerLink="/seminaires">{{ 'FOOTER.SERVICE_CORP' | translate }}</a></li>
-        <li><a routerLink="/contact">{{ 'FOOTER.SERVICE_OBSEQUES' | translate }}</a></li>
+        <li><a routerLink="/fetes-celebrations">{{ 'FOOTER.SERVICE_FETES' | translate }}</a></li>
+        <li><a routerLink="/obseques">{{ 'FOOTER.SERVICE_OBSEQUES' | translate }}</a></li>
       </ul>
     </div>
 

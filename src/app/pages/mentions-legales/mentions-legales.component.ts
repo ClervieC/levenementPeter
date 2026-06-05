@@ -1,9 +1,10 @@
 import { Component, OnInit, inject } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-mentions-legales',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './mentions-legales.component.html',
   styleUrl: './mentions-legales.component.scss'
 })

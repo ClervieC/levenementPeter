@@ -2,10 +2,11 @@ import { Component, OnInit, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { SeoService } from '../../services/seo.service';
+import { PhotoCarouselComponent } from '../../components/photo-carousel/photo-carousel.component';
 
 @Component({
   selector: 'app-mariage',
-  imports: [RouterLink, TranslateModule],
+  imports: [RouterLink, TranslateModule, PhotoCarouselComponent],
   templateUrl: './mariage.component.html',
   styleUrl: './mariage.component.scss'
 })

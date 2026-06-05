@@ -1,0 +1,85 @@
+<!-- ===== HERO ===== -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-eyebrow">{{ 'OBSEQUES.HERO.EYEBROW' | translate }}</span>
+    <h1>{{ 'OBSEQUES.HERO.TITLE1' | translate }}<br><em>{{ 'OBSEQUES.HERO.TITLE2' | translate }}</em></h1>
+    <span class="gold-line" style="margin-block:1.5rem"></span>
+    <p>{{ 'OBSEQUES.HERO.DESC' | translate }}</p>
+  </div>
+</section>
+
+<!-- ===== INTRO ===== -->
+<section class="section section--cream" aria-labelledby="obseques-intro-title">
+  <div class="container obseques-intro">
+    <span class="section-eyebrow">{{ 'OBSEQUES.INTRO.EYEBROW' | translate }}</span>
+    <h2 id="obseques-intro-title">{{ 'OBSEQUES.INTRO.TITLE' | translate }}</h2>
+    <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
+    <p>{{ 'OBSEQUES.INTRO.P1' | translate }}</p>
+    <p>{{ 'OBSEQUES.INTRO.P2' | translate }}</p>
+    <p class="obseques-intro__note">{{ 'OBSEQUES.INTRO.P3' | translate }}</p>
+  </div>
+</section>
+
+<!-- ===== NOS SERVICES ===== -->
+<section class="section" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">{{ 'OBSEQUES.SERVICES.EYEBROW' | translate }}</span>
+      <h2 id="services-title">{{ 'OBSEQUES.SERVICES.TITLE' | translate }}</h2>
+      <span class="gold-line"></span>
+    </div>
+    <div class="services-grid">
+      @for (s of ('OBSEQUES.SERVICES.ITEMS' | translate); track s.title) {
+        <div class="service-card">
+          <span class="service-card__icon">{{ s.icon }}</span>
+          <h3 class="service-card__title">{{ s.title }}</h3>
+          <p class="service-card__desc">{{ s.desc }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ===== NOS ENGAGEMENTS ===== -->
+<section class="section section--dark" aria-labelledby="engagements-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">{{ 'OBSEQUES.ENGAGEMENTS.EYEBROW' | translate }}</span>
+      <h2 id="engagements-title">{{ 'OBSEQUES.ENGAGEMENTS.TITLE' | translate }}</h2>
+      <span class="gold-line"></span>
+    </div>
+    <div class="engagements-list">
+      @for (e of ('OBSEQUES.ENGAGEMENTS.ITEMS' | translate); track e.title) {
+        <div class="engagement-item">
+          <div class="engagement-item__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <div class="engagement-item__text">
+            <h3>{{ e.title }}</h3>
+            <p>{{ e.desc }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<app-photo-carousel
+  [eyebrow]="'OBSEQUES.CAROUSEL.EYEBROW' | translate"
+  [title]="'OBSEQUES.CAROUSEL.TITLE' | translate"
+  [count]="5">
+</app-photo-carousel>
+
+<!-- ===== CTA ===== -->
+<section class="section">
+  <div class="container" style="text-align:center">
+    <span class="section-eyebrow">{{ 'OBSEQUES.CTA.EYEBROW' | translate }}</span>
+    <h2>{{ 'OBSEQUES.CTA.TITLE1' | translate }}<br><em>{{ 'OBSEQUES.CTA.TITLE2' | translate }}</em></h2>
+    <span class="gold-line" style="margin-block:1.5rem"></span>
+    <p style="max-width:540px;margin-inline:auto;margin-bottom:2rem">{{ 'OBSEQUES.CTA.TEXT' | translate }}</p>
+    <a routerLink="/contact" class="btn btn--gold">{{ 'OBSEQUES.CTA.BTN' | translate }}</a>
+  </div>
+</section>

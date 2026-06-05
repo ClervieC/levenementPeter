@@ -46,6 +46,78 @@
   p  { font-size: 0.9rem; line-height: 1.75; }
 }
 
+.team-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 1rem;
+
+  @media (max-width: 768px) { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+.team-person {
+  border: 1px solid rgba(201,168,68,0.2);
+  padding: 2rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1.8rem;
+  }
+
+  &__avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--color-gold);
+    color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 500;
+    flex-shrink: 0;
+  }
+
+  &__name {
+    font-size: 1.15rem;
+    margin-bottom: 0.2rem;
+  }
+
+  &__role {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-gold);
+  }
+
+  &__formations {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      padding: 0.45rem 0;
+      border-bottom: 1px solid var(--color-gray-light);
+      color: var(--color-charcoal);
+
+      &:last-child { border-bottom: none; }
+
+      &::before {
+        content: '—';
+        color: var(--color-gold);
+        margin-right: 0.6rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
 .local-section {
   display: grid;
   grid-template-columns: 1fr 1fr;

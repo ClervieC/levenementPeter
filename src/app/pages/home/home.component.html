@@ -1,5 +1,5 @@
 <!-- ===== HERO ===== -->
-<section class="hero" aria-label="Bienvenue chez L'Événement Peter">
+<section class="hero" aria-label="{{ 'HOME.HERO.ARIA_LABEL' | translate }}">
   <div class="hero__bg"></div>
   <div class="hero__overlay"></div>
   <div class="hero__content container">
@@ -66,6 +66,12 @@
             @if (s.icon === 'candle') {
               <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M9 2s1 2 1 4-2 4-2 4 4-1 4-4-3-4-3-4z"/><rect x="7" y="10" width="10" height="12" rx="1"/><path d="M7 16h10"/></svg>
             }
+            @if (s.icon === 'ceremony') {
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 2l1.5 3.5L17 6.5l-2.5 2.4.6 3.6L12 11l-3.1 1.5.6-3.6L7 6.5l3.5-.5z"/><path d="M5 20h14"/><path d="M12 12v8"/></svg>
+            }
+            @if (s.icon === 'celebrate') {
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M8.56 2.9A7 7 0 0 1 19 9v4"/><path d="M2 13h20"/><path d="M6 13v7"/><path d="M10 13v7"/><path d="M14 13v7"/><path d="M18 13v7"/><path d="M2 20h20"/></svg>
+            }
           </div>
           <h3 class="service-card__title">{{ s.title }}</h3>
           <p class="service-card__desc">{{ s.desc }}</p>
@@ -88,7 +94,7 @@
       <span class="gold-line"></span>
     </div>
     <p class="zone__intro" [innerHTML]="'HOME.ZONE.INTRO' | translate"></p>
-    <ul class="zone__list" aria-label="Villes couvertes">
+    <ul class="zone__list" aria-label="{{ 'HOME.ZONE.LIST_ARIA_LABEL' | translate }}">
       @for (z of zones; track z) {
         <li class="zone__item">{{ z }}</li>
       }

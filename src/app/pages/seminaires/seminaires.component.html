@@ -1,3 +1,4 @@
+<!-- ===== HERO ===== -->
 <section class="page-hero">
   <div class="container">
     <span class="section-eyebrow">{{ 'SEMINAIRES.HERO.EYEBROW' | translate }}</span>
@@ -7,6 +8,7 @@
   </div>
 </section>
 
+<!-- ===== INTRO ===== -->
 <section class="section section--cream">
   <div class="container sem-intro">
     <div>
@@ -14,7 +16,7 @@
       <h2>{{ 'SEMINAIRES.INTRO.TITLE' | translate }}</h2>
       <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
       <p [innerHTML]="'SEMINAIRES.INTRO.P1' | translate"></p>
-      <p style="margin-top:1rem" [innerHTML]="'SEMINAIRES.INTRO.P2' | translate"></p>
+      <p style="margin-top:1rem">{{ 'SEMINAIRES.INTRO.P2' | translate }}</p>
       <p style="margin-top:1rem">{{ 'SEMINAIRES.INTRO.P3' | translate }}</p>
     </div>
     <div class="image-placeholder" aria-hidden="true">
@@ -23,6 +25,7 @@
   </div>
 </section>
 
+<!-- ===== NOS ÉVÉNEMENTS ===== -->
 <section class="section" aria-labelledby="types-title">
   <div class="container">
     <div class="section-header">
@@ -42,29 +45,89 @@
   </div>
 </section>
 
-<section class="section section--dark" aria-labelledby="methode-title">
+<!-- ===== LES BÉNÉFICES ===== -->
+<section class="section section--cream" aria-labelledby="pourquoi-ev-title">
   <div class="container">
     <div class="section-header">
-      <span class="section-eyebrow">{{ 'SEMINAIRES.METHODE.EYEBROW' | translate }}</span>
-      <h2 id="methode-title">{{ 'SEMINAIRES.METHODE.TITLE' | translate }}</h2>
+      <span class="section-eyebrow">{{ 'SEMINAIRES.POURQUOI_EV.EYEBROW' | translate }}</span>
+      <h2 id="pourquoi-ev-title">{{ 'SEMINAIRES.POURQUOI_EV.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
-    <div class="methode-steps">
-      @for (s of ('SEMINAIRES.METHODE.ITEMS' | translate); track s.num) {
-        <div class="step">
-          <div class="step__num">{{ s.num }}</div>
-          <h3>{{ s.title }}</h3>
-          <p>{{ s.desc }}</p>
+    <div class="benefices-grid">
+      @for (b of ('SEMINAIRES.POURQUOI_EV.ITEMS' | translate); track b.title) {
+        <div class="benefice-card">
+          <span class="benefice-card__icon">{{ b.icon }}</span>
+          <h3 class="benefice-card__title">{{ b.title }}</h3>
+          <p class="benefice-card__desc">{{ b.desc }}</p>
         </div>
       }
     </div>
   </div>
 </section>
 
+<!-- ===== NOS DIFFÉRENCES ===== -->
+<section class="section section--dark" aria-labelledby="pourquoi-nous-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">{{ 'SEMINAIRES.POURQUOI_NOUS.EYEBROW' | translate }}</span>
+      <h2 id="pourquoi-nous-title">{{ 'SEMINAIRES.POURQUOI_NOUS.TITLE' | translate }}</h2>
+      <span class="gold-line"></span>
+    </div>
+
+    <div class="groupes-grid">
+      @for (g of ('SEMINAIRES.POURQUOI_NOUS.GROUPES' | translate); track g.label) {
+        <div class="groupe-card">
+          <div class="groupe-card__icon">
+            @if (g.icon === 'creative') {
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M9 21h6m-3-3v-3.5M12 3C8.13 3 5 6.13 5 10c0 2.38 1.19 4.47 3 5.74V17h8v-1.26C17.81 14.47 19 12.38 19 10c0-3.87-3.13-7-7-7z"/>
+              </svg>
+            }
+            @if (g.icon === 'globe') {
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            }
+            @if (g.icon === 'chat') {
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M3 7a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H7l-4 4V7z"/>
+                <path d="M17 6h1a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-1"/>
+              </svg>
+            }
+            @if (g.icon === 'home') {
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            }
+          </div>
+          <h3 class="groupe-card__label">{{ g.label }}</h3>
+          <ul class="groupe-card__items">
+            @for (item of g.items; track item) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+
+    <p class="pourquoi-nous__closing">{{ 'SEMINAIRES.POURQUOI_NOUS.CLOSING' | translate }}</p>
+  </div>
+</section>
+
+<app-photo-carousel
+  [eyebrow]="'SEMINAIRES.CAROUSEL.EYEBROW' | translate"
+  [title]="'SEMINAIRES.CAROUSEL.TITLE' | translate"
+  [count]="5">
+</app-photo-carousel>
+
+<!-- ===== CTA ===== -->
 <section class="section">
   <div class="container" style="text-align:center">
     <span class="section-eyebrow">{{ 'SEMINAIRES.CTA.EYEBROW' | translate }}</span>
-    <h2>{{ 'SEMINAIRES.CTA.TITLE1' | translate }}<br>{{ 'SEMINAIRES.CTA.TITLE2' | translate }}</h2>
+    <h2>{{ 'SEMINAIRES.CTA.TITLE1' | translate }}<br><em>{{ 'SEMINAIRES.CTA.TITLE2' | translate }}</em></h2>
     <span class="gold-line" style="margin-block:1.5rem"></span>
     <p style="max-width:520px;margin-inline:auto;margin-bottom:2rem">{{ 'SEMINAIRES.CTA.TEXT' | translate }}</p>
     <a routerLink="/contact" class="btn btn--gold">{{ 'SEMINAIRES.CTA.BTN' | translate }}</a>

@@ -1,9 +1,9 @@
 <section class="page-hero">
   <div class="container">
-    <span class="section-eyebrow">Informations légales</span>
-    <h1>Mentions Légales</h1>
+    <span class="section-eyebrow">{{ 'LEGAL.HERO.EYEBROW' | translate }}</span>
+    <h1>{{ 'LEGAL.HERO.TITLE' | translate }}</h1>
     <span class="gold-line" style="margin-block:1.5rem"></span>
-    <p>Conformément à la loi n° 2004-575 du 21 juin 2004 pour la Confiance dans l'Économie Numérique (LCEN).</p>
+    <p>{{ 'LEGAL.HERO.DESC' | translate }}</p>
   </div>
 </section>
 
@@ -11,67 +11,56 @@
   <div class="container legal-content">
 
     <article class="legal-block">
-      <h2>1. Éditeur du site</h2>
+      <h2>{{ 'LEGAL.SECTION1.TITLE' | translate }}</h2>
       <ul>
-        <li><strong>Dénomination sociale :</strong> L'Événement Peter</li>
-        <li><strong>Forme juridique :</strong> Société à Responsabilité Limitée (SARL)</li>
-        <li><strong>SIREN :</strong> 931 366 942</li>
-        <li><strong>SIRET (siège social) :</strong> 931 366 942 00023</li>
-        <li><strong>Numéro de TVA intracommunautaire :</strong> FR27931366942</li>
-        <li><strong>Code APE/NAF :</strong> 8230Z – Organisation de foires, salons professionnels et congrès</li>
-        <li><strong>Date de création :</strong> 24 juillet 2024</li>
-        <li><strong>Siège social :</strong> 35 rue François-Désiré Roulin, 35000 Rennes, France</li>
-        <li><strong>Téléphone :</strong> <a href="tel:+33652583724">06 52 58 37 24</a></li>
-        <li><strong>Email :</strong> <a href="mailto:levenementpeter@gmail.com">levenementpeter&#64;gmail.com</a></li>
-        <li><strong>Dirigeants :</strong> Ingrid GAUCHENOT et Alix PETER</li>
+        @for (item of ('LEGAL.SECTION1.ITEMS' | translate); track item.label) {
+          <li><strong>{{ item.label }}</strong> <span [innerHTML]="item.value"></span></li>
+        }
       </ul>
     </article>
 
     <article class="legal-block">
-      <h2>2. Directeur de la publication</h2>
-      <p>Clervie CAUSER</p>
-      <p>Pour toute question relative au contenu du site : <a href="mailto:levenementpeter@gmail.com">levenementpeter&#64;gmail.com</a></p>
+      <h2>{{ 'LEGAL.SECTION2.TITLE' | translate }}</h2>
+      @for (text of ('LEGAL.SECTION2.TEXTS' | translate); track text) {
+        <p [innerHTML]="text"></p>
+      }
     </article>
 
     <article class="legal-block">
-      <h2>3. Hébergeur du site</h2>
+      <h2>{{ 'LEGAL.SECTION3.TITLE' | translate }}</h2>
       <ul>
-        <li><strong>Société :</strong> Vercel Inc.</li>
-        <li><strong>Adresse :</strong> 340 Pine Street, Suite 701, San Francisco, CA 94104, États-Unis</li>
-        <li><strong>Site web :</strong> <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">https://vercel.com</a></li>
+        @for (item of ('LEGAL.SECTION3.ITEMS' | translate); track item.label) {
+          <li><strong>{{ item.label }}</strong> <span [innerHTML]="item.value"></span></li>
+        }
       </ul>
     </article>
 
     <article class="legal-block">
-      <h2>4. Propriété intellectuelle</h2>
-      <p>
-        L'ensemble du contenu de ce site (textes, images, logos, photographies, vidéos, illustrations, structure) est la propriété exclusive de L'Événement Peter ou de ses partenaires, et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle.
-      </p>
-      <p>
-        Toute reproduction, représentation, modification, publication ou adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans l'autorisation préalable écrite de L'Événement Peter, sous peine de poursuites judiciaires.
-      </p>
+      <h2>{{ 'LEGAL.SECTION4.TITLE' | translate }}</h2>
+      @for (text of ('LEGAL.SECTION4.TEXTS' | translate); track text) {
+        <p [innerHTML]="text"></p>
+      }
     </article>
 
     <article class="legal-block">
-      <h2>5. Liens hypertextes</h2>
-      <p>
-        Le site peut contenir des liens vers des sites tiers. L'Événement Peter ne peut être tenu responsable du contenu de ces sites externes et de leur politique de confidentialité. La création de liens vers le site de L'Événement Peter est soumise à autorisation préalable.
-      </p>
+      <h2>{{ 'LEGAL.SECTION5.TITLE' | translate }}</h2>
+      @for (text of ('LEGAL.SECTION5.TEXTS' | translate); track text) {
+        <p [innerHTML]="text"></p>
+      }
     </article>
 
     <article class="legal-block">
-      <h2>6. Limitation de responsabilité</h2>
-      <p>
-        L'Événement Peter s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Cependant, elle ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition et décline toute responsabilité pour tout dommage résultant d'une information inexacte ou incomplète.
-      </p>
+      <h2>{{ 'LEGAL.SECTION6.TITLE' | translate }}</h2>
+      @for (text of ('LEGAL.SECTION6.TEXTS' | translate); track text) {
+        <p [innerHTML]="text"></p>
+      }
     </article>
 
     <article class="legal-block">
-      <h2>7. Droit applicable</h2>
-      <p>
-        Les présentes mentions légales sont soumises au droit français. En cas de litige, les tribunaux français seront seuls compétents.
-      </p>
-      <p><em>Dernière mise à jour : juin 2026</em></p>
+      <h2>{{ 'LEGAL.SECTION7.TITLE' | translate }}</h2>
+      @for (text of ('LEGAL.SECTION7.TEXTS' | translate); track text) {
+        <p [innerHTML]="text"></p>
+      }
     </article>
 
   </div>

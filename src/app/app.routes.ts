@@ -17,9 +17,44 @@ export const routes: Routes = [
     title: "Décoration & Design Mariage Bretagne | L'Événement Peter"
   },
   {
+    path: 'fetes-celebrations',
+    loadComponent: () => import('./pages/fetes/fetes.component').then(m => m.FetesComponent),
+    title: "Fêtes & Célébrations sur mesure | L'Événement Peter"
+  },
+  {
+    path: 'officiante-ceremonie',
+    loadComponent: () => import('./pages/officiante-ceremonie/officiante-ceremonie.component').then(m => m.OfficianteCeremonieComponent),
+    title: "Officiante de cérémonie laïque | L'Événement Peter"
+  },
+  {
     path: 'seminaires',
     loadComponent: () => import('./pages/seminaires/seminaires.component').then(m => m.SeminairesComponent),
     title: "Organisation Séminaires & Événements Bretagne Rennes | L'Événement Peter"
+  },
+  {
+    path: 'evenement-interne',
+    loadComponent: () => import('./pages/evenement-interne/evenement-interne.component').then(m => m.EvenementInterneComponent),
+    title: "Événements internes d'entreprise | L'Événement Peter"
+  },
+  {
+    path: 'image-de-marque',
+    loadComponent: () => import('./pages/image-de-marque/image-de-marque.component').then(m => m.ImageDeMarqueComponent),
+    title: "Événements image de marque | L'Événement Peter"
+  },
+  {
+    path: 'evenement-marketing',
+    loadComponent: () => import('./pages/evenement-marketing/evenement-marketing.component').then(m => m.EvenementMarketingComponent),
+    title: "Événements marketing & communication | L'Événement Peter"
+  },
+  {
+    path: 'obseques',
+    loadComponent: () => import('./pages/obseques/obseques.component').then(m => m.ObsequesComponent),
+    title: "Obsèques & Cérémonies funèbres | L'Événement Peter"
+  },
+  {
+    path: 'galerie',
+    loadComponent: () => import('./pages/galerie/galerie.component').then(m => m.GalerieComponent),
+    title: "Galerie Réalisations | L'Événement Peter"
   },
   {
     path: 'a-propos',

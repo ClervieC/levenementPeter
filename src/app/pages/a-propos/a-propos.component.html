@@ -7,6 +7,7 @@
   </div>
 </section>
 
+<!-- Intro Alix & Ingrid -->
 <section class="section section--cream">
   <div class="container about-main">
     <div class="about-main__image" aria-hidden="true">
@@ -21,12 +22,54 @@
       <p [innerHTML]="'APROPOS.MAIN.P1' | translate"></p>
       <p style="margin-top:1.2rem">{{ 'APROPOS.MAIN.P2' | translate }}</p>
       <p style="margin-top:1.2rem">{{ 'APROPOS.MAIN.P3' | translate }}</p>
-      <p style="margin-top:1.2rem">{{ 'APROPOS.MAIN.P4' | translate }}</p>
+      <p style="margin-top:1.2rem"><em>{{ 'APROPOS.MAIN.P4' | translate }}</em></p>
     </div>
   </div>
 </section>
 
-<section class="section" aria-labelledby="valeurs-title">
+<!-- Diplômes & formations -->
+<section class="section" aria-labelledby="team-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">{{ 'APROPOS.TEAM.EYEBROW' | translate }}</span>
+      <h2 id="team-title">{{ 'APROPOS.TEAM.TITLE' | translate }}</h2>
+      <span class="gold-line"></span>
+    </div>
+    <div class="team-duo">
+      <div class="team-person">
+        <div class="team-person__header">
+          <div class="team-person__avatar">I</div>
+          <div>
+            <h3 class="team-person__name">Ingrid Peter</h3>
+            <span class="team-person__role">{{ 'APROPOS.TEAM.INGRID.ROLE' | translate }}</span>
+          </div>
+        </div>
+        <ul class="team-person__formations">
+          @for (f of ('APROPOS.TEAM.INGRID.FORMATIONS' | translate); track f) {
+            <li>{{ f }}</li>
+          }
+        </ul>
+      </div>
+      <div class="team-person">
+        <div class="team-person__header">
+          <div class="team-person__avatar">A</div>
+          <div>
+            <h3 class="team-person__name">Alix Peter</h3>
+            <span class="team-person__role">{{ 'APROPOS.TEAM.ALIX.ROLE' | translate }}</span>
+          </div>
+        </div>
+        <ul class="team-person__formations">
+          @for (f of ('APROPOS.TEAM.ALIX.FORMATIONS' | translate); track f) {
+            <li>{{ f }}</li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Valeurs -->
+<section class="section section--cream" aria-labelledby="valeurs-title">
   <div class="container">
     <div class="section-header">
       <span class="section-eyebrow">{{ 'APROPOS.VALEURS.EYEBROW' | translate }}</span>
@@ -45,6 +88,7 @@
   </div>
 </section>
 
+<!-- Ancrage local -->
 <section class="section section--dark" aria-labelledby="local-title">
   <div class="container local-section">
     <div>
@@ -63,6 +107,7 @@
   </div>
 </section>
 
+<!-- CTA -->
 <section class="section">
   <div class="container" style="text-align:center">
     <span class="section-eyebrow">{{ 'APROPOS.CTA.EYEBROW' | translate }}</span>

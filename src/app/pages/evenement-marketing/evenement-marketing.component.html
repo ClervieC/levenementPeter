@@ -1,0 +1,82 @@
+<!-- ===== HERO ===== -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-eyebrow">{{ 'EV_MARKETING.HERO.EYEBROW' | translate }}</span>
+    <h1>{{ 'EV_MARKETING.HERO.TITLE1' | translate }}<br><em>{{ 'EV_MARKETING.HERO.TITLE2' | translate }}</em></h1>
+    <span class="gold-line" style="margin-block:1.5rem"></span>
+    <p>{{ 'EV_MARKETING.HERO.DESC' | translate }}</p>
+  </div>
+</section>
+
+<!-- ===== INTRO ===== -->
+<section class="section section--cream">
+  <div class="container mkt-intro">
+    <div>
+      <span class="section-eyebrow">{{ 'EV_MARKETING.INTRO.EYEBROW' | translate }}</span>
+      <h2>{{ 'EV_MARKETING.INTRO.TITLE' | translate }}</h2>
+      <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
+      <p [innerHTML]="'EV_MARKETING.INTRO.P1' | translate"></p>
+      <p style="margin-top:1rem">{{ 'EV_MARKETING.INTRO.P2' | translate }}</p>
+    </div>
+    <div class="image-placeholder" aria-hidden="true">
+      <span class="section-eyebrow" style="margin:0">{{ 'EV_MARKETING.INTRO.IMG_ALT' | translate }}</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NOS TYPES D'ÉVÉNEMENTS ===== -->
+<section class="section" aria-labelledby="mkt-events-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">{{ 'EV_MARKETING.EVENTS.EYEBROW' | translate }}</span>
+      <h2 id="mkt-events-title">{{ 'EV_MARKETING.EVENTS.TITLE' | translate }}</h2>
+      <span class="gold-line"></span>
+    </div>
+    <div class="mkt-events-grid">
+      @for (e of ('EV_MARKETING.EVENTS.ITEMS' | translate); track e.title) {
+        <div class="mkt-card">
+          <span class="mkt-card__icon">{{ e.icon }}</span>
+          <h3 class="mkt-card__title">{{ e.title }}</h3>
+          <p class="mkt-card__desc">{{ e.desc }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ===== NOTRE IMPACT ===== -->
+<section class="section section--dark" aria-labelledby="impact-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">{{ 'EV_MARKETING.IMPACT.EYEBROW' | translate }}</span>
+      <h2 id="impact-title">{{ 'EV_MARKETING.IMPACT.TITLE' | translate }}</h2>
+      <span class="gold-line"></span>
+    </div>
+    <div class="impact-grid">
+      @for (i of ('EV_MARKETING.IMPACT.ITEMS' | translate); track i.title) {
+        <div class="impact-card">
+          <span class="impact-card__icon">{{ i.icon }}</span>
+          <h3>{{ i.title }}</h3>
+          <p>{{ i.desc }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<app-photo-carousel
+  [eyebrow]="'EV_MARKETING.CAROUSEL.EYEBROW' | translate"
+  [title]="'EV_MARKETING.CAROUSEL.TITLE' | translate"
+  [count]="5">
+</app-photo-carousel>
+
+<!-- ===== CTA ===== -->
+<section class="section">
+  <div class="container" style="text-align:center">
+    <span class="section-eyebrow">{{ 'EV_MARKETING.CTA.EYEBROW' | translate }}</span>
+    <h2>{{ 'EV_MARKETING.CTA.TITLE1' | translate }}<br><em>{{ 'EV_MARKETING.CTA.TITLE2' | translate }}</em></h2>
+    <span class="gold-line" style="margin-block:1.5rem"></span>
+    <p style="max-width:520px;margin-inline:auto;margin-bottom:2rem">{{ 'EV_MARKETING.CTA.TEXT' | translate }}</p>
+    <a routerLink="/contact" class="btn btn--gold">{{ 'EV_MARKETING.CTA.BTN' | translate }}</a>
+  </div>
+</section>

@@ -1,0 +1,83 @@
+<!-- ===== HERO ===== -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-eyebrow">{{ 'GALERIE.HERO.EYEBROW' | translate }}</span>
+    <h1>{{ 'GALERIE.HERO.TITLE1' | translate }}<br><em>{{ 'GALERIE.HERO.TITLE2' | translate }}</em></h1>
+    <span class="gold-line" style="margin-block:1.5rem"></span>
+    <p>{{ 'GALERIE.HERO.DESC' | translate }}</p>
+  </div>
+</section>
+
+<!-- ===== CATÉGORIES ou GRILLE PHOTOS ===== -->
+@if (!selected()) {
+
+  <section class="section" aria-labelledby="cats-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">{{ 'GALERIE.CATS.EYEBROW' | translate }}</span>
+        <h2 id="cats-title">{{ 'GALERIE.CATS.TITLE' | translate }}</h2>
+        <span class="gold-line"></span>
+      </div>
+      <div class="categories-grid">
+        @for (cat of categories; track cat.id) {
+          <div class="category-card"
+               (click)="selectCategory(cat)"
+               (keydown.enter)="selectCategory(cat)"
+               tabindex="0" role="button"
+               [attr.aria-label]="'GALERIE.OPEN_CATEGORY' | translate : { name: (cat.nameKey | translate) }">
+            <div class="category-card__thumb">
+              <div class="category-card__placeholder">
+                <span class="category-card__placeholder-text">{{ cat.nameKey | translate }}</span>
+              </div>
+              <div class="category-card__overlay">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                  <circle cx="11" cy="11" r="8"/>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                  <line x1="11" y1="8" x2="11" y2="14"/>
+                  <line x1="8" y1="11" x2="14" y2="11"/>
+                </svg>
+              </div>
+            </div>
+            <div class="category-card__info">
+              <span class="category-card__eyebrow">{{ cat.eyebrowKey | translate }}</span>
+              <h3 class="category-card__name">{{ cat.nameKey | translate }}</h3>
+              <span class="category-card__count">{{ 'GALERIE.PHOTO_COUNT' | translate : { count: cat.count } }}</span>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+} @else {
+
+  <section class="section">
+    <div class="container">
+
+      <button class="gallery-back" (click)="back()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        {{ 'GALERIE.BACK' | translate }}
+      </button>
+
+      <div class="section-header" style="margin-top:2rem">
+        <span class="section-eyebrow">{{ selected()!.eyebrowKey | translate }}</span>
+        <h2>{{ selected()!.nameKey | translate }}</h2>
+        <span class="gold-line"></span>
+      </div>
+
+      <div class="photo-grid">
+        @for (i of photos(selected()!.count); track i) {
+          <div class="photo-item" [class.photo-item--featured]="i === 0">
+            <div class="photo-placeholder">
+              <span class="photo-placeholder__label">{{ 'GALERIE.PHOTO_LABEL' | translate : { num: i + 1 } }}</span>
+            </div>
+          </div>
+        }
+      </div>
+
+    </div>
+  </section>
+
+}

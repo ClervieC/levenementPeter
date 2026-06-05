@@ -14,8 +14,8 @@ export class HomeComponent implements OnInit {
   private translate = inject(TranslateService);
 
   zones = [
-    'Rennes', 'Saint-Malo', 'Brest', 'Lorient', 'Vannes',
-    'Quimper', 'Ille-et-Vilaine', 'Morbihan', 'Finistère', "Côtes-d'Armor"
+    'Rennes', 'Bretagne', 'France entière', 'International', 'USA',
+    'Canada', 'Russie', 'Europe'
   ];
 
   ngOnInit(): void {

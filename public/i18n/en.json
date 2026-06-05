@@ -2,27 +2,37 @@
   "ENGLISH_SPOKEN": "English spoken",
   "NAV": {
     "HOME": "Home",
-    "MARIAGE": "Wedding",
+    "PARTICULIER": "Personal Events",
+    "PROFESSIONNEL": "Corporate Events",
+    "MARIAGE": "Wedding & Civil Union",
     "DESIGN": "Design & Decoration",
+    "OFFICIANTE": "Ceremony Officiant",
+    "FETES": "Parties & Celebrations",
+    "OBSEQUES": "Funerals & Ceremonies",
+    "EV_INTERNE": "Internal Events",
+    "IMAGE_MARQUE": "Brand Image",
+    "EV_MARKETING": "Marketing Events",
     "SEMINAIRES": "Seminars",
+    "GALERIE": "Gallery",
     "APROPOS": "About Us",
     "CONTACT": "Contact Us"
   },
   "HOME": {
     "HERO": {
-      "EYEBROW": "Event Planning Agency · Brittany & Rennes",
+      "EYEBROW": "Event Planning Agency",
       "TITLE1": "L'Événement",
       "TITLE2": "Peter",
-      "SUBTITLE1": "Wedding Planner · Wedding Design · Seminars · Funeral Services",
-      "SUBTITLE2": "A premium, tailor-made service in Brittany, France",
-      "CTA_MARIAGE": "Our Weddings",
-      "CTA_CONTACT": "Request a Quote",
-      "SCROLL": "Discover"
+      "SUBTITLE1": "Wedding · Ceremony Officiant · Design · Seminars · Funerals",
+      "SUBTITLE2": "A premium, tailor-made service — available worldwide",
+      "CTA_MARIAGE": "Our Services",
+      "CTA_CONTACT": "Request an Estimation",
+      "SCROLL": "Discover",
+      "ARIA_LABEL": "Welcome to L'Événement Peter"
     },
     "INTRO": {
       "EYEBROW": "Our Philosophy",
       "TITLE": "An Agency That Brings Your Ideas to Life",
-      "P1": "L'Événement Peter is your trusted event partner for planning an unforgettable wedding in Brittany. Based in Rennes, our agency is entirely dedicated to creating memorable experiences for couples, businesses and families who place their trust in us.",
+      "P1": "L'Événement Peter is your trusted event partner. Based in Rennes, our agency operates throughout France and internationally to create memorable experiences for couples, businesses and families who place their trust in us.",
       "P2": "Our team works with passion, expertise and commitment to offer you a premium, fully personalised service. Choosing L'Événement Peter means you can be certain that every detail will be handled to perfection.",
       "IMG_ALT": "The team",
       "CTA": "Our Story"
@@ -33,8 +43,15 @@
       "ITEMS": [
         {
           "icon": "rings",
-          "title": "Wedding in Brittany",
-          "desc": "Full organisation of your wedding, from the first meeting to the last musical note. Premium wedding planning in Rennes and throughout Brittany.",
+          "title": "Wedding & Civil Union",
+          "desc": "Full organisation of your wedding or civil union, from the first meeting to the last musical note. Premium wedding planning all around the world.",
+          "link": "/mariage",
+          "label": "Discover"
+        },
+        {
+          "icon": "ceremony",
+          "title": "Ceremony Officiant",
+          "desc": "Make your special day unforgettable with our personalised ceremony officiant service. Secular ceremony, vow renewal, baptism… every moment is unique.",
           "link": "/mariage",
           "label": "Discover"
         },
@@ -46,77 +63,113 @@
           "label": "Discover"
         },
         {
+          "icon": "celebrate",
+          "title": "Adult & Children's Parties",
+          "desc": "Birthday, divorce party, themed evening, children's party… Our team organises every celebration with creativity and enthusiasm for unforgettable memories.",
+          "link": "/fetes-celebrations",
+          "label": "Discover"
+        },
+        {
           "icon": "briefcase",
-          "title": "Seminars & Corporate",
-          "desc": "Design and organisation of corporate seminars, team-building and corporate events in Brittany. Experiences that make a lasting impression.",
+          "title": "Corporate & Internal Events",
+          "desc": "Seminars, team-building, year-end parties, gala evenings, product launches… Memorable experiences that energise your teams.",
           "link": "/seminaires",
           "label": "Discover"
         },
         {
           "icon": "candle",
           "title": "Funerals & Ceremonies",
-          "desc": "Dignified and attentive support for organising funerals and memorial ceremonies in Brittany, honouring your wishes with care.",
-          "link": "/contact",
-          "label": "Contact Us"
+          "desc": "Dignified and attentive support for organising funerals and memorial ceremonies, honouring your wishes with care.",
+          "link": "/obseques",
+          "label": "Discover"
         }
       ]
     },
     "ZONE": {
       "EYEBROW": "Our Coverage Area",
-      "TITLE": "Weddings & Events Across Brittany",
-      "INTRO": "L'Événement Peter serves all of <strong>Brittany</strong> for weddings, seminars and events. Based in <strong>Rennes</strong>, our agency covers the entire region: Ille-et-Vilaine, Morbihan, Finistère, Côtes-d'Armor.",
-      "NOTE_PREFIX": "Outside Brittany?",
-      "NOTE_LINK": "Contact us",
-      "NOTE_SUFFIX": " — we are happy to consider every request."
+      "TITLE": "Based in Rennes, Active Worldwide",
+      "INTRO": "Based in <strong>Rennes</strong>, L'Événement Peter operates throughout <strong>France</strong> and <strong>internationally</strong> to organise your weddings, seminars and events. Our agency has no borders.",
+      "NOTE_PREFIX": "Wherever you are,",
+      "NOTE_LINK": "contact us",
+      "NOTE_SUFFIX": " — we travel anywhere to be by your side.",
+      "LIST_ARIA_LABEL": "Cities covered"
     },
     "WHY": {
       "EYEBROW": "Why Choose Us",
       "TITLE": "Excellence at Every Stage",
       "ITEMS": [
-        { "num": "01", "title": "Tailor-made", "desc": "Every event is unique. We build your project from A to Z according to your wishes, budget and personality." },
-        { "num": "02", "title": "Local Expertise", "desc": "Rooted in Brittany, we know the best vendors, venues and trends in the region for a perfect wedding or event." },
-        { "num": "03", "title": "Total Peace of Mind", "desc": "We manage every detail so you can fully enjoy your day without stress or surprises. Your peace of mind is our priority." },
-        { "num": "04", "title": "Premium Quality", "desc": "A network of selected partners, constant attention to detail and refined aesthetics for an exceptional result." }
+        {
+          "num": "01",
+          "title": "Tailor-made",
+          "desc": "Every event is unique. We build your project from A to Z according to your wishes, budget and personality."
+        },
+        {
+          "num": "02",
+          "title": "Local and International Expertise",
+          "desc": "Rooted in Rennes and backed by an international background, we combine local knowledge with global experience for a perfect wedding or event."
+        },
+        {
+          "num": "03",
+          "title": "Total Peace of Mind",
+          "desc": "We manage every detail so you can fully enjoy your day without stress or surprises. Your peace of mind is our priority."
+        },
+        {
+          "num": "04",
+          "title": "Premium Quality",
+          "desc": "A network of selected partners, constant attention to detail and refined aesthetics for an exceptional result."
+        }
       ]
     },
     "CTA": {
       "EYEBROW": "Let's Get Started",
       "TITLE": "Ready to Create Your",
       "TITLE_EM": "Unforgettable Event?",
-      "TEXT": "Wedding in Brittany, seminar in Rennes, custom decoration… Share your project and receive a personalised proposal.",
+      "TEXT": "Wedding in France or abroad, seminar, custom decoration… Share your project and receive a personalised proposal.",
       "BTN": "Contact Us"
     }
   },
   "MARIAGE": {
     "HERO": {
-      "EYEBROW": "Wedding Planning · Brittany & Rennes",
-      "TITLE1": "Your Wedding in Brittany,",
+      "EYEBROW": "Wedding Planning",
+      "TITLE1": "Your Wedding",
       "TITLE2": "An Unforgettable Celebration",
       "DESC": "Wedding planner based in Rennes, L'Événement Peter orchestrates every detail of your wedding with passion and expertise. From the first consultation to the last note, we create the event you have always dreamed of."
     },
     "INTRO": {
-      "EYEBROW": "Wedding Planner Brittany",
-      "TITLE": "The Art of Planning a Wedding in Brittany",
-      "P1": "Planning a <strong>wedding in Brittany</strong> requires in-depth knowledge of the region: quality vendors, exceptional venues, trends and the specific logistical subtleties of the area. That is why L'Événement Peter is your indispensable partner.",
-      "P2": "From <strong>Rennes</strong>, our agency covers all of Brittany — Ille-et-Vilaine, Morbihan, Finistère, Côtes-d'Armor — to organise weddings worthy of your dreams, whether an intimate ceremony or a grand reception.",
+      "EYEBROW": "Wedding Planner",
+      "TITLE": "The Art of Planning a Wedding",
+      "P1": "Planning a <strong>wedding</strong> requires in-depth knowledge of vendors, exceptional venues, trends and the specific logistical subtleties of each destination. That is why L'Événement Peter is your indispensable partner.",
+      "P2": "From <strong>Rennes</strong>, our agency operates throughout France and internationally to organise weddings worthy of your dreams, whether an intimate ceremony or a grand reception.",
       "P3": "<strong>Wedding planner</strong>, on-the-day coordinator, or simply an expert consultation: we tailor our involvement to your needs and budget.",
-      "IMG_ALT": "Wedding in Brittany"
+      "IMG_ALT": "Wedding planning"
     },
     "PRESTATIONS": {
       "EYEBROW": "Our Packages",
-      "TITLE": "Bespoke Services",
+      "TITLE": "Tailor-made Services",
       "ITEMS": [
-        { "title": "Full Coordination", "desc": "From sourcing vendors to coordinating on the wedding day. We orchestrate every moment so you can experience your wedding serenely." },
-        { "title": "Wedding Day Management", "desc": "Already planned everything? We step in on the day to coordinate vendors, timings and any unexpected situations. Enjoy without worrying about a thing." },
-        { "title": "Partial Support", "desc": "Targeted assistance: venue search, vendor negotiation, schedule creation… We adapt our involvement to your specific needs." },
-        { "title": "Full-Service Wedding", "desc": "Entrust us with the entire organisation. We manage every detail from A to Z for an exceptional wedding in Brittany." }
+        {
+          "title": "Full Coordination",
+          "desc": "From sourcing vendors to coordinating on the wedding day. We orchestrate every moment so you can experience your wedding serenely."
+        },
+        {
+          "title": "Wedding Day Management",
+          "desc": "Already planned everything? We step in on the day to coordinate vendors, timings and any unexpected situations. Enjoy without worrying about a thing."
+        },
+        {
+          "title": "Partial Support",
+          "desc": "Targeted assistance: venue search, vendor negotiation, schedule creation… We adapt our involvement to your specific needs."
+        },
+        {
+          "title": "Full-Service Wedding",
+          "desc": "Entrust us with the entire organisation. We manage every detail from A to Z for an exceptional wedding anywhere in the world."
+        }
       ]
     },
     "INCLUS": {
       "EYEBROW": "Our Support",
       "TITLE": "What We Organise for You",
       "ITEMS": [
-        "Search and selection of the reception venue in Brittany",
+        "Search and selection of the reception venue",
         "Coordination with all vendors (caterer, photographer, DJ, band, florist…)",
         "Creation of the planning schedule and day programme",
         "Budget tracking and vendor negotiation",
@@ -129,161 +182,349 @@
     },
     "ZONE": {
       "EYEBROW": "Coverage Area",
-      "TITLE": "Weddings in Brittany & Ille-et-Vilaine",
-      "P1": "Our <strong>wedding planning agency in Rennes</strong> covers all of Brittany for wedding organisation: Rennes, Saint-Malo, Brest, Vannes, Lorient, Quimper, Dinard, Fougères, Vitré and all the châteaux, manor houses and estates across the region.",
-      "P2": "Every <strong>wedding in Brittany</strong> is unique. Our knowledge of the territory allows us to find the most beautiful venues and the most talented vendors for your most exclusive day."
+      "TITLE": "Weddings in France & Worldwide",
+      "P1": "Our <strong>wedding planning agency in Rennes</strong> operates throughout France and internationally for weddings: Rennes, Paris, Nice, destination venues and exceptional estates around the world.",
+      "P2": "Every wedding is unique. Our broad experience allows us to find the most beautiful venues and the most talented vendors for your most exclusive day."
     },
     "CTA": {
       "EYEBROW": "Let's Talk About Your Wedding",
       "TITLE1": "Ready to Plan Your",
-      "TITLE2": "Wedding in Brittany?",
+      "TITLE2": "Wedding?",
       "TEXT": "Contact us for a no-obligation first meeting. We will explore your project together and suggest the most suitable package.",
-      "BTN": "Request a Free Quote"
+      "BTN": "Request a Free Estimation"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Our wedding portfolio",
+      "TITLE": "Some of our weddings"
     }
   },
   "DESIGN": {
     "HERO": {
-      "EYEBROW": "Design & Decoration · Brittany & Rennes",
-      "TITLE1": "Wedding Decoration in Brittany,",
+      "EYEBROW": "Design & Decoration",
+      "TITLE1": "Wedding Decoration,",
       "TITLE2": "A Unique Visual World",
-      "DESC": "From floral creation to full staging, L'Événement Peter transforms your spaces into living works of art. A wedding design that reflects who you are, in Brittany."
+      "DESC": "From floral creation to full staging, L'Événement Peter transforms your spaces into living works of art. A wedding design that reflects who you are."
     },
     "INTRO": {
       "EYEBROW": "Our Vision",
       "TITLE": "More Than a Décor — A Sensory Experience",
-      "P1": "<strong>Wedding decoration</strong> is far more than aesthetics: it is the art of creating an atmosphere, an emotion, a memory. At L'Événement Peter, every detail is crafted to elevate your celebration in Brittany.",
-      "P2": "Our designers work on <strong>floral decoration</strong>, spatial staging, furniture, lighting and all the visual elements that shape the visual identity of your wedding in Rennes or throughout Brittany.",
+      "P1": "<strong>Wedding decoration</strong> is far more than aesthetics: it is the art of creating an atmosphere, an emotion, a memory. At L'Événement Peter, every detail is crafted to elevate your celebration.",
+      "P2": "Our designers work on <strong>floral decoration</strong>, spatial staging, furniture, lighting and all the visual elements that shape the visual identity of your wedding in Rennes and beyond.",
       "P3": "Whether you have a precise vision in mind or would like to be guided, we co-create with you the décor that reveals your personality and enchants your guests.",
-      "IMG_ALT": "Wedding decoration Brittany"
+      "IMG_ALT": "Wedding decoration"
     },
     "FEATURES": {
       "EYEBROW": "Our Creations",
       "TITLE": "What We Create for You",
       "ITEMS": [
-        { "title": "Floral Creation", "desc": "Bridal bouquets, floral arches, centrepieces, buttonholes, compositions for the church or reception hall. Handcrafted work with fresh, seasonal flowers." },
-        { "title": "Staging & Decoration", "desc": "Full styling of the reception venue: tables, central aisle, photo wall, cocktail space, children's corner. Every space tells a story." },
-        { "title": "Lighting & Ambiance", "desc": "Fairy lights, candelabras, spotlights, warm lighting… Lighting completely transforms the atmosphere and creates unforgettable photographs." },
-        { "title": "Stationery & Signage", "desc": "Menu cards, seating plans, place cards, save-the-dates, ceremony booklets… Cohesive stationery that adorns every moment." },
-        { "title": "Moodboard & Art Direction", "desc": "We define together your colour palette, materials and inspirations to create a coherent and elegant visual thread throughout the day." },
-        { "title": "Setup & Breakdown", "desc": "On the day, our team installs all the decoration before your arrival and manages the breakdown at the end of the evening. You have nothing to do." }
+        {
+          "title": "Floral Creation",
+          "desc": "Bridal bouquets, floral arches, centrepieces, buttonholes, compositions for the church or reception hall. Handcrafted work with fresh, seasonal flowers."
+        },
+        {
+          "title": "Staging & Decoration",
+          "desc": "Full styling of the reception venue: tables, central aisle, photo wall, cocktail space, children's corner. Every space tells a story."
+        },
+        {
+          "title": "Lighting & Ambiance",
+          "desc": "Fairy lights, candelabras, spotlights, warm lighting… Lighting completely transforms the atmosphere and creates unforgettable photographs."
+        },
+        {
+          "title": "Stationery & Signage",
+          "desc": "Menu cards, seating plans, place cards, save-the-dates, ceremony booklets… Cohesive stationery that adorns every moment."
+        },
+        {
+          "title": "Moodboard & Art Direction",
+          "desc": "We define together your colour palette, materials and inspirations to create a coherent and elegant visual thread throughout the day."
+        },
+        {
+          "title": "Setup & Breakdown",
+          "desc": "On the day, our team installs all the decoration before your arrival and manages the breakdown at the end of the evening. You have nothing to do."
+        }
       ]
     },
     "UNIVERS": {
       "EYEBROW": "Styles & Inspirations",
-      "TITLE": "Your Wedding Styles in Brittany",
+      "TITLE": "Your Wedding Styles",
       "ITEMS": [
-        { "label": "Romantic & Timeless", "desc": "White roses, candles and fine linens for a classic and elegant wedding." },
-        { "label": "Bohemian & Nature", "desc": "Pampas grass, eucalyptus, macramé and terracotta tones for a free-spirited and warm atmosphere." },
-        { "label": "Minimalist & Luxury", "desc": "Clean lines, marble, gold and monochrome flowers for a contemporary aesthetic." },
-        { "label": "Rustic & Countryside", "desc": "Raw wood, wildflowers and string lights for a charming, idyllic wedding." },
-        { "label": "Breton Wedding", "desc": "Embroidery, slate, linen and wildflowers to celebrate the beauty of Brittany." },
-        { "label": "Fully Bespoke", "desc": "Your world, your palette, your vision. We create the unique décor that is entirely you." }
+        {
+          "label": "Romantic & Timeless",
+          "desc": "White roses, candles and fine linens for a classic and elegant wedding."
+        },
+        {
+          "label": "Bohemian & Nature",
+          "desc": "Pampas grass, eucalyptus, macramé and terracotta tones for a free-spirited and warm atmosphere."
+        },
+        {
+          "label": "Minimalist & Luxury",
+          "desc": "Clean lines, marble, gold and monochrome flowers for a contemporary aesthetic."
+        },
+        {
+          "label": "Rustic & Countryside",
+          "desc": "Raw wood, wildflowers and string lights for a charming, idyllic wedding."
+        },
+        {
+          "label": "Heritage Wedding",
+          "desc": "Embroidery, slate, linen and wildflowers for a celebration rooted in timeless tradition."
+        },
+        {
+          "label": "Fully Tailor-Made",
+          "desc": "Your world, your palette, your vision. We create the unique décor that is entirely you."
+        }
       ]
     },
     "CTA": {
       "EYEBROW": "Let's Create Together",
       "TITLE1": "Your Wedding Decoration",
-      "TITLE2": "in Brittany Awaits",
+      "TITLE2": "Awaits",
       "TEXT": "Share your inspirations, date and venue. We create a personalised moodboard at our first meeting.",
       "BTN": "Book a Consultation"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Our decoration portfolio",
+      "TITLE": "Design & Decoration — our work"
     }
   },
   "SEMINAIRES": {
     "HERO": {
-      "EYEBROW": "Seminars & Corporate Events · Brittany & Rennes",
-      "TITLE1": "Seminars & Corporate Events",
-      "TITLE2": "in Brittany",
-      "DESC": "L'Événement Peter designs and organises your professional events in Brittany. Seminars, team-building, conventions, corporate evenings: memorable experiences that energise your teams."
+      "EYEBROW": "Corporate Events",
+      "TITLE1": "Corporate & Professional Events",
+      "TITLE2": "Worldwide",
+      "DESC": "L'Événement Peter designs and organises your professional events. Internal events, brand image, marketing events: memorable experiences that energise your teams and strengthen your brand."
     },
     "INTRO": {
-      "EYEBROW": "Professional Events",
-      "TITLE": "Your Corporate Event Agency in Brittany",
-      "P1": "Organising a <strong>seminar in Brittany</strong> or Rennes means offering your team an exceptional setting and an experience that leaves a lasting mark. L'Événement Peter brings its expertise and local partner network to your professional events.",
-      "P2": "From finding the ideal venue to on-the-day coordination, including catering, activities and logistics, we take full responsibility for your corporate event in Brittany.",
-      "P3": "Brittany offers a unique setting: châteaux, coastal estates, modern conference centres in Rennes, natural spaces… We select the perfect venue for your goals and budget.",
-      "IMG_ALT": "Seminar in Brittany"
+      "EYEBROW": "Where innovation meets excellence",
+      "TITLE": "Corporate event planning at the service of your success",
+      "P1": "At L'Événement Peter, we understand the crucial importance of your professional events for your brand image, partnerships, teams and overall success. Gala evening, inauguration, award ceremony… every event is an opportunity to stand out, make a bold statement and leave a memorable mark.",
+      "P2": "Our experienced and passionate team transforms your ideas into reality through a comprehensive range of premium services, designed to meet your most demanding needs. From finding the ideal venue to on-the-day coordination, we take full responsibility for your event.",
+      "P3": "Our commitment to excellence and attention to detail guarantee an unparalleled experience, where every aspect is carefully orchestrated to achieve your objectives and impress your guests.",
+      "IMG_ALT": "Corporate event"
+    },
+    "POURQUOI_EV": {
+      "EYEBROW": "The benefits",
+      "TITLE": "Why organise an event for your company?",
+      "ITEMS": [
+        {
+          "icon": "🤝",
+          "title": "Motivation & team bonds",
+          "desc": "Strengthen bonds between colleagues and boost the motivation of your teams."
+        },
+        {
+          "icon": "🏆",
+          "title": "Reward your teams",
+          "desc": "Recognise the commitment and performance of your employees."
+        },
+        {
+          "icon": "❤️",
+          "title": "Client loyalty",
+          "desc": "Create memorable experiences to strengthen the loyalty of your clients."
+        },
+        {
+          "icon": "🚀",
+          "title": "Promote your products",
+          "desc": "Showcase your products and services in an exceptional setting."
+        },
+        {
+          "icon": "📈",
+          "title": "Business growth",
+          "desc": "Create development opportunities and stimulate your company's growth."
+        },
+        {
+          "icon": "💼",
+          "title": "Commercial opportunities",
+          "desc": "Generate new business opportunities at every event."
+        },
+        {
+          "icon": "🌐",
+          "title": "Network expansion",
+          "desc": "Widen your professional network and forge new partnerships."
+        },
+        {
+          "icon": "👁",
+          "title": "Greater visibility",
+          "desc": "Increase your company's visibility and strengthen your brand awareness."
+        }
+      ]
     },
     "TYPES": {
       "EYEBROW": "Our Events",
       "TITLE": "All Types of Professional Events",
       "ITEMS": [
-        { "icon": "🎯", "title": "Residential Seminars", "desc": "One or more days of full immersion, with accommodation, meals and activities. We manage everything from A to Z." },
-        { "icon": "💡", "title": "Team-Building", "desc": "Original and unifying activities to strengthen team cohesion in the heart of Brittany." },
-        { "icon": "🎤", "title": "Conferences & Conventions", "desc": "Stage design, technical management, attendee welcome and speaker coordination." },
-        { "icon": "🥂", "title": "Corporate Evenings", "desc": "Galas, year-end dinners, prestige cocktail receptions. Memorable evenings that strengthen your professional bonds." },
-        { "icon": "🏆", "title": "Incentives", "desc": "Bespoke programmes to reward and motivate your teams with unique experiences in Brittany." },
-        { "icon": "📋", "title": "General Meetings", "desc": "Logistical and technical organisation of your AGMs, congresses and plenary meetings in Brittany." }
+        {
+          "icon": "🎯",
+          "title": "Internal Events",
+          "desc": "Residential seminars, team-building, year-end parties, farewell parties… We manage every detail from A to Z to strengthen your team bonds."
+        },
+        {
+          "icon": "✨",
+          "title": "Brand Image",
+          "desc": "Gala evenings, inaugurations, award ceremonies, prestige cocktails. Events that reinforce your image and impress your guests."
+        },
+        {
+          "icon": "🚀",
+          "title": "Marketing Events",
+          "desc": "Product launches, garden parties, interactive experiences, immersive technologies. Events that make your brand shine."
+        },
+        {
+          "icon": "🎤",
+          "title": "Conferences & Conventions",
+          "desc": "Stage design, technical management, attendee welcome and speaker coordination for your congresses and plenary meetings."
+        },
+        {
+          "icon": "🏆",
+          "title": "Incentives",
+          "desc": "Tailor-made programmes to reward and motivate your teams with unique experiences: sporting, culinary, creative activities."
+        },
+        {
+          "icon": "📋",
+          "title": "General Meetings",
+          "desc": "Logistical and technical organisation of your AGMs, congresses and plenary meetings worldwide."
+        }
       ]
     },
-    "METHODE": {
-      "EYEBROW": "Our Approach",
-      "TITLE": "Rigorous Organisation, from A to Z",
-      "ITEMS": [
-        { "num": "01", "title": "Defining Objectives", "desc": "We analyse your challenges, company culture and expectations to propose an event aligned with your strategic goals." },
-        { "num": "02", "title": "Venue Search", "desc": "Using our network across Brittany, we select the best available venues in Rennes and throughout the region based on your criteria." },
-        { "num": "03", "title": "Programme Design", "desc": "Creation of a bespoke programme: schedule, activities, catering, transport, accommodation. Every detail is anticipated." },
-        { "num": "04", "title": "On-the-Day Coordination", "desc": "Our team is present on the day of your event to orchestrate every vendor and allow you to focus fully on your attendees." }
-      ]
+    "POURQUOI_NOUS": {
+      "EYEBROW": "Our difference",
+      "TITLE": "Why choose L'Événement Peter?",
+      "GROUPES": [
+        {
+          "icon": "creative",
+          "label": "Expertise & creativity",
+          "items": [
+            "Innovation",
+            "Boundless creativity",
+            "Proven expertise"
+          ]
+        },
+        {
+          "icon": "globe",
+          "label": "International reach",
+          "items": [
+            "International",
+            "Partner network",
+            "Flexibility & Adaptability"
+          ]
+        },
+        {
+          "icon": "chat",
+          "label": "Client relationship",
+          "items": [
+            "Trust",
+            "Unique client service",
+            "Multicultural expertise"
+          ]
+        },
+        {
+          "icon": "home",
+          "label": "Family business",
+          "items": [
+            "Stability",
+            "Family business",
+            "Personal commitment"
+          ]
+        }
+      ],
+      "CLOSING": "By choosing L'Événement Peter, you choose competence, innovation and total satisfaction. Trust our expertise to bring your vision to life and propel your company to new heights."
     },
     "CTA": {
       "EYEBROW": "Let's Talk About Your Project",
-      "TITLE1": "Let's Organise Your Next",
-      "TITLE2": "Seminar in Brittany",
+      "TITLE1": "Let's organise your next",
+      "TITLE2": "event together",
       "TEXT": "Date, number of participants, event type, budget… Share your brief and receive a detailed proposal within 48 hours.",
-      "BTN": "Request a Quote"
+      "BTN": "Contact Us"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Our corporate portfolio",
+      "TITLE": "Some of our professional events"
     }
   },
   "APROPOS": {
     "HERO": {
-      "EYEBROW": "Our Story · Rennes, Brittany",
+      "EYEBROW": "Our Story",
       "TITLE1": "L'Événement Peter,",
       "TITLE2": "Your Trusted Partner",
-      "DESC": "An agency built on passion, excellence and a deep knowledge of Brittany. Let's meet."
+      "DESC": "Alix and Ingrid Peter, mother and daughter, unite their skills to create unique events. An agency built on passion, excellence and deep experience across destinations."
     },
     "MAIN": {
-      "IMG_ALT": "Peter & the team",
-      "EYEBROW": "Who We Are",
-      "TITLE": "An Agency Dedicated to Your Most Precious Events",
-      "P1": "<strong>L'Événement Peter</strong> is your trusted event partner for planning an unforgettable wedding. Based in <strong>Brittany</strong>, our agency is entirely dedicated to creating memorable experiences for the couples who choose us for their most exclusive and unique celebration.",
-      "P2": "Our team works with passion: they are experienced and committed to delivering a premium, tailor-made service. Choosing us means you can be certain that your wedding will not only be managed to perfection, but will also give rise to lifelong memories.",
-      "P3": "Beyond weddings, L'Événement Peter also supports businesses with their seminars and corporate events, as well as families organising funerals and ceremonies with dignity and care. Every event, whether joyful or reflective, deserves the same attention and professionalism.",
-      "P4": "Explore our full range of services and let us accompany you in creating a truly unique celebration!"
+      "IMG_ALT": "Ingrid & Alix Peter",
+      "EYEBROW": "Our Story",
+      "TITLE": "Alix and Ingrid Peter, Mother and Daughter",
+      "P1": "<strong>Alix and Ingrid Peter</strong>, mother and daughter, with a close-knit relationship, decided to join forces and combine their skills to create L'Événement Peter — an event agency dedicated to making your events truly unique.",
+      "P2": "Ingrid, with a career in international commerce, lived many years abroad with her children (USA, Russia, Canada). Back in France, she decided to open a new chapter in her life. Spontaneous, organised and warm-hearted, family values have always been her priority.",
+      "P3": "Alix, born in the United States, lived in many countries, developing a great capacity for adaptation. After artistic studies and specialist training in wedding planning, ceremony officiating and wedding design at Breizh Wedding School, she embarked on this adventure alongside her mother.",
+      "P4": "Our agency knows no borders — we will be delighted to assist you in realising your projects in France or in more exotic destinations. Welcome to the world of L'Événement Peter!"
+    },
+    "TEAM": {
+      "EYEBROW": "Our Team",
+      "TITLE": "Qualifications & Training",
+      "INGRID": {
+        "ROLE": "Co-manager",
+        "FORMATIONS": [
+          "International Business School",
+          "Bilingual — Advanced Certificate of Cambridge",
+          "Law degree (DEUG)",
+          "Qualified Funeral Advisor"
+        ]
+      },
+      "ALIX": {
+        "ROLE": "Co-manager",
+        "FORMATIONS": [
+          "Fashion & Clothing School",
+          "Wedding Planner Training",
+          "Ceremony Officiant Training",
+          "Wedding Designer Training",
+          "At Breizh Wedding School",
+          "MJM Design School – Visual Merchandiser",
+          "Image Consultant Training"
+        ]
+      }
     },
     "VALEURS": {
       "EYEBROW": "What Drives Us",
       "TITLE": "Our Values",
       "ITEMS": [
-        { "titre": "Excellence", "texte": "We never compromise on quality. Every vendor, every detail is carefully selected to achieve excellence." },
-        { "titre": "Bespoke", "texte": "No two events are alike. Every project is unique and deserves unwavering attention and creativity." },
-        { "titre": "Listening", "texte": "We take the time to know you, to understand your deepest wishes and to translate them into reality with care." },
-        { "titre": "Serenity", "texte": "Our role is to carry the organisation on your behalf so that you can fully live every moment of your event." }
+        {
+          "titre": "Innovation",
+          "texte": "We bring boundless creativity to every project, proposing original concepts and experiences that go beyond the ordinary."
+        },
+        {
+          "titre": "Excellence",
+          "texte": "We never compromise on quality. Every vendor, every detail is carefully selected to achieve excellence."
+        },
+        {
+          "titre": "Flexibility",
+          "texte": "Whether you dream of a traditional, modern, spiritual or non-denominational ceremony, we adapt to your needs and vision."
+        },
+        {
+          "titre": "Family & Trust",
+          "texte": "As a family business, we build a relationship of trust with every client. Your satisfaction and peace of mind are our absolute priority."
+        }
       ]
     },
     "LOCAL": {
       "EYEBROW": "Our Territory",
-      "TITLE": "Rooted in Brittany, Passionate About Our Region",
-      "P1": "Brittany is more than a setting for us — it is our home. This passion for our region is reflected in every event we organise: we know the most beautiful venues, the best local artisans and vendors, the picture-perfect spots that will make your wedding an authentically Breton celebration.",
-      "P2": "Based in <strong>Rennes</strong>, our agency covers all of Brittany: Ille-et-Vilaine, Morbihan, Finistère and Côtes-d'Armor. From seaside châteaux to country estates, from Rennes conference centres to Breton vineyard estates, we know every exceptional venue in the region.",
-      "IMG_ALT": "Brittany",
+      "TITLE": "Rooted in Rennes, Passionate About Our Region",
+      "P1": "Our region is more than a setting for us — it is our home. This passion for our region is reflected in every event we organise: we know the most beautiful venues, the best local artisans and vendors, and the picture-perfect spots that make your wedding unforgettable.",
+      "P2": "Based in <strong>Rennes</strong>, our agency operates throughout France and internationally. From seaside châteaux to country estates, from conference centres to vineyard estates, we know exceptional venues in every destination.",
+      "IMG_ALT": "Rennes",
       "BTN": "Let's Meet"
     },
     "CTA": {
       "EYEBROW": "Let's Get Started",
       "TITLE1": "Your Event Deserves",
-      "TITLE2": "the Best of Brittany",
+      "TITLE2": "the Best of Our Expertise",
       "BTN1": "Discover Our Weddings",
       "BTN2": "Contact Us"
     }
   },
   "CONTACT": {
     "HERO": {
-      "EYEBROW": "Event Planning Agency · Brittany & Rennes",
+      "EYEBROW": "Event Planning Agency",
       "TITLE1": "Let's Talk About",
       "TITLE2": "Your Event Project",
-      "DESC": "Wedding in Brittany, seminar in Rennes, custom decoration… Share your project. We will respond within 48 hours with a personalised proposal."
+      "DESC": "Wedding in France or abroad, seminar in Rennes, custom decoration… Share your project. We will respond within 48 hours with a personalised proposal."
     },
     "FORM": {
-      "EYEBROW": "Free Quote Request",
+      "EYEBROW": "Free Estimation Request",
       "TITLE": "Your Message",
       "PRENOM": "First name",
       "NOM": "Last name",
@@ -302,32 +543,555 @@
       "ERROR_TYPE": "Please select a type",
       "ERROR_MESSAGE": "Message required (minimum 20 characters)",
       "SUCCESS_TITLE": "Message sent!",
-      "SUCCESS_TEXT": "Thank you for your message. We will get back to you within 48 hours to discuss your project in Brittany.",
+      "SUCCESS_TEXT": "Thank you for your message. We will get back to you within 48 hours to discuss your project.",
       "ERROR_SEND": "An error occurred. Please write to us directly at levenementpeter@gmail.com",
       "TYPES": [
-        "Wedding in Brittany",
-        "Wedding Design & Decoration",
-        "Corporate Seminar",
-        "Corporate Event",
+        "Wedding & Civil Union",
+        "Ceremony Officiant",
+        "Design & Wedding Decoration",
+        "Adult Party (Birthday, Divorce party, Themed evening…)",
+        "Children's Party",
+        "Internal Event (Seminar, Team-building, Year-end party…)",
+        "Brand Image (Gala, Inauguration, Award ceremony…)",
+        "Marketing Event (Product launch, Garden party…)",
         "Funeral & Ceremony",
-        "Other Event"
+        "Other"
       ]
     },
     "INFO": {
       "EYEBROW": "Find Us",
       "TITLE": "L'Événement Peter",
       "ADDRESS_LABEL": "Address",
-      "ADDRESS": "Rennes, Brittany, France",
-      "ADDRESS_SUB": "Services available throughout Brittany",
+      "ADDRESS": "Rennes, France",
+      "ADDRESS_SUB": "Services available throughout France & worldwide",
       "PHONE_LABEL": "Phone",
       "EMAIL_LABEL": "Email",
       "HOURS_LABEL": "Opening Hours",
       "HOURS": "Monday – Friday: 9am – 6:30pm<br>Saturday: 10am – 5pm",
-      "NOTE": "We cover all of Brittany for weddings, seminars and events in Rennes, Saint-Malo, Brest, Vannes, Lorient and throughout the region."
+      "NOTE": "Based in Rennes, we operate throughout France and internationally. Our agency has no borders — contact us wherever you are."
+    }
+  },
+  "GALERIE": {
+    "HERO": {
+      "EYEBROW": "Portfolio · L'Événement Peter",
+      "TITLE1": "Our Achievements",
+      "TITLE2": "in Pictures",
+      "DESC": "Explore our event creations: weddings, seminars, birthdays, themed evenings and much more. Each photo tells a unique story."
+    },
+    "CATS": {
+      "EYEBROW": "Browse by theme",
+      "TITLE": "Choose a category"
+    },
+    "BACK": "All categories",
+    "PHOTO_COUNT": "{{count}} photos",
+    "PHOTO_LABEL": "Photo {{num}}",
+    "OPEN_CATEGORY": "Open {{name}}",
+    "CATEGORIES": {
+      "MARIAGE": {
+        "NAME": "Wedding & Civil Union",
+        "EYEBROW": "Personal Events"
+      },
+      "SEMINAIRES": {
+        "NAME": "Seminars & Corporate",
+        "EYEBROW": "Corporate"
+      },
+      "ANNIVERSAIRE": {
+        "NAME": "Birthday",
+        "EYEBROW": "Personal Events"
+      },
+      "SOIREES_THEME": {
+        "NAME": "Themed Evening",
+        "EYEBROW": "Personal Events"
+      },
+      "DIVORCE_PARTY": {
+        "NAME": "Divorce Party",
+        "EYEBROW": "Personal Events"
+      },
+      "CEREMONIES": {
+        "NAME": "Ceremonies & Funerals",
+        "EYEBROW": "Personal Events"
+      }
+    },
+    "SEO": {
+      "TITLE": "Gallery | L'Événement Peter",
+      "DESCRIPTION": "Discover our work: weddings, seminars, birthdays, themed evenings and Divorce Parties. L'Événement Peter brings expertise to your events.",
+      "KEYWORDS": "gallery wedding france, event photos rennes, wedding planner portfolio, seminar photos"
+    }
+  },
+  "OBSEQUES": {
+    "HERO": {
+      "EYEBROW": "Funerals & Ceremonies",
+      "TITLE1": "A dignified",
+      "TITLE2": "and caring farewell",
+      "DESC": "Because every life deserves to be celebrated with respect and emotion, L'Événement Peter supports you in organising personalised funeral ceremonies, worthy of the person you have lost."
+    },
+    "INTRO": {
+      "EYEBROW": "Our approach",
+      "TITLE": "Honouring a life, your way",
+      "P1": "Faced with the loss of a loved one, organising a ceremony is an emotionally and logistically demanding experience. At L'Événement Peter, we take this burden from you with gentleness, discretion and professionalism, so you can focus fully on grieving and reflection.",
+      "P2": "We believe that every ceremony should reflect the uniqueness of the person who has passed: their tastes, passions, and the moments that shaped their life. Whether you wish for an intimate family ceremony, a colourful celebration of life, or a quiet and reflective gathering, we tailor every detail to your wishes.",
+      "P3": "You are not alone. We are here, every step of the way."
+    },
+    "SERVICES": {
+      "EYEBROW": "What we take care of",
+      "TITLE": "Our funeral services",
+      "ITEMS": [
+        {
+          "icon": "🕯️",
+          "title": "Civil ceremony",
+          "desc": "Writing and hosting a personalised civil ceremony, with carefully chosen readings, music and tributes to honour the memory of the deceased."
+        },
+        {
+          "icon": "🌿",
+          "title": "Celebration of life",
+          "desc": "A positive and colourful celebration that tells the story, passions and legacy of the person who has passed. A farewell filled with love and light."
+        },
+        {
+          "icon": "📋",
+          "title": "Full coordination",
+          "desc": "We handle all logistics: venue, flowers, music, suppliers, programme. All you need to do is be present and experience the moment."
+        },
+        {
+          "icon": "🎵",
+          "title": "Music & atmosphere",
+          "desc": "Bespoke music selection, live musicians or a curated playlist to accompany the ceremony with pieces that held meaning for them."
+        },
+        {
+          "icon": "🌸",
+          "title": "Floral decoration",
+          "desc": "Floral arrangements crafted by our decoration team, in the deceased's favourite colours and flowers, for a moving visual tribute."
+        },
+        {
+          "icon": "💬",
+          "title": "Support & guidance",
+          "desc": "We guide you through difficult decisions with kindness and without judgement, at your pace, respecting your beliefs and needs."
+        }
+      ]
+    },
+    "ENGAGEMENTS": {
+      "EYEBROW": "Our promise",
+      "TITLE": "Our commitments to you",
+      "ITEMS": [
+        {
+          "title": "Complete discretion",
+          "desc": "Every family is unique. We work in full confidentiality, with total respect for your privacy and your choices."
+        },
+        {
+          "title": "Immediate availability",
+          "desc": "We respond quickly to your request and adapt to your timelines, even short ones. You can count on us."
+        },
+        {
+          "title": "Full personalisation",
+          "desc": "Nothing is standard. Every ceremony is tailored from your memories, your story and your wishes."
+        },
+        {
+          "title": "Human support",
+          "desc": "Beyond logistics, we are here with empathy and warmth. You are not a client — you are family."
+        }
+      ]
+    },
+    "CTA": {
+      "EYEBROW": "We are here for you",
+      "TITLE1": "Contact us",
+      "TITLE2": "in full confidence",
+      "TEXT": "Whether urgently or in advance to plan a ceremony, our team responds with kindness and discretion. Let's talk together.",
+      "BTN": "Contact us"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Our ceremonies",
+      "TITLE": "Ceremonies organised with care and dignity"
+    }
+  },
+  "OFFICIANTE": {
+    "HERO": {
+      "EYEBROW": "Ceremony Officiant · Brittany & Worldwide",
+      "TITLE1": "Ceremonies written",
+      "TITLE2": "to reflect who you are",
+      "DESC": "L'Événement Peter celebrates your most precious life moments with personalised secular ceremonies, written and hosted with sincerity, emotion and elegance."
+    },
+    "INTRO": {
+      "EYEBROW": "Our role",
+      "TITLE": "More than a host — your voice for a moment",
+      "P1": "The role of a <strong>ceremony officiant</strong> is to put words to what you feel. At our first meeting, we take the time to get to know you — your stories, emotions, and what defines you — to build together a script that is 100% you.",
+      "P2": "Every ceremony is unique. No generic text, no recycled script: everything is written bespoke, reviewed together and adjusted until every word feels right.",
+      "P3": "Based in Rennes, we officiate throughout Brittany and internationally.",
+      "IMG_ALT": "Ceremony officiant"
+    },
+    "CEREMONIES": {
+      "EYEBROW": "For every life moment",
+      "TITLE": "The ceremonies we celebrate",
+      "ITEMS": [
+        {
+          "icon": "💍",
+          "title": "Wedding & Civil Union",
+          "desc": "A deeply personalised secular union ceremony, with vows, readings, music and rituals chosen together. The most beautiful day of your life, told in your own words."
+        },
+        {
+          "icon": "🔄",
+          "title": "Vow renewal",
+          "desc": "After 5, 10, 20 years… renewing your vows is a powerful act of love. We create a moving ceremony that celebrates the journey you have shared."
+        },
+        {
+          "icon": "👶",
+          "title": "Birth & civil naming ceremony",
+          "desc": "Welcome your child into your family with a beautiful secular celebration, surrounded by your loved ones. A joyful, loving moment to cherish forever."
+        },
+        {
+          "icon": "🕯️",
+          "title": "Funeral ceremony",
+          "desc": "A dignified, sincere and personalised tribute to honour the memory of a loved one. We work hand in hand with the family to create a farewell worthy of the person who has passed."
+        }
+      ]
+    },
+    "METHODE": {
+      "EYEBROW": "How it works",
+      "TITLE": "From first meeting to ceremony",
+      "STEPS": [
+        {
+          "num": "01",
+          "title": "The meeting",
+          "desc": "A first exchange in person or by video call to get to know you, understand your expectations and your story."
+        },
+        {
+          "num": "02",
+          "title": "The writing",
+          "desc": "We write your bespoke script, review it together and adjust until every word feels exactly right."
+        },
+        {
+          "num": "03",
+          "title": "The rehearsal",
+          "desc": "An on-site or remote rehearsal to confirm the flow, timing and logistical details."
+        },
+        {
+          "num": "04",
+          "title": "The ceremony",
+          "desc": "The big day: we host your ceremony with warmth, ease and professionalism, for an unforgettable moment."
+        }
+      ]
+    },
+    "CTA": {
+      "EYEBROW": "Let's talk about your ceremony",
+      "TITLE1": "Let's create together",
+      "TITLE2": "an unforgettable moment",
+      "TEXT": "Every ceremony is unique. Contact us to discuss and receive a personalised quote.",
+      "BTN": "Contact us"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Our ceremonies",
+      "TITLE": "Unique moments celebrated with care"
+    }
+  },
+  "EV_INTERNE": {
+    "HERO": {
+      "EYEBROW": "Internal Events · Corporate",
+      "TITLE1": "Internal events that",
+      "TITLE2": "bring your teams together",
+      "DESC": "Gala evening, inauguration, awards ceremony, team-building… L'Événement Peter designs exceptional corporate events that unite, motivate and build connection."
+    },
+    "INTRO": {
+      "EYEBROW": "Our approach",
+      "TITLE": "An event that reflects your company, for your teams",
+      "P1": "A successful internal event is not simply a well-organised evening: it is a <strong>strategic moment</strong> for your company. It strengthens cohesion, recognises your people and conveys your values. It is an investment in your company culture.",
+      "P2": "At L'Événement Peter, we handle the entire organisation: from the creative concept to on-the-day coordination, including supplier selection, decoration and logistics.",
+      "IMG_ALT": "Corporate event"
+    },
+    "EVENTS": {
+      "EYEBROW": "What we organise",
+      "TITLE": "Our internal events",
+      "ITEMS": [
+        {
+          "icon": "✨",
+          "title": "Gala evening",
+          "desc": "An exceptional evening to reward your teams, celebrate an achievement or mark a key milestone. Red carpet, luxury decoration, gourmet dinner and premium entertainment."
+        },
+        {
+          "icon": "🏛️",
+          "title": "Inauguration",
+          "desc": "New headquarters, new agency, site opening… We orchestrate your inauguration to make it memorable: ribbon cutting, cocktail reception, speeches and entertainment."
+        },
+        {
+          "icon": "🏆",
+          "title": "Awards & trophy ceremony",
+          "desc": "Recognise your talent with an elegant, well-paced awards ceremony. Staging, speeches, trophy presentations, cocktail dinner… we handle everything."
+        },
+        {
+          "icon": "🤝",
+          "title": "Team-building",
+          "desc": "Original, tailor-made activities to strengthen team cohesion: creative workshops, group challenges, giant escape games, outdoor activities in Brittany."
+        },
+        {
+          "icon": "🎄",
+          "title": "Year-end party",
+          "desc": "Close the year in style! We create a festive and convivial evening that brings your people together in a warm and memorable atmosphere."
+        },
+        {
+          "icon": "🥂",
+          "title": "Cocktail & afterwork",
+          "desc": "Team meeting, celebrating a success, welcoming new staff… Convivial moments organised with care to build connection."
+        }
+      ]
+    },
+    "AVANTAGES": {
+      "EYEBROW": "Why trust us",
+      "TITLE": "What sets us apart",
+      "ITEMS": [
+        {
+          "icon": "🎯",
+          "title": "Listening & bespoke",
+          "desc": "Every company is unique. We co-create your event around your objectives, culture and budget."
+        },
+        {
+          "icon": "🌍",
+          "title": "International network",
+          "desc": "Based in Rennes, we operate throughout France and internationally with a curated network of premium suppliers."
+        },
+        {
+          "icon": "⚡",
+          "title": "Reliability & responsiveness",
+          "desc": "Deadlines met, seamless coordination, smooth handling of the unexpected. Count on us on the day and throughout planning."
+        },
+        {
+          "icon": "💡",
+          "title": "Creativity & innovation",
+          "desc": "Fresh concepts, original entertainment and refined staging to surprise your teams and leave a lasting impression."
+        }
+      ]
+    },
+    "CTA": {
+      "EYEBROW": "Let's plan your next event",
+      "TITLE1": "Have a project in mind?",
+      "TITLE2": "Let's talk",
+      "TEXT": "Seminar, gala, awards ceremony… Share your project and receive a bespoke proposal.",
+      "BTN": "Request a quote"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Our corporate achievements",
+      "TITLE": "Gala evenings, inaugurations & awards ceremonies"
+    }
+  },
+  "IMAGE_MARQUE": {
+    "HERO": {
+      "EYEBROW": "Brand Image · Brand Events",
+      "TITLE1": "Events that embody",
+      "TITLE2": "your identity",
+      "DESC": "Product launch, press evening, brand experience, influencer event… L'Événement Peter creates events that amplify your brand and leave a lasting impression."
+    },
+    "INTRO": {
+      "EYEBROW": "Our vision",
+      "TITLE": "The event as an extension of your brand",
+      "P1": "A successful brand event is not simply a beautiful occasion: it is an <strong>immersive experience</strong> that embodies your values, tells your story and creates a deep emotional connection with your audience. Every detail — from the venue to the staging, the speech and the atmosphere — must be the exact reflection of who you are.",
+      "P2": "L'Événement Peter works in total alignment with your brand identity, guidelines and communication objectives to create high-impact events."
+    },
+    "EVENTS": {
+      "EYEBROW": "Our specialities",
+      "TITLE": "Brand image events",
+      "ITEMS": [
+        {
+          "icon": "🚀",
+          "title": "Product / collection launch",
+          "desc": "Reveal your new product or collection with an event that builds anticipation and drives impact. Theatrical staging, live demos, press kits, media coverage."
+        },
+        {
+          "icon": "📰",
+          "title": "Press & media evening",
+          "desc": "Invite journalists, bloggers and influencers to discover your brand in an exceptional setting. Integrated PR, press dossier, media content."
+        },
+        {
+          "icon": "✨",
+          "title": "Brand experience",
+          "desc": "Ephemeral showroom, immersive pop-up, brand activation… Create a unique sensory experience that immerses your audience in your brand universe."
+        },
+        {
+          "icon": "🤝",
+          "title": "Partner & VIP client evening",
+          "desc": "Treat your strategic partners and VIP clients to an exclusive evening that strengthens the relationship and acknowledges their commitment."
+        },
+        {
+          "icon": "📱",
+          "title": "Influencer event",
+          "desc": "Bring your influencer community together for a unique, Instagrammable and memorable experience to amplify your brand visibility."
+        },
+        {
+          "icon": "🏢",
+          "title": "Brand conference",
+          "desc": "Keynote, round table, annual presentation… We script your communication so it is impactful, memorable and perfectly aligned with your brand image."
+        }
+      ]
+    },
+    "VISION": {
+      "EYEBROW": "Our approach",
+      "TITLE": "Aligning event and identity",
+      "ITEMS": [
+        {
+          "title": "Brand consistency",
+          "desc": "Every detail of the event is designed in alignment with your visual identity, values and positioning."
+        },
+        {
+          "title": "Impact & memorability",
+          "desc": "We craft experiences that stay with people, create emotion and generate positive word of mouth."
+        },
+        {
+          "title": "Coverage & content",
+          "desc": "We plan for key moments to maximise photo/video coverage and content creation for your social channels."
+        }
+      ]
+    },
+    "CTA": {
+      "EYEBROW": "Let's bring your brand to life",
+      "TITLE1": "A brand event project?",
+      "TITLE2": "Let's talk",
+      "TEXT": "Launch, press evening, brand experience… Share your brief and receive a creative proposal.",
+      "BTN": "Contact us"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Our achievements",
+      "TITLE": "Brand image events — our creations"
+    }
+  },
+  "EV_MARKETING": {
+    "HERO": {
+      "EYEBROW": "Marketing & Communication Events",
+      "TITLE1": "Events that generate",
+      "TITLE2": "real impact",
+      "DESC": "Trade show, road show, brand activation, conference, client day… L'Événement Peter designs marketing events that meet your objectives and exceed your expectations."
+    },
+    "INTRO": {
+      "EYEBROW": "Our expertise",
+      "TITLE": "Events in service of your strategy",
+      "P1": "A well-designed marketing event is one of the most powerful levers for <strong>generating leads</strong>, <strong>retaining clients</strong> and <strong>building brand awareness</strong>. But its effectiveness depends entirely on its conception, execution and the measurement of results.",
+      "P2": "L'Événement Peter supports you from strategy to debrief, including production, logistics and communications. We work as an extension of your marketing team.",
+      "IMG_ALT": "Marketing event"
+    },
+    "EVENTS": {
+      "EYEBROW": "What we organise",
+      "TITLE": "Our marketing events",
+      "ITEMS": [
+        {
+          "icon": "🏛️",
+          "title": "Trade show",
+          "desc": "Design and management of your stand or trade show presence: design, logistics, animation, visitor welcome and lead follow-up."
+        },
+        {
+          "icon": "🚌",
+          "title": "Road show",
+          "desc": "Deploy your message across multiple cities or countries with a turnkey road show: travelling concept, multi-site logistics, brand consistency."
+        },
+        {
+          "icon": "⚡",
+          "title": "Brand activation",
+          "desc": "Interactive experiences in retail spaces, public areas or third-party events to create surprise and engagement."
+        },
+        {
+          "icon": "🎤",
+          "title": "Conference & Summit",
+          "desc": "Full organisation of your conferences, forums and summits: programme, speakers, venue, live streaming, post-event content."
+        },
+        {
+          "icon": "🤝",
+          "title": "Client day",
+          "desc": "Retain your clients with a dedicated day: workshops, practical sessions, exclusive visits, prestige lunch and memorable experiences."
+        },
+        {
+          "icon": "📊",
+          "title": "Launch event",
+          "desc": "Launch of an offer, service or partnership: presentation event with keynote, demos and media coverage."
+        }
+      ]
+    },
+    "IMPACT": {
+      "EYEBROW": "Why L'Événement Peter",
+      "TITLE": "Events that perform",
+      "ITEMS": [
+        {
+          "icon": "🎯",
+          "title": "Clear objectives",
+          "desc": "Every event is designed around measurable goals: leads, awareness, engagement, retention."
+        },
+        {
+          "icon": "🌍",
+          "title": "International reach",
+          "desc": "We operate in France and internationally with a trusted network of local partners."
+        },
+        {
+          "icon": "⚡",
+          "title": "Flawless execution",
+          "desc": "Rigorous planning, risk anticipation, on-the-day coordination for a result that delivers."
+        },
+        {
+          "icon": "📈",
+          "title": "Return on investment",
+          "desc": "We measure the impact of your events and provide a full post-event report."
+        }
+      ]
+    },
+    "CTA": {
+      "EYEBROW": "Boost your marketing strategy",
+      "TITLE1": "A high-impact",
+      "TITLE2": "marketing event?",
+      "TEXT": "Trade show, road show, conference… Share your brief and receive a strategic, bespoke proposal.",
+      "BTN": "Request a quote"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Our achievements",
+      "TITLE": "Marketing & communication events"
+    }
+  },
+  "FETES": {
+    "HERO": {
+      "EYEBROW": "Parties & Celebrations · Tailor-made",
+      "TITLE1": "Parties & Celebrations",
+      "TITLE2": "Unforgettable Moments",
+      "DESC": "From birthdays to Divorce Parties and themed evenings, L'Événement Peter creates unique and memorable celebrations, entirely personalised to your desires."
+    },
+    "WELCOME": {
+      "EYEBROW": "Our Philosophy",
+      "TITLE": "The art of celebrating life, your way",
+      "P1": "Every moment of your life deserves to be celebrated with intention and creativity. At L'Événement Peter, we understand that behind every party lies a story, an emotion, a desire to share something unique with the people you love.",
+      "P2": "Whether you are planning a memorable birthday, an extravagant Divorce Party to turn the page with flair, or an immersive themed evening, our passionate team is by your side at every step. Tailor-made decoration, entertainment, catering, music… we orchestrate every detail so all you have to do is enjoy the moment.",
+      "P3": "Together, let's transform your ideas into an event that is truly yours — one you will remember for the rest of your life."
+    },
+    "OFFRES": {
+      "EYEBROW": "Our Packages",
+      "TITLE": "Our Celebration Packages",
+      "ITEMS": [
+        {
+          "icon": "🎂",
+          "title": "Birthday",
+          "desc": "Whether you are celebrating your 18th, your 40th or a golden anniversary, every birthday deserves to shine. We organise your party from A to Z: tailor-made decoration, entertainment, catering, music… A celebration entirely in your image."
+        },
+        {
+          "icon": "🥂",
+          "title": "Divorce Party",
+          "desc": "Turn the page in style! A Divorce Party is the perfect occasion to celebrate your newfound freedom with those closest to you. Our team creates a festive, uninhibited and memorable evening to begin this new chapter with flair."
+        },
+        {
+          "icon": "🎭",
+          "title": "Themed Evening",
+          "desc": "From the Roaring Twenties to the tropics, from cinema to time travel… We transform your vision into a fully immersive experience. Décor, entertainment, gastronomy: every detail is designed to transport you to another world."
+        }
+      ]
+    },
+    "THEME": {
+      "EYEBROW": "Themed Evening",
+      "TITLE": "Live a Unique and Immersive Experience",
+      "P1": "Imagine being transported into a world where every detail is meticulously orchestrated to immerse you in a unique experience. Whether you dream of an elegant evening inspired by the Roaring Twenties, an exotic party under the tropics, or a celebration in homage to your favourite film, we bring your desires to life with creativity.",
+      "P2": "Our event experts work in close collaboration with you to bring your boldest ideas to life. From initial concept to final execution, we do everything in our power to ensure your evening meets your expectations — and exceeds them.",
+      "P3": "Every detail is carefully considered, from breathtaking decoration to the selection of food and drinks, as well as the entertainment that will animate your evening from start to finish.",
+      "P4": "Contact us today to start planning your dream evening!"
+    },
+    "CTA": {
+      "EYEBROW": "Let's Get Started",
+      "TITLE1": "Ready to Create Your",
+      "TITLE2": "Unforgettable Celebration?",
+      "BTN": "Contact Us"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Our party portfolio",
+      "TITLE": "Birthdays, divorce parties & themed evenings"
     }
   },
   "FOOTER": {
-    "TAGLINE": "Your premium event partner in Brittany. Weddings, seminars, decoration and much more.",
+    "TAGLINE": "Your premium event partner, based in Rennes and active worldwide. Weddings, seminars, decoration and much more.",
     "ENGLISH_SPOKEN": "Services available in English",
     "NAV_TITLE": "Navigation",
     "SERVICES_TITLE": "Services",
@@ -338,10 +1102,134 @@
     "SERVICE_SEM": "Corporate seminars",
     "SERVICE_CORP": "Corporate events",
     "SERVICE_OBSEQUES": "Funerals & ceremonies",
-    "ADDRESS": "Rennes, Brittany, France",
+    "SERVICE_FETES": "Parties & celebrations",
+    "ADDRESS": "Rennes, France",
     "HOURS": "Mon–Fri: 9am–6:30pm · Sat: 10am–5pm",
-    "COPYRIGHT": "© {{year}} L'Événement Peter — Event planning agency, Brittany & Rennes. All rights reserved.",
+    "COPYRIGHT": "© {{year}} L'Événement Peter — Event planning agency based in Rennes. All rights reserved.",
     "MENTIONS": "Legal Notice",
-    "CONFIDENTIALITE": "Privacy Policy"
+    "CONFIDENTIALITE": "Privacy Policy",
+    "LOGO_ALT": "L'Événement Peter — Event planning agency",
+    "SOCIAL_INSTAGRAM": "Instagram",
+    "SOCIAL_FACEBOOK": "Facebook"
+  },
+  "HEADER": {
+    "LOGO_ALT": "L'Événement Peter — Event planning agency",
+    "NAVIGATION_LABEL": "Main navigation",
+    "LANG_FR": "FR",
+    "LANG_EN": "EN",
+    "LANG_FR_LABEL": "Switch to French",
+    "LANG_EN_LABEL": "Switch to English",
+    "MENU_LABEL": "Menu"
+  },
+  "PHOTO_CAROUSEL": {
+    "PREVIOUS": "Previous",
+    "NEXT": "Next",
+    "PHOTO_LABEL": "Photo {{num}}"
+  },
+  "LEGAL": {
+    "HERO": {
+      "EYEBROW": "Legal Information",
+      "TITLE": "Legal Notice",
+      "DESC": "In accordance with law no. 2004-575 of June 21, 2004 on Confidence in the Digital Economy (LCEN)."
+    },
+    "SECTION1": {
+      "TITLE": "1. Website Owner",
+      "ITEMS": [
+        {
+          "label": "Company name:",
+          "value": "L'Événement Peter"
+        },
+        {
+          "label": "Legal form:",
+          "value": "Limited Liability Company (SARL)"
+        },
+        {
+          "label": "SIREN:",
+          "value": "931 366 942"
+        },
+        {
+          "label": "SIRET (head office):",
+          "value": "931 366 942 00023"
+        },
+        {
+          "label": "VAT number:",
+          "value": "FR27931366942"
+        },
+        {
+          "label": "APE/NAF code:",
+          "value": "8230Z – Organization of trade fairs, exhibitions and congresses"
+        },
+        {
+          "label": "Date of creation:",
+          "value": "July 24, 2024"
+        },
+        {
+          "label": "Head office:",
+          "value": "35 rue François-Désiré Roulin, 35000 Rennes, France"
+        },
+        {
+          "label": "Phone:",
+          "value": "<a href=\"tel:+33652583724\">06 52 58 37 24</a>"
+        },
+        {
+          "label": "Email:",
+          "value": "<a href=\"mailto:levenementpeter@gmail.com\">levenementpeter@gmail.com</a>"
+        },
+        {
+          "label": "Executives:",
+          "value": "Ingrid GAUCHENOT and Alix PETER"
+        }
+      ]
+    },
+    "SECTION2": {
+      "TITLE": "2. Publication Director",
+      "TEXTS": [
+        "Clervie CAUSER",
+        "For any question regarding site content: <a href=\"mailto:levenementpeter@gmail.com\">levenementpeter@gmail.com</a>"
+      ]
+    },
+    "SECTION3": {
+      "TITLE": "3. Hosting Provider",
+      "ITEMS": [
+        {
+          "label": "Company:",
+          "value": "Vercel Inc."
+        },
+        {
+          "label": "Address:",
+          "value": "340 Pine Street, Suite 701, San Francisco, CA 94104, United States"
+        },
+        {
+          "label": "Website:",
+          "value": "<a href=\"https://vercel.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://vercel.com</a>"
+        }
+      ]
+    },
+    "SECTION4": {
+      "TITLE": "4. Intellectual Property",
+      "TEXTS": [
+        "All content on this site (texts, images, logos, photographs, videos, illustrations, structure) is the exclusive property of L'Événement Peter or its partners and is protected by French and international intellectual property laws.",
+        "Any reproduction, representation, modification, publication or adaptation of all or part of the elements of the site, by any means or process, is prohibited without the prior written authorization of L'Événement Peter, under penalty of legal action."
+      ]
+    },
+    "SECTION5": {
+      "TITLE": "5. Hyperlinks",
+      "TEXTS": [
+        "The site may contain links to third-party websites. L'Événement Peter cannot be held responsible for the content of these external sites or their privacy policies. Creating links to the L'Événement Peter site requires prior authorization."
+      ]
+    },
+    "SECTION6": {
+      "TITLE": "6. Limitation of Liability",
+      "TEXTS": [
+        "L'Événement Peter strives to ensure that the information published on this site is accurate and up to date. However, it cannot guarantee the accuracy, precision or completeness of the information provided and declines all responsibility for any damage resulting from inaccurate or incomplete information."
+      ]
+    },
+    "SECTION7": {
+      "TITLE": "7. Applicable Law",
+      "TEXTS": [
+        "These legal notices are subject to French law. In case of dispute, French courts shall have exclusive jurisdiction.",
+        "<em>Last updated: June 2026</em>"
+      ]
+    }
   }
 }

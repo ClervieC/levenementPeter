@@ -2,37 +2,55 @@
   <div class="header__inner container">
 
     <a routerLink="/" class="header__logo" (click)="closeMenu()">
-      <img src="/logo.jpg" alt="L'Événement Peter – Agence événementielle Bretagne" class="header__logo-img">
+      <img src="/logo.jpg" alt="{{ 'HEADER.LOGO_ALT' | translate }}" class="header__logo-img">
     </a>
 
     <!-- Nav desktop -->
-    <nav class="header__nav" aria-label="Navigation principale">
-      @for (item of navItems; track item.path) {
-        <a [routerLink]="item.path" routerLinkActive="active"
-           [routerLinkActiveOptions]="{ exact: item.path === '/' }"
-           class="header__nav-link">
-          {{ item.key | translate }}
-        </a>
+    <nav class="header__nav" aria-label="{{ 'HEADER.NAVIGATION_LABEL' | translate }}">
+      @for (item of navItems; track item.key) {
+        @if (!item.children?.length) {
+          <a [routerLink]="item.path!" routerLinkActive="active"
+             [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+             class="header__nav-link">
+            {{ item.key | translate }}
+          </a>
+        } @else {
+          <div class="header__dropdown">
+            <button class="header__nav-link header__nav-btn" type="button">
+              {{ item.key | translate }}
+              <svg class="header__chevron"
+                   width="10" height="6" viewBox="0 0 10 6" fill="none">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="header__dropdown-panel">
+              @for (child of item.children!; track child.path) {
+                <a [routerLink]="child.path" class="header__dropdown-item" (click)="closeDrop()">
+                  {{ child.key | translate }}
+                </a>
+              }
+            </div>
+          </div>
+        }
       }
     </nav>
 
-    <!-- Sélecteur de langue + badge + CTA -->
+    <!-- Sélecteur de langue + CTA -->
     <div class="header__actions">
       <div class="header__lang">
         <button class="header__lang-btn" [class.active]="lang.current() === 'fr'"
-                (click)="lang.set('fr')" aria-label="Français">FR</button>
+                (click)="lang.set('fr')" aria-label="{{ 'HEADER.LANG_FR_LABEL' | translate }}">{{ 'HEADER.LANG_FR' | translate }}</button>
         <span class="header__lang-sep">|</span>
         <button class="header__lang-btn" [class.active]="lang.current() === 'en'"
-                (click)="lang.set('en')" aria-label="English">EN</button>
+                (click)="lang.set('en')" aria-label="{{ 'HEADER.LANG_EN_LABEL' | translate }}">{{ 'HEADER.LANG_EN' | translate }}</button>
       </div>
-
       <a routerLink="/contact" class="header__cta btn btn--gold" (click)="closeMenu()">
         {{ 'NAV.CONTACT' | translate }}
       </a>
     </div>
 
     <!-- Burger -->
-    <button class="header__burger" [class.open]="menuOpen()" (click)="toggleMenu()" aria-label="Menu">
+    <button class="header__burger" [class.open]="menuOpen()" (click)="toggleMenu()" aria-label="{{ 'HEADER.MENU_LABEL' | translate }}">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -40,21 +58,43 @@
   <!-- Mobile menu -->
   <div class="header__mobile" [class.open]="menuOpen()">
     <nav>
-      @for (item of navItems; track item.path) {
-        <a [routerLink]="item.path" routerLinkActive="active"
-           [routerLinkActiveOptions]="{ exact: item.path === '/' }"
-           class="header__mobile-link" (click)="closeMenu()">
-          {{ item.key | translate }}
-        </a>
+      @for (item of navItems; track item.key) {
+        @if (!item.children?.length) {
+          <a [routerLink]="item.path!" routerLinkActive="active"
+             [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+             class="header__mobile-link" (click)="closeMenu()">
+            {{ item.key | translate }}
+          </a>
+        } @else {
+          <div class="header__mobile-group">
+            <button class="header__mobile-link header__mobile-group-btn" type="button"
+                    [class.open]="mobileOpen() === item.key"
+                    (click)="toggleMobile(item.key)">
+              {{ item.key | translate }}
+              <svg class="header__chevron" [class.flipped]="mobileOpen() === item.key"
+                   width="10" height="6" viewBox="0 0 10 6" fill="none">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+            @if (mobileOpen() === item.key) {
+              <div class="header__mobile-children">
+                @for (child of item.children!; track child.path) {
+                  <a [routerLink]="child.path" class="header__mobile-child" (click)="closeMenu()">
+                    {{ child.key | translate }}
+                  </a>
+                }
+              </div>
+            }
+          </div>
+        }
       }
       <a routerLink="/contact" class="btn btn--gold" style="margin-top:1.5rem" (click)="closeMenu()">
         {{ 'NAV.CONTACT' | translate }}
       </a>
-
       <div class="header__mobile-lang">
-        <button [class.active]="lang.current() === 'fr'" (click)="lang.set('fr')">FR</button>
+        <button [class.active]="lang.current() === 'fr'" (click)="lang.set('fr')">{{ 'HEADER.LANG_FR' | translate }}</button>
         <span>|</span>
-        <button [class.active]="lang.current() === 'en'" (click)="lang.set('en')">EN</button>
+        <button [class.active]="lang.current() === 'en'" (click)="lang.set('en')">{{ 'HEADER.LANG_EN' | translate }}</button>
       </div>
     </nav>
   </div>

@@ -1,0 +1,82 @@
+.page-hero em { font-style: italic; color: var(--color-gold); }
+
+.off-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+  @media (max-width: 768px) { grid-template-columns: 1fr; gap: 2.5rem; }
+  p { line-height: 1.85; }
+  strong { color: var(--color-black); font-weight: 500; }
+}
+
+.image-placeholder {
+  background: var(--color-gray-light);
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.2rem;
+}
+
+.ceremonies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  @media (max-width: 640px) { grid-template-columns: 1fr; }
+}
+
+.ceremony-card {
+  padding: 2.4rem 2rem;
+  border: 1px solid var(--color-gray-light);
+  transition: border-color var(--ease), box-shadow var(--ease);
+
+  &:hover {
+    border-color: var(--color-gold-light);
+    box-shadow: 0 6px 30px rgba(0,0,0,0.07);
+  }
+
+  &__icon { display: block; font-size: 2rem; margin-bottom: 1.1rem; }
+  &__title { font-size: 1.1rem; margin-bottom: 0.8rem; }
+  &__desc { font-size: 0.9rem; line-height: 1.75; color: var(--color-text-light); }
+}
+
+.methode-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  @media (max-width: 900px) { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 480px) { grid-template-columns: 1fr; }
+}
+
+.methode-step {
+  text-align: center;
+
+  &__num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid rgba(201,168,68,0.4);
+    color: var(--color-gold);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+  }
+
+  h3 { font-size: 1rem; margin-bottom: 0.6rem; color: var(--color-white); }
+  p  { font-size: 0.87rem; line-height: 1.7; color: rgba(255,255,255,0.65); }
+}
+
+.connector {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 1.7rem;
+  color: rgba(201,168,68,0.3);
+  font-size: 1.4rem;
+  justify-content: center;
+  @media (max-width: 900px) { display: none; }
+}
+
+h2 em { font-style: italic; color: var(--color-gold); }

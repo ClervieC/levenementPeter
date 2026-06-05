@@ -2,27 +2,37 @@
   "ENGLISH_SPOKEN": "English spoken",
   "NAV": {
     "HOME": "Accueil",
-    "MARIAGE": "Mariage",
+    "PARTICULIER": "Particulier",
+    "PROFESSIONNEL": "Professionnel",
+    "MARIAGE": "Mariage & PACS",
     "DESIGN": "Design & Décoration",
+    "OFFICIANTE": "Officiante de cérémonie",
+    "FETES": "Fêtes & Célébrations",
+    "OBSEQUES": "Obsèques & Cérémonies",
+    "EV_INTERNE": "Évènement interne",
+    "IMAGE_MARQUE": "Image de marque",
+    "EV_MARKETING": "Évènement marketing",
     "SEMINAIRES": "Séminaires",
-    "APROPOS": "À Propos",
+    "GALERIE": "Galerie",
+    "APROPOS": "Qui sommes-nous ?",
     "CONTACT": "Nous Contacter"
   },
   "HOME": {
     "HERO": {
-      "EYEBROW": "Agence Événementielle · Bretagne & Rennes",
+      "EYEBROW": "Agence Événementielle",
       "TITLE1": "L'Événement",
       "TITLE2": "Peter",
-      "SUBTITLE1": "Wedding Planner · Décoration Mariage · Séminaires · Obsèques",
-      "SUBTITLE2": "Un service haut de gamme et sur mesure, en Bretagne",
-      "CTA_MARIAGE": "Nos Mariages",
+      "SUBTITLE1": "Mariage · Officiante de cérémonie · Design · Séminaires · Obsèques",
+      "SUBTITLE2": "Un service haut de gamme et sur mesure, partout dans le monde",
+      "CTA_MARIAGE": "Nos Prestations",
       "CTA_CONTACT": "Demander un devis",
-      "SCROLL": "Découvrir"
+      "SCROLL": "Découvrir",
+      "ARIA_LABEL": "Bienvenue chez L'Événement Peter"
     },
     "INTRO": {
       "EYEBROW": "Notre philosophie",
       "TITLE": "Une agence qui donne vie à vos idées",
-      "P1": "L'Événement Peter est votre partenaire événementiel de confiance pour organiser un mariage inoubliable en Bretagne. Basée à Rennes, notre agence est entièrement consacrée à la création d'expériences mémorables pour les couples, les entreprises et toutes les familles qui nous font confiance.",
+      "P1": "L'Événement Peter est votre partenaire événementiel de confiance. Basée à Rennes, notre agence intervient partout en France et à l'international pour créer des expériences mémorables pour les couples, les entreprises et toutes les familles qui nous font confiance.",
       "P2": "Notre équipe travaille avec passion, expertise et engagement pour vous offrir un service haut de gamme, entièrement personnalisé. Vous choisir L'Événement Peter, c'est vous donner la certitude que chaque détail sera géré à la perfection.",
       "IMG_ALT": "Photo de l'équipe",
       "CTA": "Notre histoire"
@@ -33,8 +43,15 @@
       "ITEMS": [
         {
           "icon": "rings",
-          "title": "Mariage en Bretagne",
-          "desc": "Organisation complète de votre mariage, du premier rendez-vous au dernier accord musical. Wedding planning haut de gamme à Rennes et dans toute la Bretagne.",
+          "title": "Mariage & PACS",
+          "desc": "Organisation complète de votre mariage ou PACS, du premier rendez-vous au dernier accord musical. Wedding planning haut de gamme partout dans le monde.",
+          "link": "/mariage",
+          "label": "Découvrir"
+        },
+        {
+          "icon": "ceremony",
+          "title": "Officiante de cérémonie",
+          "desc": "Faites de votre journée un moment inoubliable avec notre service d'officiante personnalisée. Cérémonie laïque, renouvellement de vœux, baptême… chaque moment est unique.",
           "link": "/mariage",
           "label": "Découvrir"
         },
@@ -46,77 +63,113 @@
           "label": "Découvrir"
         },
         {
+          "icon": "celebrate",
+          "title": "Fêtes adultes & enfants",
+          "desc": "Anniversaire, Divorce party, soirée à thème, fête d'enfants… Notre équipe organise chaque célébration avec créativité et enthousiasme pour des souvenirs inoubliables.",
+          "link": "/fetes-celebrations",
+          "label": "Découvrir"
+        },
+        {
           "icon": "briefcase",
-          "title": "Séminaires & Corporate",
-          "desc": "Conception et organisation de séminaires d'entreprise, team-building et événements corporate en Bretagne. Des expériences qui marquent les esprits.",
+          "title": "Évènement interne & Corporate",
+          "desc": "Séminaires, team-building, fête de fin d'année, soirée de gala, inauguration, lancement de produits… Des expériences mémorables qui dynamisent vos équipes.",
           "link": "/seminaires",
           "label": "Découvrir"
         },
         {
           "icon": "candle",
           "title": "Obsèques & Cérémonies",
-          "desc": "Un accompagnement digne et attentionné pour organiser des obsèques et cérémonies funèbres en Bretagne, dans le respect de vos volontés.",
-          "link": "/contact",
-          "label": "Nous contacter"
+          "desc": "Un accompagnement digne et attentionné pour organiser des obsèques et cérémonies funèbres, dans le respect de vos volontés.",
+          "link": "/obseques",
+          "label": "Découvrir"
         }
       ]
     },
     "ZONE": {
       "EYEBROW": "Notre zone d'intervention",
-      "TITLE": "Mariages & Événements en Bretagne",
-      "INTRO": "L'Événement Peter intervient dans toute la <strong>Bretagne</strong> pour organiser vos mariages, séminaires et événements. Basée à <strong>Rennes</strong>, notre agence couvre l'ensemble de la région : Ille-et-Vilaine, Morbihan, Finistère, Côtes-d'Armor.",
-      "NOTE_PREFIX": "Vous êtes hors Bretagne ?",
-      "NOTE_LINK": "Contactez-nous",
-      "NOTE_SUFFIX": ", nous étudions chaque demande avec plaisir."
+      "TITLE": "Basés à Rennes, Actifs Partout dans le Monde",
+      "INTRO": "Basée à <strong>Rennes</strong>, L'Événement Peter intervient partout en <strong>France</strong> et à l'<strong>international</strong> pour organiser vos mariages, séminaires et événements. Notre société n'a pas de frontière.",
+      "NOTE_PREFIX": "Où que vous soyez,",
+      "NOTE_LINK": "contactez-nous",
+      "NOTE_SUFFIX": " — nous nous déplaçons partout pour vous accompagner.",
+      "LIST_ARIA_LABEL": "Villes couvertes"
     },
     "WHY": {
       "EYEBROW": "Pourquoi nous choisir",
       "TITLE": "L'Excellence à Chaque Étape",
       "ITEMS": [
-        { "num": "01", "title": "Sur mesure", "desc": "Chaque événement est unique. Nous construisons votre projet de A à Z selon vos envies, votre budget et votre personnalité." },
-        { "num": "02", "title": "Expertise locale", "desc": "Ancrés en Bretagne, nous connaissons les meilleurs prestataires, lieux et tendances de la région pour un mariage ou un événement parfait." },
-        { "num": "03", "title": "Sérénité totale", "desc": "Nous gérons chaque détail pour que vous profitiez pleinement de votre journée sans stress ni imprévu. Votre tranquillité est notre priorité." },
-        { "num": "04", "title": "Haut de gamme", "desc": "Un réseau de partenaires sélectionnés, une attention permanente aux finitions et une esthétique soignée pour un résultat d'exception." }
+        {
+          "num": "01",
+          "title": "Sur mesure",
+          "desc": "Chaque événement est unique. Nous construisons votre projet de A à Z selon vos envies, votre budget et votre personnalité."
+        },
+        {
+          "num": "02",
+          "title": "Expertise locale et internationale",
+          "desc": "Basées à Rennes et fortes d'un parcours international, nous conjuguons connaissance locale et expérience mondiale pour un mariage ou un événement parfait."
+        },
+        {
+          "num": "03",
+          "title": "Sérénité totale",
+          "desc": "Nous gérons chaque détail pour que vous profitiez pleinement de votre journée sans stress ni imprévu. Votre tranquillité est notre priorité."
+        },
+        {
+          "num": "04",
+          "title": "Haut de gamme",
+          "desc": "Un réseau de partenaires sélectionnés, une attention permanente aux finitions et une esthétique soignée pour un résultat d'exception."
+        }
       ]
     },
     "CTA": {
       "EYEBROW": "Commençons ensemble",
       "TITLE": "Prêt(e) à créer votre",
       "TITLE_EM": "événement inoubliable ?",
-      "TEXT": "Mariage en Bretagne, séminaire à Rennes, décoration sur mesure… Partagez-nous votre projet et recevez une proposition personnalisée.",
+      "TEXT": "Mariage en France ou à l'étranger, séminaire, décoration sur mesure… Partagez-nous votre projet et recevez une proposition personnalisée.",
       "BTN": "Nous Contacter"
     }
   },
   "MARIAGE": {
     "HERO": {
-      "EYEBROW": "Organisation de mariage · Bretagne & Rennes",
-      "TITLE1": "Votre Mariage en Bretagne,",
+      "EYEBROW": "Organisation de mariage",
+      "TITLE1": "Votre Mariage,",
       "TITLE2": "Une Célébration Inoubliable",
-      "DESC": "Wedding planner à Rennes, L'Événement Peter orchestre chaque détail de votre mariage avec passion et savoir-faire. De la première consultation au dernier accord, nous créons l'événement dont vous rêvez."
+      "DESC": "Wedding planner basé à Rennes, L'Événement Peter orchestre chaque détail de votre mariage avec passion et savoir-faire. De la première consultation au dernier accord, nous créons l'événement dont vous rêvez."
     },
     "INTRO": {
-      "EYEBROW": "Wedding Planner Bretagne",
-      "TITLE": "L'Art d'Organiser un Mariage en Bretagne",
-      "P1": "Organiser un <strong>mariage en Bretagne</strong> demande une connaissance approfondie du territoire : les prestataires de qualité, les lieux d'exception, les tendances et les subtilités logistiques propres à la région. C'est pourquoi L'Événement Peter est votre atout indispensable.",
-      "P2": "Depuis <strong>Rennes</strong>, notre agence rayonne sur toute la Bretagne — Ille-et-Vilaine, Morbihan, Finistère, Côtes-d'Armor — pour organiser des mariages à la hauteur de vos rêves, qu'il s'agisse d'une cérémonie intime ou d'une réception fastueuse.",
+      "EYEBROW": "Wedding Planner",
+      "TITLE": "L'Art d'Organiser un Mariage",
+      "P1": "Organiser un <strong>mariage</strong> demande une connaissance approfondie des prestataires, des lieux d'exception, des tendances et des subtilités logistiques propres à chaque destination. C'est pourquoi L'Événement Peter est votre atout indispensable.",
+      "P2": "Depuis <strong>Rennes</strong>, notre agence intervient partout en France et à l'international pour organiser des mariages à la hauteur de vos rêves, qu'il s'agisse d'une cérémonie intime ou d'une réception fastueuse.",
       "P3": "<strong>Wedding planner</strong>, coordinateur de Jour J, ou simple conseil ponctuel : nous adaptons notre intervention à vos besoins et à votre budget.",
-      "IMG_ALT": "Mariage en Bretagne"
+      "IMG_ALT": "Mariage"
     },
     "PRESTATIONS": {
       "EYEBROW": "Nos formules",
       "TITLE": "Des Prestations Sur Mesure",
       "ITEMS": [
-        { "title": "Coordination complète", "desc": "De la recherche des prestataires à la coordination le Jour J. Nous orchestrons chaque instant pour que vous viviez votre mariage sereinement." },
-        { "title": "Wedding Day Management", "desc": "Vous avez déjà tout planifié ? Nous intervenons le Jour J pour coordonner prestataires, timing et imprévus. Profitez sans vous soucier de rien." },
-        { "title": "Accompagnement partiel", "desc": "Un coup de pouce ciblé : recherche de lieu, négociation prestataires, création du planning… Nous adaptons notre intervention à vos besoins." },
-        { "title": "Mariage clé en main", "desc": "Confiez-nous l'intégralité de l'organisation. Nous gérons chaque détail de A à Z pour un mariage d'exception en Bretagne." }
+        {
+          "title": "Coordination complète",
+          "desc": "De la recherche des prestataires à la coordination le Jour J. Nous orchestrons chaque instant pour que vous viviez votre mariage sereinement."
+        },
+        {
+          "title": "Wedding Day Management",
+          "desc": "Vous avez déjà tout planifié ? Nous intervenons le Jour J pour coordonner prestataires, timing et imprévus. Profitez sans vous soucier de rien."
+        },
+        {
+          "title": "Accompagnement partiel",
+          "desc": "Un coup de pouce ciblé : recherche de lieu, négociation prestataires, création du planning… Nous adaptons notre intervention à vos besoins."
+        },
+        {
+          "title": "Mariage clé en main",
+          "desc": "Confiez-nous l'intégralité de l'organisation. Nous gérons chaque détail de A à Z pour un mariage d'exception partout dans le monde."
+        }
       ]
     },
     "INCLUS": {
       "EYEBROW": "Notre accompagnement",
       "TITLE": "Ce Que Nous Organisons pour Vous",
       "ITEMS": [
-        "Recherche et sélection du lieu de réception en Bretagne",
+        "Recherche et sélection du lieu de réception",
         "Coordination avec tous les prestataires (traiteur, photographe, DJ, groupe, fleuriste…)",
         "Création du rétroplanning et du programme de la journée",
         "Suivi budgétaire et négociation prestataires",
@@ -129,158 +182,346 @@
     },
     "ZONE": {
       "EYEBROW": "Zone d'intervention",
-      "TITLE": "Mariages en Bretagne & Ille-et-Vilaine",
-      "P1": "Notre agence de <strong>wedding planning à Rennes</strong> intervient dans toute la Bretagne pour l'organisation de mariages : Rennes, Saint-Malo, Brest, Vannes, Lorient, Quimper, Dinard, Fougères, Vitré et dans tous les châteaux, manoirs et domaines de la région.",
-      "P2": "Chaque <strong>mariage en Bretagne</strong> est unique. Notre connaissance du territoire nous permet de dénicher les lieux les plus beaux et les prestataires les plus talentueux pour votre jour le plus exclusif."
+      "TITLE": "Mariages en France & à l'International",
+      "P1": "Notre agence de <strong>wedding planning à Rennes</strong> intervient partout en France et à l'international pour l'organisation de mariages : Rennes, Paris, Nice, lieux de réception et domaines d'exception en France comme à l'étranger.",
+      "P2": "Chaque mariage est unique. Notre expérience nous permet de dénicher les lieux les plus beaux et les prestataires les plus talentueux pour votre jour le plus exclusif."
     },
     "CTA": {
       "EYEBROW": "Parlons de votre mariage",
       "TITLE1": "Prêt(e) à organiser votre",
-      "TITLE2": "mariage en Bretagne ?",
+      "TITLE2": "mariage ?",
       "TEXT": "Contactez-nous pour un premier échange sans engagement. Nous étudierons ensemble votre projet et vous proposerons la formule la plus adaptée.",
       "BTN": "Demander un devis gratuit"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Nos réalisations mariage",
+      "TITLE": "Quelques-uns de nos mariages"
     }
   },
   "DESIGN": {
     "HERO": {
-      "EYEBROW": "Design & Décoration · Bretagne & Rennes",
-      "TITLE1": "Décoration de Mariage en Bretagne,",
+      "EYEBROW": "Design & Décoration",
+      "TITLE1": "Décoration de Mariage,",
       "TITLE2": "Un Univers Visuel Unique",
-      "DESC": "De la création florale à la scénographie complète, L'Événement Peter transforme vos espaces en tableaux vivants. Un design de mariage qui vous ressemble, en Bretagne."
+      "DESC": "De la création florale à la scénographie complète, L'Événement Peter transforme vos espaces en tableaux vivants. Un design de mariage qui vous ressemble."
     },
     "INTRO": {
       "EYEBROW": "Notre vision",
       "TITLE": "Plus qu'un Décor, une Expérience Sensorielle",
-      "P1": "La <strong>décoration de mariage</strong> est bien plus qu'une question d'esthétique : c'est l'art de créer une atmosphère, une émotion, un souvenir. Chez L'Événement Peter, chaque détail est pensé pour sublimer votre célébration en Bretagne.",
-      "P2": "Nos créatrices interviennent sur la <strong>décoration florale</strong>, la scénographie des espaces, le mobilier, l'éclairage et tous les éléments visuels qui composent l'identité visuelle de votre mariage à Rennes ou dans toute la Bretagne.",
+      "P1": "La <strong>décoration de mariage</strong> est bien plus qu'une question d'esthétique : c'est l'art de créer une atmosphère, une émotion, un souvenir. Chez L'Événement Peter, chaque détail est pensé pour sublimer votre célébration.",
+      "P2": "Nos créatrices interviennent sur la <strong>décoration florale</strong>, la scénographie des espaces, le mobilier, l'éclairage et tous les éléments visuels qui composent l'identité visuelle de votre mariage à Rennes ou ailleurs.",
       "P3": "Que vous ayez un univers précis en tête ou que vous souhaitiez être guidé(e), nous co-créons avec vous le décor qui révèle votre personnalité et enchante vos invités.",
-      "IMG_ALT": "Décoration mariage Bretagne"
+      "IMG_ALT": "Décoration mariage"
     },
     "FEATURES": {
       "EYEBROW": "Nos créations",
       "TITLE": "Ce Que Nous Réalisons",
       "ITEMS": [
-        { "title": "Création florale", "desc": "Bouquets de mariée, arches florales, centres de table, boutonnières, compositions pour l'église ou la salle. Un travail artisanal réalisé avec des fleurs fraîches et de saison." },
-        { "title": "Scénographie & décoration", "desc": "Mise en scène globale du lieu de réception : tables, allée centrale, photocall, espace cocktail, coin enfants. Chaque espace raconte une histoire." },
-        { "title": "Éclairage & ambiance", "desc": "Guirlandes, candélabres, spots, lumières chaleureuses… L'éclairage transforme complètement l'atmosphère et crée des photos inoubliables." },
-        { "title": "Papeterie & signalétique", "desc": "Cartes de menu, plans de table, marque-places, save the date, livrets de cérémonie… Une papeterie cohérente qui habille chaque moment." },
-        { "title": "Moodboard & direction artistique", "desc": "Nous définissons ensemble votre palette de couleurs, vos matières, vos inspirations pour créer un fil conducteur cohérent et élégant sur toute la journée." },
-        { "title": "Installation & démontage", "desc": "Le jour J, notre équipe installe l'intégralité de la décoration avant votre arrivée et gère le démontage en fin de soirée. Vous n'avez rien à faire." }
+        {
+          "title": "Création florale",
+          "desc": "Bouquets de mariée, arches florales, centres de table, boutonnières, compositions pour l'église ou la salle. Un travail artisanal réalisé avec des fleurs fraîches et de saison."
+        },
+        {
+          "title": "Scénographie & décoration",
+          "desc": "Mise en scène globale du lieu de réception : tables, allée centrale, photocall, espace cocktail, coin enfants. Chaque espace raconte une histoire."
+        },
+        {
+          "title": "Éclairage & ambiance",
+          "desc": "Guirlandes, candélabres, spots, lumières chaleureuses… L'éclairage transforme complètement l'atmosphère et crée des photos inoubliables."
+        },
+        {
+          "title": "Papeterie & signalétique",
+          "desc": "Cartes de menu, plans de table, marque-places, save the date, livrets de cérémonie… Une papeterie cohérente qui habille chaque moment."
+        },
+        {
+          "title": "Moodboard & direction artistique",
+          "desc": "Nous définissons ensemble votre palette de couleurs, vos matières, vos inspirations pour créer un fil conducteur cohérent et élégant sur toute la journée."
+        },
+        {
+          "title": "Installation & démontage",
+          "desc": "Le jour J, notre équipe installe l'intégralité de la décoration avant votre arrivée et gère le démontage en fin de soirée. Vous n'avez rien à faire."
+        }
       ]
     },
     "UNIVERS": {
       "EYEBROW": "Styles & inspirations",
-      "TITLE": "Vos Univers de Mariage en Bretagne",
+      "TITLE": "Vos Univers de Mariage",
       "ITEMS": [
-        { "label": "Romantique & Intemporel", "desc": "Roses blanches, bougies et linges fins pour un mariage classique et élégant." },
-        { "label": "Bohème & Nature", "desc": "Pampa, eucalyptus, macramé et tons terracotta pour un esprit libre et chaleureux." },
-        { "label": "Minimaliste & Luxe", "desc": "Lignes épurées, marbre, or et fleurs monochrome pour une esthétique contemporaine." },
-        { "label": "Champêtre & Rustique", "desc": "Bois brut, fleurs champêtres et lumières guirlandes pour un mariage plein de charme." },
-        { "label": "Mariage Breton", "desc": "Broderies, ardoise, lin et fleurs sauvages pour célébrer la beauté de la Bretagne." },
-        { "label": "Sur Mesure", "desc": "Votre univers, votre palette, vos envies. Nous créons le décor unique qui vous ressemble." }
+        {
+          "label": "Romantique & Intemporel",
+          "desc": "Roses blanches, bougies et linges fins pour un mariage classique et élégant."
+        },
+        {
+          "label": "Bohème & Nature",
+          "desc": "Pampa, eucalyptus, macramé et tons terracotta pour un esprit libre et chaleureux."
+        },
+        {
+          "label": "Minimaliste & Luxe",
+          "desc": "Lignes épurées, marbre, or et fleurs monochrome pour une esthétique contemporaine."
+        },
+        {
+          "label": "Champêtre & Rustique",
+          "desc": "Bois brut, fleurs champêtres et lumières guirlandes pour un mariage plein de charme."
+        },
+        {
+          "label": "Mariage Héritage",
+          "desc": "Broderies, ardoise, lin et fleurs sauvages pour une célébration empreinte de traditions authentiques."
+        },
+        {
+          "label": "Sur Mesure",
+          "desc": "Votre univers, votre palette, vos envies. Nous créons le décor unique qui vous ressemble."
+        }
       ]
     },
     "CTA": {
       "EYEBROW": "Créons ensemble",
       "TITLE1": "Votre décor de mariage",
-      "TITLE2": "en Bretagne vous attend",
+      "TITLE2": "vous attend",
       "TEXT": "Partagez-nous vos inspirations, votre date et votre lieu. Nous créons un moodboard personnalisé lors de notre premier rendez-vous.",
       "BTN": "Demander un rendez-vous"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Nos créations décoration",
+      "TITLE": "Design & Décoration — nos réalisations"
     }
   },
   "SEMINAIRES": {
     "HERO": {
-      "EYEBROW": "Séminaires & Événements Corporate · Bretagne & Rennes",
-      "TITLE1": "Séminaires & Événements d'Entreprise",
-      "TITLE2": "en Bretagne",
-      "DESC": "L'Événement Peter conçoit et organise vos événements professionnels en Bretagne. Séminaires, team-building, conventions, soirées d'entreprise : des expériences mémorables qui dynamisent vos équipes."
+      "EYEBROW": "Évènements Professionnels",
+      "TITLE1": "Évènements d'Entreprise",
+      "TITLE2": "partout dans le monde",
+      "DESC": "L'Événement Peter conçoit et organise vos événements professionnels. Évènements internes, image de marque, évènements marketing : des expériences mémorables qui dynamisent vos équipes et renforcent votre image."
     },
     "INTRO": {
-      "EYEBROW": "Événements professionnels",
-      "TITLE": "Votre Agence Événementielle d'Entreprise en Bretagne",
-      "P1": "Organiser un <strong>séminaire en Bretagne</strong> ou à Rennes, c'est offrir à vos collaborateurs un cadre exceptionnel et une expérience qui les marque durablement. L'Événement Peter met son expertise et son réseau de partenaires locaux au service de vos événements professionnels.",
-      "P2": "De la recherche du lieu idéal à la coordination le jour J, en passant par la restauration, les activités et la logistique, nous prenons en charge l'intégralité de votre événement d'entreprise en Bretagne.",
-      "P3": "La Bretagne offre un cadre unique : châteaux, domaines maritimes, centres de congrès modernes à Rennes, espaces nature… Nous sélectionnons le lieu parfait pour vos objectifs et votre budget.",
-      "IMG_ALT": "Séminaire en Bretagne"
+      "EYEBROW": "Là où l'innovation rencontre l'excellence",
+      "TITLE": "L'événementiel d'entreprise au service de votre succès",
+      "P1": "Chez L'Événement Peter, nous comprenons l'importance cruciale que revêtent vos événements professionnels pour votre image de marque, vos partenariats, vos collaborateurs et votre succès global. Soirée de gala, inauguration, remise de prix… chaque événement est une occasion de se démarquer, de faire une déclaration audacieuse et de laisser une empreinte mémorable.",
+      "P2": "Notre équipe expérimentée et passionnée transforme vos idées en réalité grâce à une gamme complète de services haut de gamme, conçus pour répondre à vos besoins les plus exigeants. De la recherche du lieu idéal à la coordination le jour J, nous prenons en charge l'intégralité de votre événement.",
+      "P3": "Notre engagement envers l'excellence et notre souci du détail vous assurent une expérience sans pareille, où chaque aspect est soigneusement orchestré pour atteindre vos objectifs et impressionner vos convives.",
+      "IMG_ALT": "Évènement professionnel"
+    },
+    "POURQUOI_EV": {
+      "EYEBROW": "Les bénéfices",
+      "TITLE": "Pourquoi organiser un événement pour votre entreprise ?",
+      "ITEMS": [
+        {
+          "icon": "🤝",
+          "title": "Motivation & liens",
+          "desc": "Renforcez les liens entre collaborateurs et boostez la motivation de vos équipes."
+        },
+        {
+          "icon": "🏆",
+          "title": "Récompenser vos équipes",
+          "desc": "Valorisez l'engagement et les performances de vos collaborateurs."
+        },
+        {
+          "icon": "❤️",
+          "title": "Fidélisation clients",
+          "desc": "Créez des expériences mémorables pour renforcer la loyauté de vos clients."
+        },
+        {
+          "icon": "🚀",
+          "title": "Promouvoir vos produits",
+          "desc": "Mettez en valeur vos produits et services dans un cadre exceptionnel."
+        },
+        {
+          "icon": "📈",
+          "title": "Croissance de l'entreprise",
+          "desc": "Créez des opportunités de développement et stimulez votre croissance."
+        },
+        {
+          "icon": "💼",
+          "title": "Opportunités commerciales",
+          "desc": "Générez de nouvelles opportunités d'affaires lors de chaque événement."
+        },
+        {
+          "icon": "🌐",
+          "title": "Extension de réseau",
+          "desc": "Élargissez votre réseau professionnel et créez de nouveaux partenariats."
+        },
+        {
+          "icon": "👁",
+          "title": "Visibilité accrue",
+          "desc": "Accroissez la visibilité de votre entreprise et renforcez votre notoriété."
+        }
+      ]
     },
     "TYPES": {
       "EYEBROW": "Nos événements",
       "TITLE": "Tous Types d'Événements Professionnels",
       "ITEMS": [
-        { "icon": "🎯", "title": "Séminaires résidentiels", "desc": "Un ou plusieurs jours en immersion, avec hébergement, repas et animations. Nous gérons tout de A à Z." },
-        { "icon": "💡", "title": "Team-building", "desc": "Activités originales et fédératrices pour renforcer la cohésion d'équipe en plein cœur de la Bretagne." },
-        { "icon": "🎤", "title": "Conférences & conventions", "desc": "Scénographie de scène, régie technique, accueil des participants et coordination des intervenants." },
-        { "icon": "🥂", "title": "Soirées d'entreprise", "desc": "Galas, dîners de fin d'année, cocktails de prestige. Des soirées mémorables qui renforcent vos liens professionnels." },
-        { "icon": "🏆", "title": "Incentives", "desc": "Programmes sur mesure pour récompenser et motiver vos équipes avec des expériences uniques en Bretagne." },
-        { "icon": "📋", "title": "Assemblées générales", "desc": "Organisation logistique et technique de vos AG, congrès et réunions plénières en Bretagne." }
+        {
+          "icon": "🎯",
+          "title": "Évènement interne",
+          "desc": "Séminaires résidentiels, team-building, fête de fin d'année, fête de départ… Nous gérons chaque détail de A à Z pour renforcer les liens de vos équipes."
+        },
+        {
+          "icon": "✨",
+          "title": "Image de marque",
+          "desc": "Soirées de gala, inaugurations, remises de prix, cocktails de prestige. Des évènements qui renforcent votre image et impressionnent vos invités."
+        },
+        {
+          "icon": "🚀",
+          "title": "Évènement marketing",
+          "desc": "Lancement de produits, garden party, expériences interactives, technologies immersives. Des évènements qui font rayonner votre marque."
+        },
+        {
+          "icon": "🎤",
+          "title": "Conférences & conventions",
+          "desc": "Scénographie de scène, régie technique, accueil des participants et coordination des intervenants pour vos congrès et plénières."
+        },
+        {
+          "icon": "🏆",
+          "title": "Incentives",
+          "desc": "Programmes sur mesure pour récompenser et motiver vos équipes avec des expériences uniques : activités sportives, culinaires, créatives."
+        },
+        {
+          "icon": "📋",
+          "title": "Assemblées générales",
+          "desc": "Organisation logistique et technique de vos AG, congrès et réunions plénières partout dans le monde."
+        }
       ]
     },
-    "METHODE": {
-      "EYEBROW": "Notre approche",
-      "TITLE": "Une Organisation Rigoureuse, de A à Z",
-      "ITEMS": [
-        { "num": "01", "title": "Définition des objectifs", "desc": "Nous analysons vos enjeux, votre culture d'entreprise et vos attentes pour proposer un événement aligné avec vos objectifs stratégiques." },
-        { "num": "02", "title": "Recherche du lieu", "desc": "Grâce à notre réseau en Bretagne, nous sélectionnons les meilleurs lieux disponibles à Rennes et dans toute la région selon vos critères." },
-        { "num": "03", "title": "Conception du programme", "desc": "Création d'un programme sur mesure : horaires, animations, restauration, transport, hébergement. Chaque détail est anticipé." },
-        { "num": "04", "title": "Coordination le Jour J", "desc": "Notre équipe est présente le jour de votre événement pour orchestrer chaque prestataire et vous permettre de vous concentrer sur vos participants." }
-      ]
+    "POURQUOI_NOUS": {
+      "EYEBROW": "Notre différence",
+      "TITLE": "Pourquoi choisir L'Événement Peter ?",
+      "GROUPES": [
+        {
+          "icon": "creative",
+          "label": "Expertise & créativité",
+          "items": [
+            "Innovation",
+            "Créativité sans limite",
+            "Compétence à toute épreuve"
+          ]
+        },
+        {
+          "icon": "globe",
+          "label": "Rayonnement international",
+          "items": [
+            "International",
+            "Réseau de partenaires",
+            "Flexibilité & Adaptabilité"
+          ]
+        },
+        {
+          "icon": "chat",
+          "label": "Relation client",
+          "items": [
+            "Confiance",
+            "Service client unique",
+            "Expertise multiculturelle"
+          ]
+        },
+        {
+          "icon": "home",
+          "label": "Entreprise familiale",
+          "items": [
+            "Stabilité",
+            "Entreprise familiale",
+            "Engagement personnel"
+          ]
+        }
+      ],
+      "CLOSING": "En choisissant L'Événement Peter, vous choisissez la compétence, l'innovation et la satisfaction totale. Faites confiance à notre expertise pour donner vie à votre vision et propulser votre société vers de nouveaux sommets."
     },
     "CTA": {
       "EYEBROW": "Parlons de votre projet",
       "TITLE1": "Organisons votre prochain",
-      "TITLE2": "séminaire en Bretagne",
+      "TITLE2": "évènement ensemble",
       "TEXT": "Date, nombre de participants, type d'événement, budget… Partagez-nous votre brief et recevez une proposition détaillée dans les 48 heures.",
-      "BTN": "Demander un devis"
+      "BTN": "Nous contacter"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Nos réalisations corporate",
+      "TITLE": "Quelques-uns de nos événements professionnels"
     }
   },
   "APROPOS": {
     "HERO": {
-      "EYEBROW": "Notre histoire · Rennes, Bretagne",
+      "EYEBROW": "Notre histoire",
       "TITLE1": "L'Événement Peter,",
       "TITLE2": "Votre Partenaire de Confiance",
-      "DESC": "Une agence fondée sur la passion, l'excellence et une connaissance profonde de la Bretagne. Rencontrons-nous."
+      "DESC": "Alix et Ingrid Peter, mère et fille, unissent leurs compétences pour créer des événements uniques. Une agence fondée sur la passion, l'excellence et une connaissance approfondie de notre territoire."
     },
     "MAIN": {
-      "IMG_ALT": "Peter & l'équipe",
-      "EYEBROW": "Qui sommes-nous",
-      "TITLE": "Une Agence Dédiée à Vos Événements les Plus Précieux",
-      "P1": "<strong>L'Événement Peter</strong> est votre partenaire événementiel de confiance pour organiser un mariage inoubliable. L'agence est basée en <strong>Bretagne</strong>, et son activité est entièrement consacrée à la création d'expériences mémorables pour les couples qui nous choisissent pour célébrer leur jour le plus exclusif et unique.",
-      "P2": "Notre équipe travaille avec passion : elle est expérimentée et s'engage à assurer un service haut de gamme et sur mesure. Nous choisir, c'est vous donner la certitude que votre mariage sera non seulement géré à la perfection, mais également à l'origine de souvenirs inoubliables.",
-      "P3": "Au-delà du mariage, L'Événement Peter accompagne aussi les entreprises pour leurs séminaires et événements corporate, ainsi que les familles pour des obsèques et cérémonies organisées avec dignité et soin. Chaque événement, qu'il soit de joie ou de recueillement, mérite la même attention et le même professionnalisme.",
-      "P4": "Découvrez vite notre ample gamme de prestations et laissez-nous vous accompagner pour créer une célébration unique !"
+      "IMG_ALT": "Ingrid & Alix Peter",
+      "EYEBROW": "Notre histoire",
+      "TITLE": "Alix et Ingrid Peter, Mère et Fille",
+      "P1": "<strong>Alix et Ingrid Peter</strong>, mère et fille, fort d'une relation fusionnelle, ont décidé de s'associer et de mettre en commun leurs compétences afin de créer L'Événement Peter — une société en événementiel qui saura tout mettre en œuvre pour rendre vos événements uniques.",
+      "P2": "Ingrid, forte d'une carrière internationale dans le commerce, a vécu de nombreuses années à l'étranger (USA, Russie, Canada). De retour en France, elle a décidé d'ouvrir un nouveau chapitre de sa vie. Spontanée, organisée et bienveillante, les valeurs familiales ont toujours été sa priorité.",
+      "P3": "Alix, née aux États-Unis, a habité dans de nombreux pays, développant ainsi une grande capacité d'adaptation. Après des études artistiques et une formation spécialisée en wedding planning, officiante de cérémonie et wedding design à la Breizh Wedding School, elle s'est lancée dans l'aventure aux côtés de sa mère.",
+      "P4": "Notre société n'a pas de frontière — nous nous ferons un plaisir de vous accompagner dans la réalisation de vos projets en France ou dans d'autres lieux plus exotiques. Bienvenue dans l'univers de L'Événement Peter !"
+    },
+    "TEAM": {
+      "EYEBROW": "Notre équipe",
+      "TITLE": "Diplômes & Formations",
+      "INGRID": {
+        "ROLE": "Cogérante",
+        "FORMATIONS": [
+          "École de commerce internationale",
+          "Bilingue — Advanced Certificate of Cambridge",
+          "DEUG de droit",
+          "Diplôme de conseiller funéraire"
+        ]
+      },
+      "ALIX": {
+        "ROLE": "Cogérante",
+        "FORMATIONS": [
+          "École de mode et vêtement",
+          "Formation Wedding Planner",
+          "Formation Officiante de cérémonie",
+          "Formation Wedding Designer",
+          "À Breizh Wedding School",
+          "École de design MJM – Visual Merchandiser",
+          "Formation conseillère en image"
+        ]
+      }
     },
     "VALEURS": {
       "EYEBROW": "Ce qui nous anime",
       "TITLE": "Nos Valeurs",
       "ITEMS": [
-        { "titre": "Excellence", "texte": "Nous ne transigeons jamais sur la qualité. Chaque prestataire, chaque détail est choisi avec soin pour atteindre l'excellence." },
-        { "titre": "Sur mesure", "texte": "Aucun événement ne ressemble à un autre. Chaque projet est unique et mérite une attention et une créativité sans compromis." },
-        { "titre": "Écoute", "texte": "Nous prenons le temps de vous connaître, de comprendre vos désirs profonds et de les traduire en réalité avec justesse." },
-        { "titre": "Sérénité", "texte": "Notre rôle est de porter l'organisation à votre place pour que vous puissiez vivre pleinement chaque instant de votre événement." }
+        {
+          "titre": "Innovation",
+          "texte": "Nous apportons de la créativité sans limite à chaque projet, proposant des concepts originaux et des expériences qui sortent de l'ordinaire."
+        },
+        {
+          "titre": "Excellence",
+          "texte": "Nous ne transigeons jamais sur la qualité. Chaque prestataire, chaque détail est choisi avec soin pour atteindre l'excellence."
+        },
+        {
+          "titre": "Flexibilité",
+          "texte": "Que vous rêviez d'une cérémonie traditionnelle, moderne, spirituelle ou non confessionnelle, nous nous adaptons à vos besoins et à votre vision."
+        },
+        {
+          "titre": "Famille & Confiance",
+          "texte": "Agence familiale, nous bâtissons une relation de confiance avec chaque client. Votre satisfaction et votre sérénité sont notre priorité absolue."
+        }
       ]
     },
     "LOCAL": {
       "EYEBROW": "Notre territoire",
-      "TITLE": "Ancrés en Bretagne, Passionnés par notre Région",
-      "P1": "La Bretagne est bien plus qu'un décor pour nous — c'est notre maison. Cette passion pour notre région se traduit dans chaque événement que nous organisons : nous connaissons les plus beaux lieux, les meilleurs artisans et prestataires locaux, les coins de carte postale qui feront de votre mariage une célébration authentiquement bretonne.",
-      "P2": "Basée à <strong>Rennes</strong>, notre agence intervient sur toute la Bretagne : Ille-et-Vilaine, Morbihan, Finistère et Côtes-d'Armor. Du château de bord de mer à la demeure de campagne, du centre de congrès rennais au domaine viticole breton, nous connaissons tous les lieux d'exception de la région.",
-      "IMG_ALT": "Bretagne",
+      "TITLE": "Ancrés à Rennes, Passionnés par notre Région",
+      "P1": "Notre région est bien plus qu'un décor pour nous — c'est notre maison. Cette passion pour notre région se traduit dans chaque événement que nous organisons : nous connaissons les plus beaux lieux, les meilleurs artisans et prestataires locaux, et les coins de carte postale qui feront de votre mariage une célébration inoubliable.",
+      "P2": "Basée à <strong>Rennes</strong>, notre agence intervient partout en France et à l'international. Du château de bord de mer à la demeure de campagne, du centre de congrès rennais au domaine viticole, nous connaissons tous les lieux d'exception.",
+      "IMG_ALT": "Rennes",
       "BTN": "Rencontrons-nous"
     },
     "CTA": {
       "EYEBROW": "Commençons ensemble",
       "TITLE1": "Votre événement mérite",
-      "TITLE2": "le meilleur de la Bretagne",
+      "TITLE2": "le meilleur de notre expertise",
       "BTN1": "Découvrir nos mariages",
       "BTN2": "Nous contacter"
     }
   },
   "CONTACT": {
     "HERO": {
-      "EYEBROW": "Agence événementielle · Bretagne & Rennes",
+      "EYEBROW": "Agence événementielle",
       "TITLE1": "Parlons de Votre",
       "TITLE2": "Projet Événementiel",
-      "DESC": "Mariage en Bretagne, séminaire à Rennes, décoration sur mesure… Partagez-nous votre projet. Nous vous répondons sous 48 heures avec une proposition personnalisée."
+      "DESC": "Mariage en France ou à l'étranger, séminaire, décoration sur mesure… Partagez-nous votre projet. Nous vous répondons sous 48 heures avec une proposition personnalisée."
     },
     "FORM": {
       "EYEBROW": "Demande de devis gratuit",
@@ -302,32 +543,555 @@
       "ERROR_TYPE": "Veuillez sélectionner un type",
       "ERROR_MESSAGE": "Message requis (20 caractères minimum)",
       "SUCCESS_TITLE": "Message envoyé !",
-      "SUCCESS_TEXT": "Merci pour votre message. Nous reviendrons vers vous sous 48 heures pour discuter de votre projet en Bretagne.",
+      "SUCCESS_TEXT": "Merci pour votre message. Nous reviendrons vers vous sous 48 heures pour discuter de votre projet.",
       "ERROR_SEND": "Une erreur est survenue. Merci de nous écrire directement à levenementpeter@gmail.com",
       "TYPES": [
-        "Mariage en Bretagne",
+        "Mariage & PACS",
+        "Officiante de cérémonie",
         "Design & Décoration mariage",
-        "Séminaire d'entreprise",
-        "Événement corporate",
+        "Fêtes adultes (Anniversaire, Divorce party, Soirée à thème…)",
+        "Fêtes enfants",
+        "Évènement interne (Séminaire, Team building, Fête de fin d'année…)",
+        "Image de marque (Soirée de gala, Inauguration, Remise de prix…)",
+        "Évènement marketing (Lancement de produits, Garden party…)",
         "Obsèques & cérémonie",
-        "Autre événement"
+        "Autre"
       ]
     },
     "INFO": {
       "EYEBROW": "Nous trouver",
       "TITLE": "L'Événement Peter",
       "ADDRESS_LABEL": "Adresse",
-      "ADDRESS": "Rennes, Bretagne",
-      "ADDRESS_SUB": "Interventions dans toute la Bretagne",
+      "ADDRESS": "Rennes, France",
+      "ADDRESS_SUB": "Interventions dans toute la France et à l'international",
       "PHONE_LABEL": "Téléphone",
       "EMAIL_LABEL": "Email",
       "HOURS_LABEL": "Horaires",
       "HOURS": "Lundi – Vendredi : 9h – 18h30<br>Samedi : 10h – 17h",
-      "NOTE": "Nous couvrons toute la Bretagne pour l'organisation de mariages, séminaires et événements à Rennes, Saint-Malo, Brest, Vannes, Lorient et dans toute la région."
+      "NOTE": "Basés à Rennes, nous intervenons partout en France et à l'international. Notre société n'a pas de frontière — contactez-nous où que vous soyez."
+    }
+  },
+  "GALERIE": {
+    "HERO": {
+      "EYEBROW": "Portfolio · L'Événement Peter",
+      "TITLE1": "Nos Réalisations",
+      "TITLE2": "en Images",
+      "DESC": "Explorez nos créations événementielles : mariages, séminaires, anniversaires, soirées à thème et bien plus encore. Chaque photo raconte une histoire unique."
+    },
+    "CATS": {
+      "EYEBROW": "Parcourir par thème",
+      "TITLE": "Choisissez une catégorie"
+    },
+    "BACK": "Toutes les catégories",
+    "PHOTO_COUNT": "{{count}} photos",
+    "PHOTO_LABEL": "Photo {{num}}",
+    "OPEN_CATEGORY": "Ouvrir {{name}}",
+    "CATEGORIES": {
+      "MARIAGE": {
+        "NAME": "Mariage & PACS",
+        "EYEBROW": "Particulier"
+      },
+      "SEMINAIRES": {
+        "NAME": "Séminaires & Corporate",
+        "EYEBROW": "Professionnel"
+      },
+      "ANNIVERSAIRE": {
+        "NAME": "Anniversaire",
+        "EYEBROW": "Particulier"
+      },
+      "SOIREES_THEME": {
+        "NAME": "Soirée à thème",
+        "EYEBROW": "Particulier"
+      },
+      "DIVORCE_PARTY": {
+        "NAME": "Divorce Party",
+        "EYEBROW": "Particulier"
+      },
+      "CEREMONIES": {
+        "NAME": "Cérémonies & Obsèques",
+        "EYEBROW": "Particulier"
+      }
+    },
+    "SEO": {
+      "TITLE": "Galerie Réalisations | L'Événement Peter",
+      "DESCRIPTION": "Découvrez nos réalisations : mariages en France, séminaires, anniversaires, soirées à thème et Divorce Parties. L'Événement Peter met son savoir-faire au service de vos événements.",
+      "KEYWORDS": "galerie mariage france, photos événements rennes, réalisations wedding planner, photos seminaire"
+    }
+  },
+  "OBSEQUES": {
+    "HERO": {
+      "EYEBROW": "Obsèques & Cérémonies",
+      "TITLE1": "Un accompagnement digne",
+      "TITLE2": "et bienveillant",
+      "DESC": "Parce que chaque vie mérite d'être célébrée avec respect et émotion, L'Événement Peter vous accompagne dans l'organisation de cérémonies funèbres personnalisées, à la hauteur de celui ou celle que vous avez perdu."
+    },
+    "INTRO": {
+      "EYEBROW": "Notre approche",
+      "TITLE": "Honorer une vie, à votre façon",
+      "P1": "Face à la perte d'un être cher, organiser une cérémonie représente une épreuve émotionnelle et logistique difficile. Chez L'Événement Peter, nous vous déchargeons de ce poids avec douceur, discrétion et professionnalisme, pour que vous puissiez vous concentrer pleinement sur le deuil et le recueillement.",
+      "P2": "Nous croyons que chaque cérémonie doit refléter la singularité de la personne disparue : ses goûts, ses passions, les moments qui ont marqué sa vie. Que vous souhaitiez une cérémonie intime en famille, une célébration de vie colorée et joyeuse, ou un moment sobre et recueilli, nous adaptons chaque détail à vos souhaits.",
+      "P3": "Vous n'êtes pas seul(e). Nous sommes là, à chaque étape."
+    },
+    "SERVICES": {
+      "EYEBROW": "Ce que nous prenons en charge",
+      "TITLE": "Nos services funèbres",
+      "ITEMS": [
+        {
+          "icon": "🕯️",
+          "title": "Cérémonie laïque",
+          "desc": "Rédaction et animation d'une cérémonie laïque personnalisée, avec lectures, musiques et témoignages choisis avec soin pour honorer la mémoire du défunt."
+        },
+        {
+          "icon": "🌿",
+          "title": "Célébration de vie",
+          "desc": "Une célébration positive et colorée qui raconte l'histoire, les passions et l'héritage de la personne disparue. Un adieu empreint d'amour et de lumière."
+        },
+        {
+          "icon": "📋",
+          "title": "Coordination complète",
+          "desc": "Prise en charge de la logistique : lieu, fleurs, musique, prestataires, programme. Vous n'avez qu'à être présent(e) et vivre le moment."
+        },
+        {
+          "icon": "🎵",
+          "title": "Musique & ambiance",
+          "desc": "Sélection musicale sur mesure, musiciens en live ou playlist soignée pour accompagner la cérémonie avec les morceaux qui avaient du sens pour lui ou elle."
+        },
+        {
+          "icon": "🌸",
+          "title": "Décoration florale",
+          "desc": "Compositions florales élaborées par notre équipe décoration, dans les couleurs et les fleurs préférées du défunt, pour un hommage visuel émouvant."
+        },
+        {
+          "icon": "💬",
+          "title": "Accompagnement & conseil",
+          "desc": "Nous vous guidons dans les choix difficiles avec bienveillance et sans jugement, à votre rythme, en respectant vos croyances et vos besoins."
+        }
+      ]
+    },
+    "ENGAGEMENTS": {
+      "EYEBROW": "Notre promesse",
+      "TITLE": "Nos engagements envers vous",
+      "ITEMS": [
+        {
+          "title": "Discrétion absolue",
+          "desc": "Chaque famille est unique. Nous travaillons dans la confidentialité et le respect total de votre intimité et de vos choix."
+        },
+        {
+          "title": "Disponibilité immédiate",
+          "desc": "Nous répondons rapidement à votre demande et nous adaptons à vos délais, même courts. Vous pouvez compter sur nous."
+        },
+        {
+          "title": "Personnalisation totale",
+          "desc": "Rien n'est standard. Chaque cérémonie est conçue sur mesure, à partir de vos souvenirs, de votre histoire et de vos volontés."
+        },
+        {
+          "title": "Accompagnement humain",
+          "desc": "Au-delà de la logistique, nous sommes là avec empathie et chaleur humaine. Vous n'êtes pas un client, vous êtes une famille."
+        }
+      ]
+    },
+    "CTA": {
+      "EYEBROW": "Nous sommes là pour vous",
+      "TITLE1": "Contactez-nous",
+      "TITLE2": "en toute confiance",
+      "TEXT": "Que ce soit en urgence ou en amont pour préparer une cérémonie, notre équipe vous répond avec bienveillance et discrétion. Échangeons ensemble.",
+      "BTN": "Nous contacter"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Nos cérémonies",
+      "TITLE": "Des cérémonies organisées avec soin et dignité"
+    }
+  },
+  "OFFICIANTE": {
+    "HERO": {
+      "EYEBROW": "Officiante de cérémonie · Bretagne & Monde",
+      "TITLE1": "Des cérémonies écrites",
+      "TITLE2": "pour vous ressembler",
+      "DESC": "L'Événement Peter célèbre vos moments de vie les plus précieux avec des cérémonies laïques personnalisées, rédigées et animées avec sincérité, émotion et élégance."
+    },
+    "INTRO": {
+      "EYEBROW": "Notre rôle",
+      "TITLE": "Bien plus qu'une animatrice — votre voix le temps d'un instant",
+      "P1": "Le rôle d'une <strong>officiante de cérémonie</strong> est de mettre des mots sur ce que vous ressentez. Lors de votre première rencontre, nous prenons le temps d'apprendre à vous connaître — vos histoires, vos émotions, ce qui vous définit — pour construire ensemble un discours qui vous ressemble à 100 %.",
+      "P2": "Chaque cérémonie est unique. Pas de texte générique, pas de script recyclé : tout est rédigé sur mesure, relu avec vous, ajusté jusqu'à ce que chaque mot soit juste.",
+      "P3": "Basée à Rennes, nous officions partout en Bretagne et à l'international.",
+      "IMG_ALT": "Officiante de cérémonie"
+    },
+    "CEREMONIES": {
+      "EYEBROW": "Pour chaque moment de vie",
+      "TITLE": "Les cérémonies que nous célébrons",
+      "ITEMS": [
+        {
+          "icon": "💍",
+          "title": "Mariage & PACS laïque",
+          "desc": "Une cérémonie laïque d'union profondément personnalisée, avec vœux, lectures, musiques et rituels choisis ensemble. Le plus beau jour de votre vie, raconté avec vos mots."
+        },
+        {
+          "icon": "🔄",
+          "title": "Renouvellement de vœux",
+          "desc": "Après 5, 10, 20 ans… renouveler ses vœux est un acte d'amour fort. Nous créons une cérémonie émouvante qui célèbre votre chemin parcouru ensemble."
+        },
+        {
+          "icon": "👶",
+          "title": "Naissance & baptême civil",
+          "desc": "Accueillez votre enfant dans votre famille avec une belle célébration laïque, entourés de vos proches. Un moment de joie et d'amour à graver dans les mémoires."
+        },
+        {
+          "icon": "🕯️",
+          "title": "Cérémonie d'obsèques",
+          "desc": "Un hommage digne, sincère et personnalisé pour honorer la mémoire d'un être cher. Nous travaillons main dans la main avec la famille pour créer un dernier au revoir à la hauteur de la personne disparue."
+        }
+      ]
+    },
+    "METHODE": {
+      "EYEBROW": "Comment ça se passe",
+      "TITLE": "De la rencontre à la cérémonie",
+      "STEPS": [
+        {
+          "num": "01",
+          "title": "La rencontre",
+          "desc": "Un premier échange en visio ou en personne pour apprendre à vous connaître, comprendre vos attentes et votre histoire."
+        },
+        {
+          "num": "02",
+          "title": "La rédaction",
+          "desc": "Nous rédigeons votre discours sur mesure, relisons ensemble et ajustons jusqu'à ce que chaque mot soit juste."
+        },
+        {
+          "num": "03",
+          "title": "La répétition",
+          "desc": "Une répétition sur place ou à distance pour valider le déroulé, le timing et les détails logistiques."
+        },
+        {
+          "num": "04",
+          "title": "La cérémonie",
+          "desc": "Le grand jour : nous animons votre cérémonie avec naturel, chaleur et professionnalisme, pour un moment inoubliable."
+        }
+      ]
+    },
+    "CTA": {
+      "EYEBROW": "Parlons de votre cérémonie",
+      "TITLE1": "Créons ensemble",
+      "TITLE2": "un moment inoubliable",
+      "TEXT": "Chaque cérémonie est unique. Contactez-nous pour en discuter et recevoir un devis personnalisé.",
+      "BTN": "Nous contacter"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Nos cérémonies",
+      "TITLE": "Des moments uniques célébrés avec soin"
+    }
+  },
+  "EV_INTERNE": {
+    "HERO": {
+      "EYEBROW": "Événements internes · Corporate & Entreprise",
+      "TITLE1": "Des événements internes",
+      "TITLE2": "qui marquent vos équipes",
+      "DESC": "Soirée de gala, inauguration, remise de prix, team-building… L'Événement Peter conçoit des événements d'entreprise d'exception qui fédèrent, motivent et créent du lien."
+    },
+    "INTRO": {
+      "EYEBROW": "Notre approche",
+      "TITLE": "Un événement à votre image, pour vos équipes",
+      "P1": "Un événement interne réussi n'est pas simplement une soirée bien organisée : c'est un <strong>moment stratégique</strong> pour votre entreprise. Il renforce la cohésion, valorise vos collaborateurs et transmet vos valeurs. C'est un investissement dans votre culture d'entreprise.",
+      "P2": "Chez L'Événement Peter, nous prenons en charge l'intégralité de l'organisation : du concept créatif à la coordination le jour J, en passant par la sélection des prestataires, la décoration et la gestion logistique.",
+      "IMG_ALT": "Événement d'entreprise"
+    },
+    "EVENTS": {
+      "EYEBROW": "Ce que nous organisons",
+      "TITLE": "Nos événements internes",
+      "ITEMS": [
+        {
+          "icon": "✨",
+          "title": "Soirée de gala",
+          "desc": "Une soirée d'exception pour récompenser vos équipes, célébrer une réussite ou marquer une étape clé. Tapis rouge, décoration luxueuse, dîner gastronomique et animation haut de gamme."
+        },
+        {
+          "icon": "🏛️",
+          "title": "Inauguration",
+          "desc": "Nouveau siège, nouvelle agence, ouverture d'un site… Nous orchestrons votre inauguration pour qu'elle soit mémorable : coupé de ruban, cocktail, discours et animation."
+        },
+        {
+          "icon": "🏆",
+          "title": "Remise de prix & trophées",
+          "desc": "Valorisez vos talents avec une cérémonie de remise de prix élégante et bien rythmée. Scénographie, discours, remise de trophées, cocktail dînatoire… nous gérons tout."
+        },
+        {
+          "icon": "🤝",
+          "title": "Team-building",
+          "desc": "Des activités originales et sur mesure pour renforcer la cohésion d'équipe : ateliers créatifs, défis collectifs, escape game géant, activités outdoor en Bretagne."
+        },
+        {
+          "icon": "🎄",
+          "title": "Fête de fin d'année",
+          "desc": "Clôturez l'année avec panache ! Nous créons une soirée festive et conviviale qui réunit vos collaborateurs dans une atmosphère chaleureuse et mémorable."
+        },
+        {
+          "icon": "🥂",
+          "title": "Cocktail & afterwork",
+          "desc": "Réunion d'équipe, célébration d'un succès, accueil de nouveaux collaborateurs… Des moments conviviaux organisés avec soin pour créer du lien."
+        }
+      ]
+    },
+    "AVANTAGES": {
+      "EYEBROW": "Pourquoi nous faire confiance",
+      "TITLE": "Ce qui fait notre différence",
+      "ITEMS": [
+        {
+          "icon": "🎯",
+          "title": "Écoute & sur mesure",
+          "desc": "Chaque entreprise est unique. Nous co-construisons votre événement selon vos objectifs, votre culture et votre budget."
+        },
+        {
+          "icon": "🌍",
+          "title": "Réseau international",
+          "desc": "Basés à Rennes, nous intervenons partout en France et à l'international avec un réseau de prestataires premium sélectionnés."
+        },
+        {
+          "icon": "⚡",
+          "title": "Réactivité & fiabilité",
+          "desc": "Délais respectés, coordination sans faille, gestion des imprévus. Vous pouvez compter sur nous le jour J comme en amont."
+        },
+        {
+          "icon": "💡",
+          "title": "Créativité & innovation",
+          "desc": "Des concepts frais, des animations originales et une scénographie soignée pour surprendre vos collaborateurs et marquer les esprits."
+        }
+      ]
+    },
+    "CTA": {
+      "EYEBROW": "Organisons votre prochain événement",
+      "TITLE1": "Un projet en tête ?",
+      "TITLE2": "Parlons-en ensemble",
+      "TEXT": "Séminaire, gala, remise de prix… Partagez votre projet et recevez une proposition sur mesure.",
+      "BTN": "Demander un devis"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Nos réalisations corporate",
+      "TITLE": "Soirées de gala, inaugurations & remises de prix"
+    }
+  },
+  "IMAGE_MARQUE": {
+    "HERO": {
+      "EYEBROW": "Image de marque · Brand Events",
+      "TITLE1": "Des événements qui incarnent",
+      "TITLE2": "votre identité",
+      "DESC": "Lancement de produit, soirée presse, expérience de marque, événement influenceurs… L'Événement Peter crée des événements qui rayonnent votre marque et marquent les esprits."
+    },
+    "INTRO": {
+      "EYEBROW": "Notre vision",
+      "TITLE": "L'événement comme extension de votre marque",
+      "P1": "Un événement de marque réussi n'est pas simplement un beau moment : c'est une <strong>expérience immersive</strong> qui incarne vos valeurs, raconte votre histoire et crée un lien émotionnel fort avec votre audience. Chaque détail — du lieu à la scénographie, en passant par le discours et l'ambiance — doit être l'exact reflet de qui vous êtes.",
+      "P2": "L'Événement Peter travaille en totale cohérence avec votre identité de marque, vos guidelines et vos objectifs de communication pour créer des événements à fort impact."
+    },
+    "EVENTS": {
+      "EYEBROW": "Nos spécialités",
+      "TITLE": "Événements image de marque",
+      "ITEMS": [
+        {
+          "icon": "🚀",
+          "title": "Lancement de produit / collection",
+          "desc": "Révélez votre nouveau produit ou collection avec un événement qui crée l'attente et génère de l'impact. Scénographie théâtrale, démonstrations live, press kit, couverture médias."
+        },
+        {
+          "icon": "📰",
+          "title": "Soirée presse & médias",
+          "desc": "Invitez journalistes, blogueurs et influenceurs à découvrir votre marque dans un cadre d'exception. Relations presse intégrées, dossier de presse, contenus médias."
+        },
+        {
+          "icon": "✨",
+          "title": "Expérience de marque",
+          "desc": "Showroom éphémère, pop-up immersif, brand activation… Créez une expérience sensorielle unique qui plonge vos audiences dans l'univers de votre marque."
+        },
+        {
+          "icon": "🤝",
+          "title": "Soirée partenaires & clients",
+          "desc": "Chouchoutez vos partenaires stratégiques et clients VIP avec une soirée exclusive qui renforce la relation et valorise leur engagement."
+        },
+        {
+          "icon": "📱",
+          "title": "Événement influenceurs",
+          "desc": "Rassemblez votre communauté d'influenceurs autour d'une expérience unique, instagrammable et mémorable pour démultiplier la visibilité de votre marque."
+        },
+        {
+          "icon": "🏢",
+          "title": "Conférence de marque",
+          "desc": "Keynote, table ronde, présentation annuelle… Nous scénarisons votre prise de parole pour qu'elle soit impactante, mémorable et parfaitement en phase avec votre image."
+        }
+      ]
+    },
+    "VISION": {
+      "EYEBROW": "Notre approche",
+      "TITLE": "Aligner événement et identité",
+      "ITEMS": [
+        {
+          "title": "Cohérence de marque",
+          "desc": "Chaque détail de l'événement est pensé en cohérence avec votre charte graphique, vos valeurs et votre positionnement."
+        },
+        {
+          "title": "Impact & mémorabilité",
+          "desc": "Nous concevons des expériences qui marquent les esprits, créent de l'émotion et génèrent du bouche-à-oreille positif."
+        },
+        {
+          "title": "Couverture & contenus",
+          "desc": "Nous anticipons les temps forts pour maximiser la couverture photo/vidéo et la création de contenus pour vos réseaux."
+        }
+      ]
+    },
+    "CTA": {
+      "EYEBROW": "Donnons vie à votre marque",
+      "TITLE1": "Un projet brand event ?",
+      "TITLE2": "Parlons-en",
+      "TEXT": "Lancement, soirée presse, expérience de marque… Partagez votre brief et recevons une proposition créative.",
+      "BTN": "Nous contacter"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Nos réalisations",
+      "TITLE": "Événements image de marque — nos créations"
+    }
+  },
+  "EV_MARKETING": {
+    "HERO": {
+      "EYEBROW": "Événements marketing & communication",
+      "TITLE1": "Des événements qui génèrent",
+      "TITLE2": "de l'impact",
+      "DESC": "Salon professionnel, road show, activation de marque, conférence, journée clients… L'Événement Peter conçoit des événements marketing qui atteignent vos objectifs et dépassent vos attentes."
+    },
+    "INTRO": {
+      "EYEBROW": "Notre expertise",
+      "TITLE": "L'événement au service de votre stratégie",
+      "P1": "Un événement marketing bien conçu est l'un des leviers les plus puissants pour <strong>générer des leads</strong>, <strong>fidéliser vos clients</strong> et <strong>accroître la notoriété</strong> de votre marque. Mais son efficacité dépend entièrement de sa conception, de son exécution et de la mesure de ses résultats.",
+      "P2": "L'Événement Peter vous accompagne de la stratégie au débrief, en passant par la production, la logistique et la communication. Nous travaillons comme une extension de votre équipe marketing.",
+      "IMG_ALT": "Événement marketing"
+    },
+    "EVENTS": {
+      "EYEBROW": "Ce que nous organisons",
+      "TITLE": "Nos événements marketing",
+      "ITEMS": [
+        {
+          "icon": "🏛️",
+          "title": "Salon professionnel",
+          "desc": "Conception et gestion de votre stand ou participation à un salon : design, logistique, animation, accueil des visiteurs et suivi des leads générés."
+        },
+        {
+          "icon": "🚌",
+          "title": "Road show",
+          "desc": "Déployez votre message dans plusieurs villes ou pays avec un road show clé en main : concept itinérant, logistique multi-sites, cohérence de marque."
+        },
+        {
+          "icon": "⚡",
+          "title": "Activation de marque",
+          "desc": "Expériences interactives en point de vente, dans des espaces publics ou lors d'événements tiers pour créer de la surprise et de l'engagement."
+        },
+        {
+          "icon": "🎤",
+          "title": "Conférence & Summit",
+          "desc": "Organisation complète de vos conférences, forums et summits : programme, intervenants, salle, diffusion live, contenus post-événement."
+        },
+        {
+          "icon": "🤝",
+          "title": "Journée clients",
+          "desc": "Fidélisez vos clients avec une journée dédiée : workshops, ateliers pratiques, visites exclusives, déjeuner de prestige et expériences mémorables."
+        },
+        {
+          "icon": "📊",
+          "title": "Événement de lancement",
+          "desc": "Lancement d'une offre, d'un service ou d'un partenariat : événement de présentation avec prise de parole, démonstrations et couverture médias."
+        }
+      ]
+    },
+    "IMPACT": {
+      "EYEBROW": "Pourquoi L'Événement Peter",
+      "TITLE": "Des événements qui performent",
+      "ITEMS": [
+        {
+          "icon": "🎯",
+          "title": "Objectifs définis",
+          "desc": "Chaque événement est conçu autour d'objectifs mesurables : leads, notoriété, engagement, fidélisation."
+        },
+        {
+          "icon": "🌍",
+          "title": "Portée internationale",
+          "desc": "Nous intervenons en France et à l'international avec un réseau de partenaires locaux de confiance."
+        },
+        {
+          "icon": "⚡",
+          "title": "Exécution sans faille",
+          "desc": "Planning rigoureux, anticipation des risques, coordination le jour J pour un résultat à la hauteur."
+        },
+        {
+          "icon": "📈",
+          "title": "Retour sur investissement",
+          "desc": "Nous mesurons l'impact de vos événements et vous fournissons un bilan complet post-événement."
+        }
+      ]
+    },
+    "CTA": {
+      "EYEBROW": "Boostez votre stratégie marketing",
+      "TITLE1": "Un événement marketing",
+      "TITLE2": "à fort impact ?",
+      "TEXT": "Salon, road show, conférence… Partagez votre brief et recevez une proposition stratégique sur mesure.",
+      "BTN": "Demander un devis"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Nos réalisations",
+      "TITLE": "Événements marketing & communication"
+    }
+  },
+  "FETES": {
+    "HERO": {
+      "EYEBROW": "Fêtes & Célébrations · Sur mesure",
+      "TITLE1": "Fêtes & Célébrations",
+      "TITLE2": "Des Moments Inoubliables",
+      "DESC": "De l'anniversaire à la Divorce Party en passant par les soirées à thème, L'Événement Peter crée des célébrations uniques et mémorables, entièrement personnalisées selon vos désirs."
+    },
+    "WELCOME": {
+      "EYEBROW": "Notre philosophie",
+      "TITLE": "L'art de célébrer la vie, à votre façon",
+      "P1": "Chaque moment de votre vie mérite d'être célébré avec intention et créativité. Chez L'Événement Peter, nous comprenons que derrière chaque fête se cache une histoire, une émotion, une envie de partager quelque chose d'unique avec ceux qui vous sont chers.",
+      "P2": "Que vous planifiiez un anniversaire mémorable, une Divorce Party extravagante pour tourner la page avec panache, ou une soirée à thème immersive, notre équipe passionnée vous accompagne à chaque étape. Décoration sur mesure, animations, traiteur, ambiance musicale… nous orchestrons chaque détail pour que vous n'ayez plus qu'à profiter.",
+      "P3": "Ensemble, transformons vos idées en un événement qui vous ressemble — et dont vous vous souviendrez toute votre vie."
+    },
+    "OFFRES": {
+      "EYEBROW": "Nos formules",
+      "TITLE": "Nos Formules de Célébration",
+      "ITEMS": [
+        {
+          "icon": "🎂",
+          "title": "Anniversaire",
+          "desc": "Que vous fêtiez vos 18 ans, vos 40 ans ou vos noces d'or, chaque anniversaire mérite d'être célébré avec éclat. Nous organisons votre fête de A à Z : décoration sur mesure, animation, traiteur, musique… Une célébration entièrement à votre image."
+        },
+        {
+          "icon": "🥂",
+          "title": "Divorce Party",
+          "desc": "Tournez la page avec style et élégance ! Une Divorce Party est l'occasion parfaite de célébrer votre nouvelle liberté avec vos proches. Notre équipe crée une soirée festive, décomplexée et mémorable pour commencer ce nouveau chapitre avec panache."
+        },
+        {
+          "icon": "🎭",
+          "title": "Soirée à thème",
+          "desc": "Des années folles aux tropiques, du cinéma au voyage dans le temps… Nous transformons votre vision en une expérience immersive totale. Décors, animations, gastronomie : chaque détail est pensé pour vous plonger dans un autre univers."
+        }
+      ]
+    },
+    "THEME": {
+      "EYEBROW": "Soirée à thème",
+      "TITLE": "Vivez une Expérience Unique et Immersive",
+      "P1": "Imaginez-vous transporté dans un monde où chaque détail est méticuleusement orchestré pour vous immerger dans une expérience unique. Que vous rêviez d'une soirée élégante inspirée des années folles, d'une fête exotique sous les tropiques, ou d'une célébration en hommage à votre film préféré, nous réalisons vos désirs avec créativité.",
+      "P2": "Nos experts en événementiel travaillent en étroite collaboration avec vous pour donner vie à vos idées les plus audacieuses. De la conception initiale à l'exécution finale, nous mettons tout en œuvre pour que votre soirée soit à la hauteur de vos attentes, voire même les dépasser.",
+      "P3": "Chaque détail est soigneusement pris en compte, de la décoration époustouflante à la sélection de plats et de boissons, en passant par le divertissement qui animera votre soirée du début à la fin.",
+      "P4": "Contactez-nous dès aujourd'hui pour commencer à planifier votre soirée de rêve !"
+    },
+    "CTA": {
+      "EYEBROW": "Commençons ensemble",
+      "TITLE1": "Prêt(e) à créer votre",
+      "TITLE2": "célébration inoubliable ?",
+      "BTN": "Nous Contacter"
+    },
+    "CAROUSEL": {
+      "EYEBROW": "Nos réalisations fêtes",
+      "TITLE": "Anniversaires, Divorce Parties & Soirées à thème"
     }
   },
   "FOOTER": {
-    "TAGLINE": "Votre partenaire événementiel haut de gamme en Bretagne. Mariages, séminaires, décoration et bien plus encore.",
+    "TAGLINE": "Votre partenaire événementiel haut de gamme, basé à Rennes et actif partout dans le monde. Mariages, séminaires, décoration et bien plus encore.",
     "ENGLISH_SPOKEN": "Services disponibles en anglais",
     "NAV_TITLE": "Navigation",
     "SERVICES_TITLE": "Prestations",
@@ -338,10 +1102,134 @@
     "SERVICE_SEM": "Séminaires d'entreprise",
     "SERVICE_CORP": "Événements corporate",
     "SERVICE_OBSEQUES": "Obsèques & cérémonies",
-    "ADDRESS": "Rennes, Bretagne",
+    "SERVICE_FETES": "Fêtes & célébrations",
+    "ADDRESS": "Rennes, France",
     "HOURS": "Lun–Ven : 9h–18h30 · Sam : 10h–17h",
-    "COPYRIGHT": "© {{year}} L'Événement Peter — Agence événementielle Bretagne & Rennes. Tous droits réservés.",
+    "COPYRIGHT": "© {{year}} L'Événement Peter — Agence événementielle basée à Rennes. Tous droits réservés.",
     "MENTIONS": "Mentions légales",
-    "CONFIDENTIALITE": "Politique de confidentialité"
+    "CONFIDENTIALITE": "Politique de confidentialité",
+    "LOGO_ALT": "L'Événement Peter — Agence événementielle",
+    "SOCIAL_INSTAGRAM": "Instagram",
+    "SOCIAL_FACEBOOK": "Facebook"
+  },
+  "HEADER": {
+    "LOGO_ALT": "L'Événement Peter — Agence événementielle",
+    "NAVIGATION_LABEL": "Navigation principale",
+    "LANG_FR": "FR",
+    "LANG_EN": "EN",
+    "LANG_FR_LABEL": "Passer en français",
+    "LANG_EN_LABEL": "Passer en anglais",
+    "MENU_LABEL": "Menu"
+  },
+  "PHOTO_CAROUSEL": {
+    "PREVIOUS": "Précédent",
+    "NEXT": "Suivant",
+    "PHOTO_LABEL": "Photo {{num}}"
+  },
+  "LEGAL": {
+    "HERO": {
+      "EYEBROW": "Informations légales",
+      "TITLE": "Mentions Légales",
+      "DESC": "Conformément à la loi n° 2004-575 du 21 juin 2004 pour la Confiance dans l'Économie Numérique (LCEN)."
+    },
+    "SECTION1": {
+      "TITLE": "1. Éditeur du site",
+      "ITEMS": [
+        {
+          "label": "Dénomination sociale :",
+          "value": "L'Événement Peter"
+        },
+        {
+          "label": "Forme juridique :",
+          "value": "Société à Responsabilité Limitée (SARL)"
+        },
+        {
+          "label": "SIREN :",
+          "value": "931 366 942"
+        },
+        {
+          "label": "SIRET (siège social) :",
+          "value": "931 366 942 00023"
+        },
+        {
+          "label": "Numéro de TVA intracommunautaire :",
+          "value": "FR27931366942"
+        },
+        {
+          "label": "Code APE/NAF :",
+          "value": "8230Z – Organisation de foires, salons professionnels et congrès"
+        },
+        {
+          "label": "Date de création :",
+          "value": "24 juillet 2024"
+        },
+        {
+          "label": "Siège social :",
+          "value": "35 rue François-Désiré Roulin, 35000 Rennes, France"
+        },
+        {
+          "label": "Téléphone :",
+          "value": "<a href=\"tel:+33652583724\">06 52 58 37 24</a>"
+        },
+        {
+          "label": "Email :",
+          "value": "<a href=\"mailto:levenementpeter@gmail.com\">levenementpeter@gmail.com</a>"
+        },
+        {
+          "label": "Dirigeants :",
+          "value": "Ingrid GAUCHENOT et Alix PETER"
+        }
+      ]
+    },
+    "SECTION2": {
+      "TITLE": "2. Directeur de la publication",
+      "TEXTS": [
+        "Clervie CAUSER",
+        "Pour toute question relative au contenu du site : <a href=\"mailto:levenementpeter@gmail.com\">levenementpeter@gmail.com</a>"
+      ]
+    },
+    "SECTION3": {
+      "TITLE": "3. Hébergeur du site",
+      "ITEMS": [
+        {
+          "label": "Société :",
+          "value": "Vercel Inc."
+        },
+        {
+          "label": "Adresse :",
+          "value": "340 Pine Street, Suite 701, San Francisco, CA 94104, États-Unis"
+        },
+        {
+          "label": "Site web :",
+          "value": "<a href=\"https://vercel.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://vercel.com</a>"
+        }
+      ]
+    },
+    "SECTION4": {
+      "TITLE": "4. Propriété intellectuelle",
+      "TEXTS": [
+        "L'ensemble du contenu de ce site (textes, images, logos, photographies, vidéos, illustrations, structure) est la propriété exclusive de L'Événement Peter ou de ses partenaires, et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle.",
+        "Toute reproduction, représentation, modification, publication ou adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans l'autorisation préalable écrite de L'Événement Peter, sous peine de poursuites judiciaires."
+      ]
+    },
+    "SECTION5": {
+      "TITLE": "5. Liens hypertextes",
+      "TEXTS": [
+        "Le site peut contenir des liens vers des sites tiers. L'Événement Peter ne peut être tenu responsable du contenu de ces sites externes et de leur politique de confidentialité. La création de liens vers le site de L'Événement Peter est soumise à autorisation préalable."
+      ]
+    },
+    "SECTION6": {
+      "TITLE": "6. Limitation de responsabilité",
+      "TEXTS": [
+        "L'Événement Peter s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Cependant, elle ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition et décline toute responsabilité pour tout dommage résultant d'une information inexacte ou incomplète."
+      ]
+    },
+    "SECTION7": {
+      "TITLE": "7. Droit applicable",
+      "TEXTS": [
+        "Les présentes mentions légales sont soumises au droit français. En cas de litige, les tribunaux français seront seuls compétents.",
+        "<em>Dernière mise à jour : juin 2026</em>"
+      ]
+    }
   }
 }

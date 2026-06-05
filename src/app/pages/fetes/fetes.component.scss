@@ -1,0 +1,62 @@
+.page-hero em { font-style: italic; color: var(--color-gold); }
+
+/* Welcome section */
+.fetes-welcome {
+  max-width: 860px;
+  margin-inline: auto;
+
+  p {
+    line-height: 1.9;
+    margin-top: 1.2rem;
+    font-size: 0.97rem;
+  }
+
+  &__closing {
+    margin-top: 1.8rem !important;
+    font-style: italic;
+    color: var(--color-black);
+    font-weight: 500;
+  }
+}
+
+/* Offers grid */
+.fetes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  @media (max-width: 800px) { grid-template-columns: 1fr; }
+}
+
+.fete-card {
+  padding: 2.4rem 2rem;
+  border: 1px solid var(--color-gray-light);
+  transition: border-color var(--ease), box-shadow var(--ease);
+  text-align: center;
+
+  &:hover {
+    border-color: var(--color-gold-light);
+    box-shadow: 0 6px 30px rgba(0,0,0,0.07);
+  }
+
+  &__icon {
+    display: block;
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  &__title {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    color: var(--color-black);
+  }
+
+  &__desc {
+    font-size: 0.9rem;
+    line-height: 1.75;
+    color: var(--color-text-light);
+  }
+}
+
+/* CTA */
+h2 em { font-style: italic; color: var(--color-gold); }

@@ -1,0 +1,83 @@
+<!-- ===== HERO ===== -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-eyebrow">{{ 'OFFICIANTE.HERO.EYEBROW' | translate }}</span>
+    <h1>{{ 'OFFICIANTE.HERO.TITLE1' | translate }}<br><em>{{ 'OFFICIANTE.HERO.TITLE2' | translate }}</em></h1>
+    <span class="gold-line" style="margin-block:1.5rem"></span>
+    <p>{{ 'OFFICIANTE.HERO.DESC' | translate }}</p>
+  </div>
+</section>
+
+<!-- ===== INTRO ===== -->
+<section class="section section--cream">
+  <div class="container off-intro">
+    <div>
+      <span class="section-eyebrow">{{ 'OFFICIANTE.INTRO.EYEBROW' | translate }}</span>
+      <h2>{{ 'OFFICIANTE.INTRO.TITLE' | translate }}</h2>
+      <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
+      <p [innerHTML]="'OFFICIANTE.INTRO.P1' | translate"></p>
+      <p style="margin-top:1rem">{{ 'OFFICIANTE.INTRO.P2' | translate }}</p>
+      <p style="margin-top:1rem">{{ 'OFFICIANTE.INTRO.P3' | translate }}</p>
+    </div>
+    <div class="image-placeholder" aria-hidden="true">
+      <span class="section-eyebrow" style="margin:0">{{ 'OFFICIANTE.INTRO.IMG_ALT' | translate }}</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TYPES DE CÉRÉMONIES ===== -->
+<section class="section" aria-labelledby="ceremonies-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">{{ 'OFFICIANTE.CEREMONIES.EYEBROW' | translate }}</span>
+      <h2 id="ceremonies-title">{{ 'OFFICIANTE.CEREMONIES.TITLE' | translate }}</h2>
+      <span class="gold-line"></span>
+    </div>
+    <div class="ceremonies-grid">
+      @for (c of ('OFFICIANTE.CEREMONIES.ITEMS' | translate); track c.title) {
+        <div class="ceremony-card">
+          <span class="ceremony-card__icon">{{ c.icon }}</span>
+          <h3 class="ceremony-card__title">{{ c.title }}</h3>
+          <p class="ceremony-card__desc">{{ c.desc }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ===== NOTRE MÉTHODE ===== -->
+<section class="section section--dark" aria-labelledby="methode-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">{{ 'OFFICIANTE.METHODE.EYEBROW' | translate }}</span>
+      <h2 id="methode-title">{{ 'OFFICIANTE.METHODE.TITLE' | translate }}</h2>
+      <span class="gold-line"></span>
+    </div>
+    <div class="methode-steps">
+      @for (s of ('OFFICIANTE.METHODE.STEPS' | translate); track s.num; let last = $last) {
+        <div class="methode-step">
+          <div class="methode-step__num">{{ s.num }}</div>
+          <h3>{{ s.title }}</h3>
+          <p>{{ s.desc }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<app-photo-carousel
+  [eyebrow]="'OFFICIANTE.CAROUSEL.EYEBROW' | translate"
+  [title]="'OFFICIANTE.CAROUSEL.TITLE' | translate"
+  [count]="5">
+</app-photo-carousel>
+
+<!-- ===== CTA ===== -->
+<section class="section">
+  <div class="container" style="text-align:center">
+    <span class="section-eyebrow">{{ 'OFFICIANTE.CTA.EYEBROW' | translate }}</span>
+    <h2>{{ 'OFFICIANTE.CTA.TITLE1' | translate }}<br><em>{{ 'OFFICIANTE.CTA.TITLE2' | translate }}</em></h2>
+    <span class="gold-line" style="margin-block:1.5rem"></span>
+    <p style="max-width:520px;margin-inline:auto;margin-bottom:2rem">{{ 'OFFICIANTE.CTA.TEXT' | translate }}</p>
+    <a routerLink="/contact" class="btn btn--gold">{{ 'OFFICIANTE.CTA.BTN' | translate }}</a>
+  </div>
+</section>

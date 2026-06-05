@@ -1,0 +1,82 @@
+<!-- ===== HERO ===== -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-eyebrow">{{ 'EV_INTERNE.HERO.EYEBROW' | translate }}</span>
+    <h1>{{ 'EV_INTERNE.HERO.TITLE1' | translate }}<br><em>{{ 'EV_INTERNE.HERO.TITLE2' | translate }}</em></h1>
+    <span class="gold-line" style="margin-block:1.5rem"></span>
+    <p>{{ 'EV_INTERNE.HERO.DESC' | translate }}</p>
+  </div>
+</section>
+
+<!-- ===== INTRO ===== -->
+<section class="section section--cream">
+  <div class="container ev-intro">
+    <div>
+      <span class="section-eyebrow">{{ 'EV_INTERNE.INTRO.EYEBROW' | translate }}</span>
+      <h2>{{ 'EV_INTERNE.INTRO.TITLE' | translate }}</h2>
+      <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
+      <p [innerHTML]="'EV_INTERNE.INTRO.P1' | translate"></p>
+      <p style="margin-top:1rem">{{ 'EV_INTERNE.INTRO.P2' | translate }}</p>
+    </div>
+    <div class="image-placeholder" aria-hidden="true">
+      <span class="section-eyebrow" style="margin:0">{{ 'EV_INTERNE.INTRO.IMG_ALT' | translate }}</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NOS ÉVÉNEMENTS ===== -->
+<section class="section" aria-labelledby="ev-interne-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">{{ 'EV_INTERNE.EVENTS.EYEBROW' | translate }}</span>
+      <h2 id="ev-interne-title">{{ 'EV_INTERNE.EVENTS.TITLE' | translate }}</h2>
+      <span class="gold-line"></span>
+    </div>
+    <div class="events-grid">
+      @for (e of ('EV_INTERNE.EVENTS.ITEMS' | translate); track e.title) {
+        <div class="event-card">
+          <span class="event-card__icon">{{ e.icon }}</span>
+          <h3>{{ e.title }}</h3>
+          <p>{{ e.desc }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ===== POURQUOI NOUS ===== -->
+<section class="section section--dark" aria-labelledby="avantages-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">{{ 'EV_INTERNE.AVANTAGES.EYEBROW' | translate }}</span>
+      <h2 id="avantages-title">{{ 'EV_INTERNE.AVANTAGES.TITLE' | translate }}</h2>
+      <span class="gold-line"></span>
+    </div>
+    <div class="avantages-grid">
+      @for (a of ('EV_INTERNE.AVANTAGES.ITEMS' | translate); track a.title) {
+        <div class="avantage-card">
+          <span class="avantage-card__icon">{{ a.icon }}</span>
+          <h3>{{ a.title }}</h3>
+          <p>{{ a.desc }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<app-photo-carousel
+  [eyebrow]="'EV_INTERNE.CAROUSEL.EYEBROW' | translate"
+  [title]="'EV_INTERNE.CAROUSEL.TITLE' | translate"
+  [count]="5">
+</app-photo-carousel>
+
+<!-- ===== CTA ===== -->
+<section class="section">
+  <div class="container" style="text-align:center">
+    <span class="section-eyebrow">{{ 'EV_INTERNE.CTA.EYEBROW' | translate }}</span>
+    <h2>{{ 'EV_INTERNE.CTA.TITLE1' | translate }}<br><em>{{ 'EV_INTERNE.CTA.TITLE2' | translate }}</em></h2>
+    <span class="gold-line" style="margin-block:1.5rem"></span>
+    <p style="max-width:520px;margin-inline:auto;margin-bottom:2rem">{{ 'EV_INTERNE.CTA.TEXT' | translate }}</p>
+    <a routerLink="/contact" class="btn btn--gold">{{ 'EV_INTERNE.CTA.BTN' | translate }}</a>
+  </div>
+</section>

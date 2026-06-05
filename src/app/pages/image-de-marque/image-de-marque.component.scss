@@ -1,0 +1,59 @@
+.page-hero em { font-style: italic; color: var(--color-gold); }
+
+.brand-intro {
+  max-width: 860px;
+  margin-inline: auto;
+  p { line-height: 1.9; margin-top: 1.2rem; font-size: 0.97rem; }
+  strong { color: var(--color-black); font-weight: 500; }
+}
+
+.brand-events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  @media (max-width: 900px) { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 560px) { grid-template-columns: 1fr; }
+}
+
+.brand-card {
+  padding: 2.4rem 2rem;
+  border: 1px solid var(--color-gray-light);
+  transition: border-color var(--ease), box-shadow var(--ease);
+
+  &:hover {
+    border-color: var(--color-gold-light);
+    box-shadow: 0 6px 30px rgba(0,0,0,0.07);
+  }
+
+  &__icon { display: block; font-size: 1.8rem; margin-bottom: 1rem; }
+  &__title { font-size: 1.05rem; margin-bottom: 0.7rem; }
+  &__desc { font-size: 0.9rem; line-height: 1.75; color: var(--color-text-light); }
+}
+
+.vision-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  @media (max-width: 700px) { grid-template-columns: 1fr; }
+}
+
+.vision-item {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border: 1px solid rgba(201,168,68,0.2);
+
+  &__icon {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gold);
+  }
+
+  h3 { font-size: 0.95rem; margin-bottom: 0.6rem; color: var(--color-white); }
+  p  { font-size: 0.87rem; line-height: 1.7; color: rgba(255,255,255,0.65); }
+}
+
+h2 em { font-style: italic; color: var(--color-gold); }

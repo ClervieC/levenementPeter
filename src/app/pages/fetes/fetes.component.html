@@ -1,0 +1,57 @@
+<!-- ===== HERO ===== -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-eyebrow">{{ 'FETES.HERO.EYEBROW' | translate }}</span>
+    <h1>{{ 'FETES.HERO.TITLE1' | translate }}<br><em>{{ 'FETES.HERO.TITLE2' | translate }}</em></h1>
+    <span class="gold-line" style="margin-block:1.5rem"></span>
+    <p>{{ 'FETES.HERO.DESC' | translate }}</p>
+  </div>
+</section>
+
+<!-- ===== BIENVENUE ===== -->
+<section class="section section--cream" aria-labelledby="welcome-title">
+  <div class="container fetes-welcome">
+    <span class="section-eyebrow">{{ 'FETES.WELCOME.EYEBROW' | translate }}</span>
+    <h2 id="welcome-title">{{ 'FETES.WELCOME.TITLE' | translate }}</h2>
+    <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
+    <p>{{ 'FETES.WELCOME.P1' | translate }}</p>
+    <p>{{ 'FETES.WELCOME.P2' | translate }}</p>
+    <p class="fetes-welcome__closing">{{ 'FETES.WELCOME.P3' | translate }}</p>
+  </div>
+</section>
+
+<!-- ===== NOS 3 OFFRES ===== -->
+<section class="section" aria-labelledby="offres-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">{{ 'FETES.OFFRES.EYEBROW' | translate }}</span>
+      <h2 id="offres-title">{{ 'FETES.OFFRES.TITLE' | translate }}</h2>
+      <span class="gold-line"></span>
+    </div>
+    <div class="fetes-grid">
+      @for (offer of ('FETES.OFFRES.ITEMS' | translate); track offer.title) {
+        <div class="fete-card">
+          <span class="fete-card__icon">{{ offer.icon }}</span>
+          <h3 class="fete-card__title">{{ offer.title }}</h3>
+          <p class="fete-card__desc">{{ offer.desc }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<app-photo-carousel
+  [eyebrow]="'FETES.CAROUSEL.EYEBROW' | translate"
+  [title]="'FETES.CAROUSEL.TITLE' | translate"
+  [count]="5">
+</app-photo-carousel>
+
+<!-- ===== CTA ===== -->
+<section class="section">
+  <div class="container" style="text-align:center">
+    <span class="section-eyebrow">{{ 'FETES.CTA.EYEBROW' | translate }}</span>
+    <h2>{{ 'FETES.CTA.TITLE1' | translate }}<br><em>{{ 'FETES.CTA.TITLE2' | translate }}</em></h2>
+    <span class="gold-line" style="margin-block:1.5rem"></span>
+    <a routerLink="/contact" class="btn btn--gold">{{ 'FETES.CTA.BTN' | translate }}</a>
+  </div>
+</section>
