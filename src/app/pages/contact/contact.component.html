@@ -1,145 +1,109 @@
 <section class="page-hero">
   <div class="container">
-    <span class="section-eyebrow">Agence événementielle · Bretagne &amp; Rennes</span>
-    <h1>Parlons de Votre<br><em>Projet Événementiel</em></h1>
+    <span class="section-eyebrow">{{ 'CONTACT.HERO.EYEBROW' | translate }}</span>
+    <h1>{{ 'CONTACT.HERO.TITLE1' | translate }}<br><em>{{ 'CONTACT.HERO.TITLE2' | translate }}</em></h1>
     <span class="gold-line" style="margin-block:1.5rem"></span>
-    <p>
-      Mariage en Bretagne, séminaire à Rennes, décoration sur mesure… Partagez-nous votre projet. Nous vous répondons sous 48 heures avec une proposition personnalisée.
-    </p>
+    <p>{{ 'CONTACT.HERO.DESC' | translate }}</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container contact-layout">
 
-    <!-- Formulaire -->
     <div class="contact-form-wrap">
-      <span class="section-eyebrow">Demande de devis gratuit</span>
-      <h2>Votre Message</h2>
+      <span class="section-eyebrow">{{ 'CONTACT.FORM.EYEBROW' | translate }}</span>
+      <h2>{{ 'CONTACT.FORM.TITLE' | translate }}</h2>
       <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
 
       @if (sent()) {
         <div class="success-message" role="alert">
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <h3>Message envoyé !</h3>
-          <p>Merci pour votre message. Nous reviendrons vers vous sous 48 heures pour discuter de votre projet en Bretagne.</p>
+          <h3>{{ 'CONTACT.FORM.SUCCESS_TITLE' | translate }}</h3>
+          <p>{{ 'CONTACT.FORM.SUCCESS_TEXT' | translate }}</p>
         </div>
       } @else {
         <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
           <div class="form-row">
             <div class="form-group" [class.has-error]="isInvalid('prenom')">
-              <label for="prenom">Prénom *</label>
-              <input id="prenom" type="text" formControlName="prenom" placeholder="Votre prénom">
-              <span class="error-msg">Prénom requis</span>
+              <label for="prenom">{{ 'CONTACT.FORM.PRENOM' | translate }} *</label>
+              <input id="prenom" type="text" formControlName="prenom" [placeholder]="'CONTACT.FORM.PRENOM' | translate">
+              <span class="error-msg">{{ 'CONTACT.FORM.ERROR_PRENOM' | translate }}</span>
             </div>
             <div class="form-group" [class.has-error]="isInvalid('nom')">
-              <label for="nom">Nom *</label>
-              <input id="nom" type="text" formControlName="nom" placeholder="Votre nom">
-              <span class="error-msg">Nom requis</span>
+              <label for="nom">{{ 'CONTACT.FORM.NOM' | translate }} *</label>
+              <input id="nom" type="text" formControlName="nom" [placeholder]="'CONTACT.FORM.NOM' | translate">
+              <span class="error-msg">{{ 'CONTACT.FORM.ERROR_NOM' | translate }}</span>
             </div>
           </div>
-
           <div class="form-row">
             <div class="form-group" [class.has-error]="isInvalid('email')">
-              <label for="email">Email *</label>
+              <label for="email">{{ 'CONTACT.FORM.EMAIL' | translate }} *</label>
               <input id="email" type="email" formControlName="email" placeholder="votre@email.fr">
-              <span class="error-msg">Email valide requis</span>
+              <span class="error-msg">{{ 'CONTACT.FORM.ERROR_EMAIL' | translate }}</span>
             </div>
             <div class="form-group">
-              <label for="telephone">Téléphone</label>
+              <label for="telephone">{{ 'CONTACT.FORM.TELEPHONE' | translate }}</label>
               <input id="telephone" type="tel" formControlName="telephone" placeholder="06 XX XX XX XX">
             </div>
           </div>
-
           <div class="form-row">
             <div class="form-group" [class.has-error]="isInvalid('typeEvenement')">
-              <label for="typeEvenement">Type d'événement *</label>
+              <label for="typeEvenement">{{ 'CONTACT.FORM.TYPE' | translate }} *</label>
               <select id="typeEvenement" formControlName="typeEvenement">
-                <option value="">Sélectionner…</option>
+                <option value="">{{ 'CONTACT.FORM.TYPE_PLACEHOLDER' | translate }}</option>
                 @for (t of typesEvenement; track t) {
                   <option [value]="t">{{ t }}</option>
                 }
               </select>
-              <span class="error-msg">Veuillez sélectionner un type</span>
+              <span class="error-msg">{{ 'CONTACT.FORM.ERROR_TYPE' | translate }}</span>
             </div>
             <div class="form-group">
-              <label for="dateEvenement">Date envisagée</label>
+              <label for="dateEvenement">{{ 'CONTACT.FORM.DATE' | translate }}</label>
               <input id="dateEvenement" type="date" formControlName="dateEvenement">
             </div>
           </div>
-
           <div class="form-group" [class.has-error]="isInvalid('message')">
-            <label for="message">Votre message *</label>
-            <textarea id="message" formControlName="message" placeholder="Décrivez votre projet : lieu envisagé, nombre d'invités, vos attentes…"></textarea>
-            <span class="error-msg">Message requis (20 caractères minimum)</span>
+            <label for="message">{{ 'CONTACT.FORM.MESSAGE' | translate }} *</label>
+            <textarea id="message" formControlName="message" [placeholder]="'CONTACT.FORM.MESSAGE_PLACEHOLDER' | translate"></textarea>
+            <span class="error-msg">{{ 'CONTACT.FORM.ERROR_MESSAGE' | translate }}</span>
           </div>
-
           <button type="submit" class="btn btn--gold submit-btn" [disabled]="loading()">
-            @if (loading()) {
-              <span>Envoi en cours…</span>
-            } @else {
-              <span>Envoyer ma demande</span>
-            }
+            @if (loading()) { <span>{{ 'CONTACT.FORM.SENDING' | translate }}</span> }
+            @else { <span>{{ 'CONTACT.FORM.SUBMIT' | translate }}</span> }
           </button>
-
-          @if (error()) {
-            <p class="form-error" role="alert">{{ error() }}</p>
-          }
+          @if (error()) { <p class="form-error" role="alert">{{ error() }}</p> }
         </form>
       }
     </div>
 
-    <!-- Infos contact -->
     <aside class="contact-info">
-      <span class="section-eyebrow">Nous trouver</span>
-      <h2>L'Événement Peter</h2>
+      <span class="section-eyebrow">{{ 'CONTACT.INFO.EYEBROW' | translate }}</span>
+      <h2>{{ 'CONTACT.INFO.TITLE' | translate }}</h2>
       <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
-
       <ul class="contact-details">
         <li>
-          <div class="contact-details__icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
+          <div class="contact-details__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
           <div>
-            <strong>Adresse</strong>
-            <p>Rennes, Bretagne<br><small>Interventions dans toute la Bretagne</small></p>
+            <strong>{{ 'CONTACT.INFO.ADDRESS_LABEL' | translate }}</strong>
+            <p>{{ 'CONTACT.INFO.ADDRESS' | translate }}<br><small>{{ 'CONTACT.INFO.ADDRESS_SUB' | translate }}</small></p>
           </div>
         </li>
         <li>
-          <div class="contact-details__icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5.1 2 2 0 0 1 3.58 2.93h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.44a16 16 0 0 0 6.29 6.29l.87-1.28a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          </div>
-          <div>
-            <strong>Téléphone</strong>
-            <a href="tel:+33652583724">06 52 58 37 24</a>
-          </div>
+          <div class="contact-details__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5.1 2 2 0 0 1 3.58 2.93h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.44a16 16 0 0 0 6.29 6.29l.87-1.28a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><strong>{{ 'CONTACT.INFO.PHONE_LABEL' | translate }}</strong><a href="tel:+33652583724">06 52 58 37 24</a></div>
         </li>
         <li>
-          <div class="contact-details__icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </div>
-          <div>
-            <strong>Email</strong>
-            <a href="mailto:contact@levenement-peter.fr">contact&#64;levenement-peter.fr</a>
-          </div>
+          <div class="contact-details__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><strong>{{ 'CONTACT.INFO.EMAIL_LABEL' | translate }}</strong><a href="mailto:levenementpeter@gmail.com">levenementpeter&#64;gmail.com</a></div>
         </li>
         <li>
-          <div class="contact-details__icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <div>
-            <strong>Horaires</strong>
-            <p>Lundi – Vendredi : 9h – 18h30<br>Samedi : 10h – 17h</p>
-          </div>
+          <div class="contact-details__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div><strong>{{ 'CONTACT.INFO.HOURS_LABEL' | translate }}</strong><p [innerHTML]="'CONTACT.INFO.HOURS' | translate"></p></div>
         </li>
       </ul>
-
       <div class="contact-note">
-        <p>
-          <em>Nous couvrons toute la Bretagne pour l'organisation de mariages, séminaires et événements à Rennes, Saint-Malo, Brest, Vannes, Lorient et dans toute la région.</em>
-        </p>
+        <p><em>{{ 'CONTACT.INFO.NOTE' | translate }}</em></p>
       </div>
     </aside>
-
   </div>
 </section>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.levenement-peter.fr/sitemap.xml
+Sitemap: https://levenement-peter.vercel.app/sitemap.xml

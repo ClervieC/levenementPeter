@@ -1,0 +1,347 @@
+{
+  "ENGLISH_SPOKEN": "English spoken",
+  "NAV": {
+    "HOME": "Home",
+    "MARIAGE": "Wedding",
+    "DESIGN": "Design & Decoration",
+    "SEMINAIRES": "Seminars",
+    "APROPOS": "About Us",
+    "CONTACT": "Contact Us"
+  },
+  "HOME": {
+    "HERO": {
+      "EYEBROW": "Event Planning Agency · Brittany & Rennes",
+      "TITLE1": "L'Événement",
+      "TITLE2": "Peter",
+      "SUBTITLE1": "Wedding Planner · Wedding Design · Seminars · Funeral Services",
+      "SUBTITLE2": "A premium, tailor-made service in Brittany, France",
+      "CTA_MARIAGE": "Our Weddings",
+      "CTA_CONTACT": "Request a Quote",
+      "SCROLL": "Discover"
+    },
+    "INTRO": {
+      "EYEBROW": "Our Philosophy",
+      "TITLE": "An Agency That Brings Your Ideas to Life",
+      "P1": "L'Événement Peter is your trusted event partner for planning an unforgettable wedding in Brittany. Based in Rennes, our agency is entirely dedicated to creating memorable experiences for couples, businesses and families who place their trust in us.",
+      "P2": "Our team works with passion, expertise and commitment to offer you a premium, fully personalised service. Choosing L'Événement Peter means you can be certain that every detail will be handled to perfection.",
+      "IMG_ALT": "The team",
+      "CTA": "Our Story"
+    },
+    "SERVICES": {
+      "EYEBROW": "What We Do",
+      "TITLE": "Our Event Services",
+      "ITEMS": [
+        {
+          "icon": "rings",
+          "title": "Wedding in Brittany",
+          "desc": "Full organisation of your wedding, from the first meeting to the last musical note. Premium wedding planning in Rennes and throughout Brittany.",
+          "link": "/mariage",
+          "label": "Discover"
+        },
+        {
+          "icon": "flower",
+          "title": "Design & Decoration",
+          "desc": "Floral creation, staging and custom wedding decoration. We transform your ideas into a unique and unforgettable visual world.",
+          "link": "/design-decoration",
+          "label": "Discover"
+        },
+        {
+          "icon": "briefcase",
+          "title": "Seminars & Corporate",
+          "desc": "Design and organisation of corporate seminars, team-building and corporate events in Brittany. Experiences that make a lasting impression.",
+          "link": "/seminaires",
+          "label": "Discover"
+        },
+        {
+          "icon": "candle",
+          "title": "Funerals & Ceremonies",
+          "desc": "Dignified and attentive support for organising funerals and memorial ceremonies in Brittany, honouring your wishes with care.",
+          "link": "/contact",
+          "label": "Contact Us"
+        }
+      ]
+    },
+    "ZONE": {
+      "EYEBROW": "Our Coverage Area",
+      "TITLE": "Weddings & Events Across Brittany",
+      "INTRO": "L'Événement Peter serves all of <strong>Brittany</strong> for weddings, seminars and events. Based in <strong>Rennes</strong>, our agency covers the entire region: Ille-et-Vilaine, Morbihan, Finistère, Côtes-d'Armor.",
+      "NOTE_PREFIX": "Outside Brittany?",
+      "NOTE_LINK": "Contact us",
+      "NOTE_SUFFIX": " — we are happy to consider every request."
+    },
+    "WHY": {
+      "EYEBROW": "Why Choose Us",
+      "TITLE": "Excellence at Every Stage",
+      "ITEMS": [
+        { "num": "01", "title": "Tailor-made", "desc": "Every event is unique. We build your project from A to Z according to your wishes, budget and personality." },
+        { "num": "02", "title": "Local Expertise", "desc": "Rooted in Brittany, we know the best vendors, venues and trends in the region for a perfect wedding or event." },
+        { "num": "03", "title": "Total Peace of Mind", "desc": "We manage every detail so you can fully enjoy your day without stress or surprises. Your peace of mind is our priority." },
+        { "num": "04", "title": "Premium Quality", "desc": "A network of selected partners, constant attention to detail and refined aesthetics for an exceptional result." }
+      ]
+    },
+    "CTA": {
+      "EYEBROW": "Let's Get Started",
+      "TITLE": "Ready to Create Your",
+      "TITLE_EM": "Unforgettable Event?",
+      "TEXT": "Wedding in Brittany, seminar in Rennes, custom decoration… Share your project and receive a personalised proposal.",
+      "BTN": "Contact Us"
+    }
+  },
+  "MARIAGE": {
+    "HERO": {
+      "EYEBROW": "Wedding Planning · Brittany & Rennes",
+      "TITLE1": "Your Wedding in Brittany,",
+      "TITLE2": "An Unforgettable Celebration",
+      "DESC": "Wedding planner based in Rennes, L'Événement Peter orchestrates every detail of your wedding with passion and expertise. From the first consultation to the last note, we create the event you have always dreamed of."
+    },
+    "INTRO": {
+      "EYEBROW": "Wedding Planner Brittany",
+      "TITLE": "The Art of Planning a Wedding in Brittany",
+      "P1": "Planning a <strong>wedding in Brittany</strong> requires in-depth knowledge of the region: quality vendors, exceptional venues, trends and the specific logistical subtleties of the area. That is why L'Événement Peter is your indispensable partner.",
+      "P2": "From <strong>Rennes</strong>, our agency covers all of Brittany — Ille-et-Vilaine, Morbihan, Finistère, Côtes-d'Armor — to organise weddings worthy of your dreams, whether an intimate ceremony or a grand reception.",
+      "P3": "<strong>Wedding planner</strong>, on-the-day coordinator, or simply an expert consultation: we tailor our involvement to your needs and budget.",
+      "IMG_ALT": "Wedding in Brittany"
+    },
+    "PRESTATIONS": {
+      "EYEBROW": "Our Packages",
+      "TITLE": "Bespoke Services",
+      "ITEMS": [
+        { "title": "Full Coordination", "desc": "From sourcing vendors to coordinating on the wedding day. We orchestrate every moment so you can experience your wedding serenely." },
+        { "title": "Wedding Day Management", "desc": "Already planned everything? We step in on the day to coordinate vendors, timings and any unexpected situations. Enjoy without worrying about a thing." },
+        { "title": "Partial Support", "desc": "Targeted assistance: venue search, vendor negotiation, schedule creation… We adapt our involvement to your specific needs." },
+        { "title": "Full-Service Wedding", "desc": "Entrust us with the entire organisation. We manage every detail from A to Z for an exceptional wedding in Brittany." }
+      ]
+    },
+    "INCLUS": {
+      "EYEBROW": "Our Support",
+      "TITLE": "What We Organise for You",
+      "ITEMS": [
+        "Search and selection of the reception venue in Brittany",
+        "Coordination with all vendors (caterer, photographer, DJ, band, florist…)",
+        "Creation of the planning schedule and day programme",
+        "Budget tracking and vendor negotiation",
+        "Organisation of the civil and/or secular ceremony",
+        "Management of invitations, seating plan and accommodation",
+        "On-the-day coordination: welcome, timing, handling of any issues",
+        "Advice on wedding decoration and design"
+      ],
+      "DESIGN_LINK": "Design & Decoration"
+    },
+    "ZONE": {
+      "EYEBROW": "Coverage Area",
+      "TITLE": "Weddings in Brittany & Ille-et-Vilaine",
+      "P1": "Our <strong>wedding planning agency in Rennes</strong> covers all of Brittany for wedding organisation: Rennes, Saint-Malo, Brest, Vannes, Lorient, Quimper, Dinard, Fougères, Vitré and all the châteaux, manor houses and estates across the region.",
+      "P2": "Every <strong>wedding in Brittany</strong> is unique. Our knowledge of the territory allows us to find the most beautiful venues and the most talented vendors for your most exclusive day."
+    },
+    "CTA": {
+      "EYEBROW": "Let's Talk About Your Wedding",
+      "TITLE1": "Ready to Plan Your",
+      "TITLE2": "Wedding in Brittany?",
+      "TEXT": "Contact us for a no-obligation first meeting. We will explore your project together and suggest the most suitable package.",
+      "BTN": "Request a Free Quote"
+    }
+  },
+  "DESIGN": {
+    "HERO": {
+      "EYEBROW": "Design & Decoration · Brittany & Rennes",
+      "TITLE1": "Wedding Decoration in Brittany,",
+      "TITLE2": "A Unique Visual World",
+      "DESC": "From floral creation to full staging, L'Événement Peter transforms your spaces into living works of art. A wedding design that reflects who you are, in Brittany."
+    },
+    "INTRO": {
+      "EYEBROW": "Our Vision",
+      "TITLE": "More Than a Décor — A Sensory Experience",
+      "P1": "<strong>Wedding decoration</strong> is far more than aesthetics: it is the art of creating an atmosphere, an emotion, a memory. At L'Événement Peter, every detail is crafted to elevate your celebration in Brittany.",
+      "P2": "Our designers work on <strong>floral decoration</strong>, spatial staging, furniture, lighting and all the visual elements that shape the visual identity of your wedding in Rennes or throughout Brittany.",
+      "P3": "Whether you have a precise vision in mind or would like to be guided, we co-create with you the décor that reveals your personality and enchants your guests.",
+      "IMG_ALT": "Wedding decoration Brittany"
+    },
+    "FEATURES": {
+      "EYEBROW": "Our Creations",
+      "TITLE": "What We Create for You",
+      "ITEMS": [
+        { "title": "Floral Creation", "desc": "Bridal bouquets, floral arches, centrepieces, buttonholes, compositions for the church or reception hall. Handcrafted work with fresh, seasonal flowers." },
+        { "title": "Staging & Decoration", "desc": "Full styling of the reception venue: tables, central aisle, photo wall, cocktail space, children's corner. Every space tells a story." },
+        { "title": "Lighting & Ambiance", "desc": "Fairy lights, candelabras, spotlights, warm lighting… Lighting completely transforms the atmosphere and creates unforgettable photographs." },
+        { "title": "Stationery & Signage", "desc": "Menu cards, seating plans, place cards, save-the-dates, ceremony booklets… Cohesive stationery that adorns every moment." },
+        { "title": "Moodboard & Art Direction", "desc": "We define together your colour palette, materials and inspirations to create a coherent and elegant visual thread throughout the day." },
+        { "title": "Setup & Breakdown", "desc": "On the day, our team installs all the decoration before your arrival and manages the breakdown at the end of the evening. You have nothing to do." }
+      ]
+    },
+    "UNIVERS": {
+      "EYEBROW": "Styles & Inspirations",
+      "TITLE": "Your Wedding Styles in Brittany",
+      "ITEMS": [
+        { "label": "Romantic & Timeless", "desc": "White roses, candles and fine linens for a classic and elegant wedding." },
+        { "label": "Bohemian & Nature", "desc": "Pampas grass, eucalyptus, macramé and terracotta tones for a free-spirited and warm atmosphere." },
+        { "label": "Minimalist & Luxury", "desc": "Clean lines, marble, gold and monochrome flowers for a contemporary aesthetic." },
+        { "label": "Rustic & Countryside", "desc": "Raw wood, wildflowers and string lights for a charming, idyllic wedding." },
+        { "label": "Breton Wedding", "desc": "Embroidery, slate, linen and wildflowers to celebrate the beauty of Brittany." },
+        { "label": "Fully Bespoke", "desc": "Your world, your palette, your vision. We create the unique décor that is entirely you." }
+      ]
+    },
+    "CTA": {
+      "EYEBROW": "Let's Create Together",
+      "TITLE1": "Your Wedding Decoration",
+      "TITLE2": "in Brittany Awaits",
+      "TEXT": "Share your inspirations, date and venue. We create a personalised moodboard at our first meeting.",
+      "BTN": "Book a Consultation"
+    }
+  },
+  "SEMINAIRES": {
+    "HERO": {
+      "EYEBROW": "Seminars & Corporate Events · Brittany & Rennes",
+      "TITLE1": "Seminars & Corporate Events",
+      "TITLE2": "in Brittany",
+      "DESC": "L'Événement Peter designs and organises your professional events in Brittany. Seminars, team-building, conventions, corporate evenings: memorable experiences that energise your teams."
+    },
+    "INTRO": {
+      "EYEBROW": "Professional Events",
+      "TITLE": "Your Corporate Event Agency in Brittany",
+      "P1": "Organising a <strong>seminar in Brittany</strong> or Rennes means offering your team an exceptional setting and an experience that leaves a lasting mark. L'Événement Peter brings its expertise and local partner network to your professional events.",
+      "P2": "From finding the ideal venue to on-the-day coordination, including catering, activities and logistics, we take full responsibility for your corporate event in Brittany.",
+      "P3": "Brittany offers a unique setting: châteaux, coastal estates, modern conference centres in Rennes, natural spaces… We select the perfect venue for your goals and budget.",
+      "IMG_ALT": "Seminar in Brittany"
+    },
+    "TYPES": {
+      "EYEBROW": "Our Events",
+      "TITLE": "All Types of Professional Events",
+      "ITEMS": [
+        { "icon": "🎯", "title": "Residential Seminars", "desc": "One or more days of full immersion, with accommodation, meals and activities. We manage everything from A to Z." },
+        { "icon": "💡", "title": "Team-Building", "desc": "Original and unifying activities to strengthen team cohesion in the heart of Brittany." },
+        { "icon": "🎤", "title": "Conferences & Conventions", "desc": "Stage design, technical management, attendee welcome and speaker coordination." },
+        { "icon": "🥂", "title": "Corporate Evenings", "desc": "Galas, year-end dinners, prestige cocktail receptions. Memorable evenings that strengthen your professional bonds." },
+        { "icon": "🏆", "title": "Incentives", "desc": "Bespoke programmes to reward and motivate your teams with unique experiences in Brittany." },
+        { "icon": "📋", "title": "General Meetings", "desc": "Logistical and technical organisation of your AGMs, congresses and plenary meetings in Brittany." }
+      ]
+    },
+    "METHODE": {
+      "EYEBROW": "Our Approach",
+      "TITLE": "Rigorous Organisation, from A to Z",
+      "ITEMS": [
+        { "num": "01", "title": "Defining Objectives", "desc": "We analyse your challenges, company culture and expectations to propose an event aligned with your strategic goals." },
+        { "num": "02", "title": "Venue Search", "desc": "Using our network across Brittany, we select the best available venues in Rennes and throughout the region based on your criteria." },
+        { "num": "03", "title": "Programme Design", "desc": "Creation of a bespoke programme: schedule, activities, catering, transport, accommodation. Every detail is anticipated." },
+        { "num": "04", "title": "On-the-Day Coordination", "desc": "Our team is present on the day of your event to orchestrate every vendor and allow you to focus fully on your attendees." }
+      ]
+    },
+    "CTA": {
+      "EYEBROW": "Let's Talk About Your Project",
+      "TITLE1": "Let's Organise Your Next",
+      "TITLE2": "Seminar in Brittany",
+      "TEXT": "Date, number of participants, event type, budget… Share your brief and receive a detailed proposal within 48 hours.",
+      "BTN": "Request a Quote"
+    }
+  },
+  "APROPOS": {
+    "HERO": {
+      "EYEBROW": "Our Story · Rennes, Brittany",
+      "TITLE1": "L'Événement Peter,",
+      "TITLE2": "Your Trusted Partner",
+      "DESC": "An agency built on passion, excellence and a deep knowledge of Brittany. Let's meet."
+    },
+    "MAIN": {
+      "IMG_ALT": "Peter & the team",
+      "EYEBROW": "Who We Are",
+      "TITLE": "An Agency Dedicated to Your Most Precious Events",
+      "P1": "<strong>L'Événement Peter</strong> is your trusted event partner for planning an unforgettable wedding. Based in <strong>Brittany</strong>, our agency is entirely dedicated to creating memorable experiences for the couples who choose us for their most exclusive and unique celebration.",
+      "P2": "Our team works with passion: they are experienced and committed to delivering a premium, tailor-made service. Choosing us means you can be certain that your wedding will not only be managed to perfection, but will also give rise to lifelong memories.",
+      "P3": "Beyond weddings, L'Événement Peter also supports businesses with their seminars and corporate events, as well as families organising funerals and ceremonies with dignity and care. Every event, whether joyful or reflective, deserves the same attention and professionalism.",
+      "P4": "Explore our full range of services and let us accompany you in creating a truly unique celebration!"
+    },
+    "VALEURS": {
+      "EYEBROW": "What Drives Us",
+      "TITLE": "Our Values",
+      "ITEMS": [
+        { "titre": "Excellence", "texte": "We never compromise on quality. Every vendor, every detail is carefully selected to achieve excellence." },
+        { "titre": "Bespoke", "texte": "No two events are alike. Every project is unique and deserves unwavering attention and creativity." },
+        { "titre": "Listening", "texte": "We take the time to know you, to understand your deepest wishes and to translate them into reality with care." },
+        { "titre": "Serenity", "texte": "Our role is to carry the organisation on your behalf so that you can fully live every moment of your event." }
+      ]
+    },
+    "LOCAL": {
+      "EYEBROW": "Our Territory",
+      "TITLE": "Rooted in Brittany, Passionate About Our Region",
+      "P1": "Brittany is more than a setting for us — it is our home. This passion for our region is reflected in every event we organise: we know the most beautiful venues, the best local artisans and vendors, the picture-perfect spots that will make your wedding an authentically Breton celebration.",
+      "P2": "Based in <strong>Rennes</strong>, our agency covers all of Brittany: Ille-et-Vilaine, Morbihan, Finistère and Côtes-d'Armor. From seaside châteaux to country estates, from Rennes conference centres to Breton vineyard estates, we know every exceptional venue in the region.",
+      "IMG_ALT": "Brittany",
+      "BTN": "Let's Meet"
+    },
+    "CTA": {
+      "EYEBROW": "Let's Get Started",
+      "TITLE1": "Your Event Deserves",
+      "TITLE2": "the Best of Brittany",
+      "BTN1": "Discover Our Weddings",
+      "BTN2": "Contact Us"
+    }
+  },
+  "CONTACT": {
+    "HERO": {
+      "EYEBROW": "Event Planning Agency · Brittany & Rennes",
+      "TITLE1": "Let's Talk About",
+      "TITLE2": "Your Event Project",
+      "DESC": "Wedding in Brittany, seminar in Rennes, custom decoration… Share your project. We will respond within 48 hours with a personalised proposal."
+    },
+    "FORM": {
+      "EYEBROW": "Free Quote Request",
+      "TITLE": "Your Message",
+      "PRENOM": "First name",
+      "NOM": "Last name",
+      "EMAIL": "Email",
+      "TELEPHONE": "Phone",
+      "TYPE": "Event type",
+      "TYPE_PLACEHOLDER": "Select…",
+      "DATE": "Planned date",
+      "MESSAGE": "Your message",
+      "MESSAGE_PLACEHOLDER": "Describe your project: planned venue, number of guests, your expectations…",
+      "SUBMIT": "Send My Request",
+      "SENDING": "Sending…",
+      "ERROR_PRENOM": "First name required",
+      "ERROR_NOM": "Last name required",
+      "ERROR_EMAIL": "Valid email required",
+      "ERROR_TYPE": "Please select a type",
+      "ERROR_MESSAGE": "Message required (minimum 20 characters)",
+      "SUCCESS_TITLE": "Message sent!",
+      "SUCCESS_TEXT": "Thank you for your message. We will get back to you within 48 hours to discuss your project in Brittany.",
+      "ERROR_SEND": "An error occurred. Please write to us directly at levenementpeter@gmail.com",
+      "TYPES": [
+        "Wedding in Brittany",
+        "Wedding Design & Decoration",
+        "Corporate Seminar",
+        "Corporate Event",
+        "Funeral & Ceremony",
+        "Other Event"
+      ]
+    },
+    "INFO": {
+      "EYEBROW": "Find Us",
+      "TITLE": "L'Événement Peter",
+      "ADDRESS_LABEL": "Address",
+      "ADDRESS": "Rennes, Brittany, France",
+      "ADDRESS_SUB": "Services available throughout Brittany",
+      "PHONE_LABEL": "Phone",
+      "EMAIL_LABEL": "Email",
+      "HOURS_LABEL": "Opening Hours",
+      "HOURS": "Monday – Friday: 9am – 6:30pm<br>Saturday: 10am – 5pm",
+      "NOTE": "We cover all of Brittany for weddings, seminars and events in Rennes, Saint-Malo, Brest, Vannes, Lorient and throughout the region."
+    }
+  },
+  "FOOTER": {
+    "TAGLINE": "Your premium event partner in Brittany. Weddings, seminars, decoration and much more.",
+    "ENGLISH_SPOKEN": "Services available in English",
+    "NAV_TITLE": "Navigation",
+    "SERVICES_TITLE": "Services",
+    "CONTACT_TITLE": "Contact",
+    "SERVICE_MARIAGE": "Wedding planning",
+    "SERVICE_DECO": "Wedding decoration",
+    "SERVICE_FLORAL": "Floral design",
+    "SERVICE_SEM": "Corporate seminars",
+    "SERVICE_CORP": "Corporate events",
+    "SERVICE_OBSEQUES": "Funerals & ceremonies",
+    "ADDRESS": "Rennes, Brittany, France",
+    "HOURS": "Mon–Fri: 9am–6:30pm · Sat: 10am–5pm",
+    "COPYRIGHT": "© {{year}} L'Événement Peter — Event planning agency, Brittany & Rennes. All rights reserved.",
+    "MENTIONS": "Legal Notice",
+    "CONFIDENTIALITE": "Privacy Policy"
+  }
+}

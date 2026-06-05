@@ -1,50 +1,37 @@
-<!-- Hero interne -->
 <section class="page-hero">
   <div class="container">
-    <span class="section-eyebrow">Organisation de mariage · Bretagne &amp; Rennes</span>
-    <h1>Votre Mariage en Bretagne,<br><em>Une Célébration Inoubliable</em></h1>
+    <span class="section-eyebrow">{{ 'MARIAGE.HERO.EYEBROW' | translate }}</span>
+    <h1>{{ 'MARIAGE.HERO.TITLE1' | translate }}<br><em>{{ 'MARIAGE.HERO.TITLE2' | translate }}</em></h1>
     <span class="gold-line" style="margin-block:1.5rem"></span>
-    <p>
-      Wedding planner à Rennes, L'Événement Peter orchestre chaque détail de votre mariage avec passion et savoir-faire. De la première consultation au dernier accord, nous créons l'événement dont vous rêvez.
-    </p>
+    <p>{{ 'MARIAGE.HERO.DESC' | translate }}</p>
   </div>
 </section>
 
-<!-- Intro SEO -->
 <section class="section section--cream">
   <div class="container mariage-intro">
     <div class="mariage-intro__text">
-      <span class="section-eyebrow">Wedding Planner Bretagne</span>
-      <h2>L'Art d'Organiser un Mariage en Bretagne</h2>
+      <span class="section-eyebrow">{{ 'MARIAGE.INTRO.EYEBROW' | translate }}</span>
+      <h2>{{ 'MARIAGE.INTRO.TITLE' | translate }}</h2>
       <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
-      <p>
-        Organiser un <strong>mariage en Bretagne</strong> demande une connaissance approfondie du territoire : les prestataires de qualité, les lieux d'exception, les tendances et les subtilités logistiques propres à la région. C'est pourquoi L'Événement Peter est votre atout indispensable.
-      </p>
-      <p style="margin-top:1rem">
-        Depuis <strong>Rennes</strong>, notre agence rayonne sur toute la Bretagne — Ille-et-Vilaine, Morbihan, Finistère, Côtes-d'Armor — pour organiser des mariages à la hauteur de vos rêves, qu'il s'agisse d'une cérémonie intime ou d'une réception fastueuse.
-      </p>
-      <p style="margin-top:1rem">
-        <strong>Wedding planner</strong>, coordinateur de Jour J, ou simple conseil ponctuel : nous adaptons notre intervention à vos besoins et à votre budget.
-      </p>
+      <p [innerHTML]="'MARIAGE.INTRO.P1' | translate"></p>
+      <p style="margin-top:1rem" [innerHTML]="'MARIAGE.INTRO.P2' | translate"></p>
+      <p style="margin-top:1rem" [innerHTML]="'MARIAGE.INTRO.P3' | translate"></p>
     </div>
-    <div class="mariage-intro__image" aria-hidden="true">
-      <div class="image-placeholder">
-        <span class="section-eyebrow" style="margin:0">Mariage en Bretagne</span>
-      </div>
+    <div class="image-placeholder" aria-hidden="true">
+      <span class="section-eyebrow" style="margin:0">{{ 'MARIAGE.INTRO.IMG_ALT' | translate }}</span>
     </div>
   </div>
 </section>
 
-<!-- Prestations -->
 <section class="section" aria-labelledby="prestations-title">
   <div class="container">
     <div class="section-header">
-      <span class="section-eyebrow">Nos formules</span>
-      <h2 id="prestations-title">Des Prestations Sur Mesure</h2>
+      <span class="section-eyebrow">{{ 'MARIAGE.PRESTATIONS.EYEBROW' | translate }}</span>
+      <h2 id="prestations-title">{{ 'MARIAGE.PRESTATIONS.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="prestations-grid">
-      @for (p of prestations; track p.title; let i = $index) {
+      @for (p of ('MARIAGE.PRESTATIONS.ITEMS' | translate); track p.title; let i = $index) {
         <div class="prestation-card">
           <div class="prestation-card__number">0{{ i + 1 }}</div>
           <h3>{{ p.title }}</h3>
@@ -55,53 +42,40 @@
   </div>
 </section>
 
-<!-- Ce qu'on inclut -->
 <section class="section section--cream" aria-labelledby="inclus-title">
   <div class="container">
     <div class="section-header">
-      <span class="section-eyebrow">Notre accompagnement</span>
-      <h2 id="inclus-title">Ce Que Nous Organisons pour Vous</h2>
+      <span class="section-eyebrow">{{ 'MARIAGE.INCLUS.EYEBROW' | translate }}</span>
+      <h2 id="inclus-title">{{ 'MARIAGE.INCLUS.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <ul class="checklist">
-      <li>Recherche et sélection du lieu de réception en Bretagne</li>
-      <li>Coordination avec tous les prestataires (traiteur, photographe, DJ, groupe, fleuriste…)</li>
-      <li>Création du rétroplanning et du programme de la journée</li>
-      <li>Suivi budgétaire et négociation prestataires</li>
-      <li>Organisation de la cérémonie civile et/ou laïque</li>
-      <li>Gestion des invitations, du plan de table et de l'hébergement</li>
-      <li>Coordination le Jour J : accueil, timing, gestion des imprévus</li>
-      <li>Conseil en décoration et design de mariage (voir aussi notre page <a routerLink="/design-decoration">Design & Décoration</a>)</li>
+      @for (item of ('MARIAGE.INCLUS.ITEMS' | translate); track item) {
+        <li>{{ item }}</li>
+      }
+      <li>{{ 'MARIAGE.INCLUS.ITEMS' | translate : {} }} <a routerLink="/design-decoration">{{ 'MARIAGE.INCLUS.DESIGN_LINK' | translate }}</a></li>
     </ul>
   </div>
 </section>
 
-<!-- Zone géographique -->
 <section class="section section--dark" aria-labelledby="zone-title">
   <div class="container zone-section">
     <div class="section-header">
-      <span class="section-eyebrow">Zone d'intervention</span>
-      <h2 id="zone-title">Mariages en Bretagne &amp; Ille-et-Vilaine</h2>
+      <span class="section-eyebrow">{{ 'MARIAGE.ZONE.EYEBROW' | translate }}</span>
+      <h2 id="zone-title">{{ 'MARIAGE.ZONE.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
-    <p class="zone-section__text">
-      Notre agence de <strong>wedding planning à Rennes</strong> intervient dans toute la Bretagne pour l'organisation de mariages : Rennes, Saint-Malo, Brest, Vannes, Lorient, Quimper, Dinard, Fougères, Vitré et dans tous les châteaux, manoirs et domaines de la région.
-    </p>
-    <p class="zone-section__text" style="margin-top:1rem">
-      Chaque <strong>mariage en Bretagne</strong> est unique. Notre connaissance du territoire nous permet de dénicher les lieux les plus beaux et les prestataires les plus talentueux pour votre jour le plus exclusif.
-    </p>
+    <p class="zone-section__text" [innerHTML]="'MARIAGE.ZONE.P1' | translate"></p>
+    <p class="zone-section__text" style="margin-top:1rem" [innerHTML]="'MARIAGE.ZONE.P2' | translate"></p>
   </div>
 </section>
 
-<!-- CTA -->
 <section class="section">
   <div class="container" style="text-align:center">
-    <span class="section-eyebrow">Parlons de votre mariage</span>
-    <h2>Prêt(e) à organiser votre<br>mariage en Bretagne ?</h2>
+    <span class="section-eyebrow">{{ 'MARIAGE.CTA.EYEBROW' | translate }}</span>
+    <h2>{{ 'MARIAGE.CTA.TITLE1' | translate }}<br>{{ 'MARIAGE.CTA.TITLE2' | translate }}</h2>
     <span class="gold-line" style="margin-block:1.5rem"></span>
-    <p style="max-width:520px;margin-inline:auto;margin-bottom:2rem">
-      Contactez-nous pour un premier échange sans engagement. Nous étudierons ensemble votre projet et vous proposerons la formule la plus adaptée.
-    </p>
-    <a routerLink="/contact" class="btn btn--gold">Demander un devis gratuit</a>
+    <p style="max-width:520px;margin-inline:auto;margin-bottom:2rem">{{ 'MARIAGE.CTA.TEXT' | translate }}</p>
+    <a routerLink="/contact" class="btn btn--gold">{{ 'MARIAGE.CTA.BTN' | translate }}</a>
   </div>
 </section>

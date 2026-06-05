@@ -1,0 +1,347 @@
+{
+  "ENGLISH_SPOKEN": "English spoken",
+  "NAV": {
+    "HOME": "Accueil",
+    "MARIAGE": "Mariage",
+    "DESIGN": "Design & Décoration",
+    "SEMINAIRES": "Séminaires",
+    "APROPOS": "À Propos",
+    "CONTACT": "Nous Contacter"
+  },
+  "HOME": {
+    "HERO": {
+      "EYEBROW": "Agence Événementielle · Bretagne & Rennes",
+      "TITLE1": "L'Événement",
+      "TITLE2": "Peter",
+      "SUBTITLE1": "Wedding Planner · Décoration Mariage · Séminaires · Obsèques",
+      "SUBTITLE2": "Un service haut de gamme et sur mesure, en Bretagne",
+      "CTA_MARIAGE": "Nos Mariages",
+      "CTA_CONTACT": "Demander un devis",
+      "SCROLL": "Découvrir"
+    },
+    "INTRO": {
+      "EYEBROW": "Notre philosophie",
+      "TITLE": "Une agence qui donne vie à vos idées",
+      "P1": "L'Événement Peter est votre partenaire événementiel de confiance pour organiser un mariage inoubliable en Bretagne. Basée à Rennes, notre agence est entièrement consacrée à la création d'expériences mémorables pour les couples, les entreprises et toutes les familles qui nous font confiance.",
+      "P2": "Notre équipe travaille avec passion, expertise et engagement pour vous offrir un service haut de gamme, entièrement personnalisé. Vous choisir L'Événement Peter, c'est vous donner la certitude que chaque détail sera géré à la perfection.",
+      "IMG_ALT": "Photo de l'équipe",
+      "CTA": "Notre histoire"
+    },
+    "SERVICES": {
+      "EYEBROW": "Ce que nous faisons",
+      "TITLE": "Nos Prestations Événementielles",
+      "ITEMS": [
+        {
+          "icon": "rings",
+          "title": "Mariage en Bretagne",
+          "desc": "Organisation complète de votre mariage, du premier rendez-vous au dernier accord musical. Wedding planning haut de gamme à Rennes et dans toute la Bretagne.",
+          "link": "/mariage",
+          "label": "Découvrir"
+        },
+        {
+          "icon": "flower",
+          "title": "Design & Décoration",
+          "desc": "Création florale, mise en scène et décoration de mariage sur mesure. Nous transformons vos idées en un univers visuel unique et inoubliable.",
+          "link": "/design-decoration",
+          "label": "Découvrir"
+        },
+        {
+          "icon": "briefcase",
+          "title": "Séminaires & Corporate",
+          "desc": "Conception et organisation de séminaires d'entreprise, team-building et événements corporate en Bretagne. Des expériences qui marquent les esprits.",
+          "link": "/seminaires",
+          "label": "Découvrir"
+        },
+        {
+          "icon": "candle",
+          "title": "Obsèques & Cérémonies",
+          "desc": "Un accompagnement digne et attentionné pour organiser des obsèques et cérémonies funèbres en Bretagne, dans le respect de vos volontés.",
+          "link": "/contact",
+          "label": "Nous contacter"
+        }
+      ]
+    },
+    "ZONE": {
+      "EYEBROW": "Notre zone d'intervention",
+      "TITLE": "Mariages & Événements en Bretagne",
+      "INTRO": "L'Événement Peter intervient dans toute la <strong>Bretagne</strong> pour organiser vos mariages, séminaires et événements. Basée à <strong>Rennes</strong>, notre agence couvre l'ensemble de la région : Ille-et-Vilaine, Morbihan, Finistère, Côtes-d'Armor.",
+      "NOTE_PREFIX": "Vous êtes hors Bretagne ?",
+      "NOTE_LINK": "Contactez-nous",
+      "NOTE_SUFFIX": ", nous étudions chaque demande avec plaisir."
+    },
+    "WHY": {
+      "EYEBROW": "Pourquoi nous choisir",
+      "TITLE": "L'Excellence à Chaque Étape",
+      "ITEMS": [
+        { "num": "01", "title": "Sur mesure", "desc": "Chaque événement est unique. Nous construisons votre projet de A à Z selon vos envies, votre budget et votre personnalité." },
+        { "num": "02", "title": "Expertise locale", "desc": "Ancrés en Bretagne, nous connaissons les meilleurs prestataires, lieux et tendances de la région pour un mariage ou un événement parfait." },
+        { "num": "03", "title": "Sérénité totale", "desc": "Nous gérons chaque détail pour que vous profitiez pleinement de votre journée sans stress ni imprévu. Votre tranquillité est notre priorité." },
+        { "num": "04", "title": "Haut de gamme", "desc": "Un réseau de partenaires sélectionnés, une attention permanente aux finitions et une esthétique soignée pour un résultat d'exception." }
+      ]
+    },
+    "CTA": {
+      "EYEBROW": "Commençons ensemble",
+      "TITLE": "Prêt(e) à créer votre",
+      "TITLE_EM": "événement inoubliable ?",
+      "TEXT": "Mariage en Bretagne, séminaire à Rennes, décoration sur mesure… Partagez-nous votre projet et recevez une proposition personnalisée.",
+      "BTN": "Nous Contacter"
+    }
+  },
+  "MARIAGE": {
+    "HERO": {
+      "EYEBROW": "Organisation de mariage · Bretagne & Rennes",
+      "TITLE1": "Votre Mariage en Bretagne,",
+      "TITLE2": "Une Célébration Inoubliable",
+      "DESC": "Wedding planner à Rennes, L'Événement Peter orchestre chaque détail de votre mariage avec passion et savoir-faire. De la première consultation au dernier accord, nous créons l'événement dont vous rêvez."
+    },
+    "INTRO": {
+      "EYEBROW": "Wedding Planner Bretagne",
+      "TITLE": "L'Art d'Organiser un Mariage en Bretagne",
+      "P1": "Organiser un <strong>mariage en Bretagne</strong> demande une connaissance approfondie du territoire : les prestataires de qualité, les lieux d'exception, les tendances et les subtilités logistiques propres à la région. C'est pourquoi L'Événement Peter est votre atout indispensable.",
+      "P2": "Depuis <strong>Rennes</strong>, notre agence rayonne sur toute la Bretagne — Ille-et-Vilaine, Morbihan, Finistère, Côtes-d'Armor — pour organiser des mariages à la hauteur de vos rêves, qu'il s'agisse d'une cérémonie intime ou d'une réception fastueuse.",
+      "P3": "<strong>Wedding planner</strong>, coordinateur de Jour J, ou simple conseil ponctuel : nous adaptons notre intervention à vos besoins et à votre budget.",
+      "IMG_ALT": "Mariage en Bretagne"
+    },
+    "PRESTATIONS": {
+      "EYEBROW": "Nos formules",
+      "TITLE": "Des Prestations Sur Mesure",
+      "ITEMS": [
+        { "title": "Coordination complète", "desc": "De la recherche des prestataires à la coordination le Jour J. Nous orchestrons chaque instant pour que vous viviez votre mariage sereinement." },
+        { "title": "Wedding Day Management", "desc": "Vous avez déjà tout planifié ? Nous intervenons le Jour J pour coordonner prestataires, timing et imprévus. Profitez sans vous soucier de rien." },
+        { "title": "Accompagnement partiel", "desc": "Un coup de pouce ciblé : recherche de lieu, négociation prestataires, création du planning… Nous adaptons notre intervention à vos besoins." },
+        { "title": "Mariage clé en main", "desc": "Confiez-nous l'intégralité de l'organisation. Nous gérons chaque détail de A à Z pour un mariage d'exception en Bretagne." }
+      ]
+    },
+    "INCLUS": {
+      "EYEBROW": "Notre accompagnement",
+      "TITLE": "Ce Que Nous Organisons pour Vous",
+      "ITEMS": [
+        "Recherche et sélection du lieu de réception en Bretagne",
+        "Coordination avec tous les prestataires (traiteur, photographe, DJ, groupe, fleuriste…)",
+        "Création du rétroplanning et du programme de la journée",
+        "Suivi budgétaire et négociation prestataires",
+        "Organisation de la cérémonie civile et/ou laïque",
+        "Gestion des invitations, du plan de table et de l'hébergement",
+        "Coordination le Jour J : accueil, timing, gestion des imprévus",
+        "Conseil en décoration et design de mariage"
+      ],
+      "DESIGN_LINK": "Design & Décoration"
+    },
+    "ZONE": {
+      "EYEBROW": "Zone d'intervention",
+      "TITLE": "Mariages en Bretagne & Ille-et-Vilaine",
+      "P1": "Notre agence de <strong>wedding planning à Rennes</strong> intervient dans toute la Bretagne pour l'organisation de mariages : Rennes, Saint-Malo, Brest, Vannes, Lorient, Quimper, Dinard, Fougères, Vitré et dans tous les châteaux, manoirs et domaines de la région.",
+      "P2": "Chaque <strong>mariage en Bretagne</strong> est unique. Notre connaissance du territoire nous permet de dénicher les lieux les plus beaux et les prestataires les plus talentueux pour votre jour le plus exclusif."
+    },
+    "CTA": {
+      "EYEBROW": "Parlons de votre mariage",
+      "TITLE1": "Prêt(e) à organiser votre",
+      "TITLE2": "mariage en Bretagne ?",
+      "TEXT": "Contactez-nous pour un premier échange sans engagement. Nous étudierons ensemble votre projet et vous proposerons la formule la plus adaptée.",
+      "BTN": "Demander un devis gratuit"
+    }
+  },
+  "DESIGN": {
+    "HERO": {
+      "EYEBROW": "Design & Décoration · Bretagne & Rennes",
+      "TITLE1": "Décoration de Mariage en Bretagne,",
+      "TITLE2": "Un Univers Visuel Unique",
+      "DESC": "De la création florale à la scénographie complète, L'Événement Peter transforme vos espaces en tableaux vivants. Un design de mariage qui vous ressemble, en Bretagne."
+    },
+    "INTRO": {
+      "EYEBROW": "Notre vision",
+      "TITLE": "Plus qu'un Décor, une Expérience Sensorielle",
+      "P1": "La <strong>décoration de mariage</strong> est bien plus qu'une question d'esthétique : c'est l'art de créer une atmosphère, une émotion, un souvenir. Chez L'Événement Peter, chaque détail est pensé pour sublimer votre célébration en Bretagne.",
+      "P2": "Nos créatrices interviennent sur la <strong>décoration florale</strong>, la scénographie des espaces, le mobilier, l'éclairage et tous les éléments visuels qui composent l'identité visuelle de votre mariage à Rennes ou dans toute la Bretagne.",
+      "P3": "Que vous ayez un univers précis en tête ou que vous souhaitiez être guidé(e), nous co-créons avec vous le décor qui révèle votre personnalité et enchante vos invités.",
+      "IMG_ALT": "Décoration mariage Bretagne"
+    },
+    "FEATURES": {
+      "EYEBROW": "Nos créations",
+      "TITLE": "Ce Que Nous Réalisons",
+      "ITEMS": [
+        { "title": "Création florale", "desc": "Bouquets de mariée, arches florales, centres de table, boutonnières, compositions pour l'église ou la salle. Un travail artisanal réalisé avec des fleurs fraîches et de saison." },
+        { "title": "Scénographie & décoration", "desc": "Mise en scène globale du lieu de réception : tables, allée centrale, photocall, espace cocktail, coin enfants. Chaque espace raconte une histoire." },
+        { "title": "Éclairage & ambiance", "desc": "Guirlandes, candélabres, spots, lumières chaleureuses… L'éclairage transforme complètement l'atmosphère et crée des photos inoubliables." },
+        { "title": "Papeterie & signalétique", "desc": "Cartes de menu, plans de table, marque-places, save the date, livrets de cérémonie… Une papeterie cohérente qui habille chaque moment." },
+        { "title": "Moodboard & direction artistique", "desc": "Nous définissons ensemble votre palette de couleurs, vos matières, vos inspirations pour créer un fil conducteur cohérent et élégant sur toute la journée." },
+        { "title": "Installation & démontage", "desc": "Le jour J, notre équipe installe l'intégralité de la décoration avant votre arrivée et gère le démontage en fin de soirée. Vous n'avez rien à faire." }
+      ]
+    },
+    "UNIVERS": {
+      "EYEBROW": "Styles & inspirations",
+      "TITLE": "Vos Univers de Mariage en Bretagne",
+      "ITEMS": [
+        { "label": "Romantique & Intemporel", "desc": "Roses blanches, bougies et linges fins pour un mariage classique et élégant." },
+        { "label": "Bohème & Nature", "desc": "Pampa, eucalyptus, macramé et tons terracotta pour un esprit libre et chaleureux." },
+        { "label": "Minimaliste & Luxe", "desc": "Lignes épurées, marbre, or et fleurs monochrome pour une esthétique contemporaine." },
+        { "label": "Champêtre & Rustique", "desc": "Bois brut, fleurs champêtres et lumières guirlandes pour un mariage plein de charme." },
+        { "label": "Mariage Breton", "desc": "Broderies, ardoise, lin et fleurs sauvages pour célébrer la beauté de la Bretagne." },
+        { "label": "Sur Mesure", "desc": "Votre univers, votre palette, vos envies. Nous créons le décor unique qui vous ressemble." }
+      ]
+    },
+    "CTA": {
+      "EYEBROW": "Créons ensemble",
+      "TITLE1": "Votre décor de mariage",
+      "TITLE2": "en Bretagne vous attend",
+      "TEXT": "Partagez-nous vos inspirations, votre date et votre lieu. Nous créons un moodboard personnalisé lors de notre premier rendez-vous.",
+      "BTN": "Demander un rendez-vous"
+    }
+  },
+  "SEMINAIRES": {
+    "HERO": {
+      "EYEBROW": "Séminaires & Événements Corporate · Bretagne & Rennes",
+      "TITLE1": "Séminaires & Événements d'Entreprise",
+      "TITLE2": "en Bretagne",
+      "DESC": "L'Événement Peter conçoit et organise vos événements professionnels en Bretagne. Séminaires, team-building, conventions, soirées d'entreprise : des expériences mémorables qui dynamisent vos équipes."
+    },
+    "INTRO": {
+      "EYEBROW": "Événements professionnels",
+      "TITLE": "Votre Agence Événementielle d'Entreprise en Bretagne",
+      "P1": "Organiser un <strong>séminaire en Bretagne</strong> ou à Rennes, c'est offrir à vos collaborateurs un cadre exceptionnel et une expérience qui les marque durablement. L'Événement Peter met son expertise et son réseau de partenaires locaux au service de vos événements professionnels.",
+      "P2": "De la recherche du lieu idéal à la coordination le jour J, en passant par la restauration, les activités et la logistique, nous prenons en charge l'intégralité de votre événement d'entreprise en Bretagne.",
+      "P3": "La Bretagne offre un cadre unique : châteaux, domaines maritimes, centres de congrès modernes à Rennes, espaces nature… Nous sélectionnons le lieu parfait pour vos objectifs et votre budget.",
+      "IMG_ALT": "Séminaire en Bretagne"
+    },
+    "TYPES": {
+      "EYEBROW": "Nos événements",
+      "TITLE": "Tous Types d'Événements Professionnels",
+      "ITEMS": [
+        { "icon": "🎯", "title": "Séminaires résidentiels", "desc": "Un ou plusieurs jours en immersion, avec hébergement, repas et animations. Nous gérons tout de A à Z." },
+        { "icon": "💡", "title": "Team-building", "desc": "Activités originales et fédératrices pour renforcer la cohésion d'équipe en plein cœur de la Bretagne." },
+        { "icon": "🎤", "title": "Conférences & conventions", "desc": "Scénographie de scène, régie technique, accueil des participants et coordination des intervenants." },
+        { "icon": "🥂", "title": "Soirées d'entreprise", "desc": "Galas, dîners de fin d'année, cocktails de prestige. Des soirées mémorables qui renforcent vos liens professionnels." },
+        { "icon": "🏆", "title": "Incentives", "desc": "Programmes sur mesure pour récompenser et motiver vos équipes avec des expériences uniques en Bretagne." },
+        { "icon": "📋", "title": "Assemblées générales", "desc": "Organisation logistique et technique de vos AG, congrès et réunions plénières en Bretagne." }
+      ]
+    },
+    "METHODE": {
+      "EYEBROW": "Notre approche",
+      "TITLE": "Une Organisation Rigoureuse, de A à Z",
+      "ITEMS": [
+        { "num": "01", "title": "Définition des objectifs", "desc": "Nous analysons vos enjeux, votre culture d'entreprise et vos attentes pour proposer un événement aligné avec vos objectifs stratégiques." },
+        { "num": "02", "title": "Recherche du lieu", "desc": "Grâce à notre réseau en Bretagne, nous sélectionnons les meilleurs lieux disponibles à Rennes et dans toute la région selon vos critères." },
+        { "num": "03", "title": "Conception du programme", "desc": "Création d'un programme sur mesure : horaires, animations, restauration, transport, hébergement. Chaque détail est anticipé." },
+        { "num": "04", "title": "Coordination le Jour J", "desc": "Notre équipe est présente le jour de votre événement pour orchestrer chaque prestataire et vous permettre de vous concentrer sur vos participants." }
+      ]
+    },
+    "CTA": {
+      "EYEBROW": "Parlons de votre projet",
+      "TITLE1": "Organisons votre prochain",
+      "TITLE2": "séminaire en Bretagne",
+      "TEXT": "Date, nombre de participants, type d'événement, budget… Partagez-nous votre brief et recevez une proposition détaillée dans les 48 heures.",
+      "BTN": "Demander un devis"
+    }
+  },
+  "APROPOS": {
+    "HERO": {
+      "EYEBROW": "Notre histoire · Rennes, Bretagne",
+      "TITLE1": "L'Événement Peter,",
+      "TITLE2": "Votre Partenaire de Confiance",
+      "DESC": "Une agence fondée sur la passion, l'excellence et une connaissance profonde de la Bretagne. Rencontrons-nous."
+    },
+    "MAIN": {
+      "IMG_ALT": "Peter & l'équipe",
+      "EYEBROW": "Qui sommes-nous",
+      "TITLE": "Une Agence Dédiée à Vos Événements les Plus Précieux",
+      "P1": "<strong>L'Événement Peter</strong> est votre partenaire événementiel de confiance pour organiser un mariage inoubliable. L'agence est basée en <strong>Bretagne</strong>, et son activité est entièrement consacrée à la création d'expériences mémorables pour les couples qui nous choisissent pour célébrer leur jour le plus exclusif et unique.",
+      "P2": "Notre équipe travaille avec passion : elle est expérimentée et s'engage à assurer un service haut de gamme et sur mesure. Nous choisir, c'est vous donner la certitude que votre mariage sera non seulement géré à la perfection, mais également à l'origine de souvenirs inoubliables.",
+      "P3": "Au-delà du mariage, L'Événement Peter accompagne aussi les entreprises pour leurs séminaires et événements corporate, ainsi que les familles pour des obsèques et cérémonies organisées avec dignité et soin. Chaque événement, qu'il soit de joie ou de recueillement, mérite la même attention et le même professionnalisme.",
+      "P4": "Découvrez vite notre ample gamme de prestations et laissez-nous vous accompagner pour créer une célébration unique !"
+    },
+    "VALEURS": {
+      "EYEBROW": "Ce qui nous anime",
+      "TITLE": "Nos Valeurs",
+      "ITEMS": [
+        { "titre": "Excellence", "texte": "Nous ne transigeons jamais sur la qualité. Chaque prestataire, chaque détail est choisi avec soin pour atteindre l'excellence." },
+        { "titre": "Sur mesure", "texte": "Aucun événement ne ressemble à un autre. Chaque projet est unique et mérite une attention et une créativité sans compromis." },
+        { "titre": "Écoute", "texte": "Nous prenons le temps de vous connaître, de comprendre vos désirs profonds et de les traduire en réalité avec justesse." },
+        { "titre": "Sérénité", "texte": "Notre rôle est de porter l'organisation à votre place pour que vous puissiez vivre pleinement chaque instant de votre événement." }
+      ]
+    },
+    "LOCAL": {
+      "EYEBROW": "Notre territoire",
+      "TITLE": "Ancrés en Bretagne, Passionnés par notre Région",
+      "P1": "La Bretagne est bien plus qu'un décor pour nous — c'est notre maison. Cette passion pour notre région se traduit dans chaque événement que nous organisons : nous connaissons les plus beaux lieux, les meilleurs artisans et prestataires locaux, les coins de carte postale qui feront de votre mariage une célébration authentiquement bretonne.",
+      "P2": "Basée à <strong>Rennes</strong>, notre agence intervient sur toute la Bretagne : Ille-et-Vilaine, Morbihan, Finistère et Côtes-d'Armor. Du château de bord de mer à la demeure de campagne, du centre de congrès rennais au domaine viticole breton, nous connaissons tous les lieux d'exception de la région.",
+      "IMG_ALT": "Bretagne",
+      "BTN": "Rencontrons-nous"
+    },
+    "CTA": {
+      "EYEBROW": "Commençons ensemble",
+      "TITLE1": "Votre événement mérite",
+      "TITLE2": "le meilleur de la Bretagne",
+      "BTN1": "Découvrir nos mariages",
+      "BTN2": "Nous contacter"
+    }
+  },
+  "CONTACT": {
+    "HERO": {
+      "EYEBROW": "Agence événementielle · Bretagne & Rennes",
+      "TITLE1": "Parlons de Votre",
+      "TITLE2": "Projet Événementiel",
+      "DESC": "Mariage en Bretagne, séminaire à Rennes, décoration sur mesure… Partagez-nous votre projet. Nous vous répondons sous 48 heures avec une proposition personnalisée."
+    },
+    "FORM": {
+      "EYEBROW": "Demande de devis gratuit",
+      "TITLE": "Votre Message",
+      "PRENOM": "Prénom",
+      "NOM": "Nom",
+      "EMAIL": "Email",
+      "TELEPHONE": "Téléphone",
+      "TYPE": "Type d'événement",
+      "TYPE_PLACEHOLDER": "Sélectionner…",
+      "DATE": "Date envisagée",
+      "MESSAGE": "Votre message",
+      "MESSAGE_PLACEHOLDER": "Décrivez votre projet : lieu envisagé, nombre d'invités, vos attentes…",
+      "SUBMIT": "Envoyer ma demande",
+      "SENDING": "Envoi en cours…",
+      "ERROR_PRENOM": "Prénom requis",
+      "ERROR_NOM": "Nom requis",
+      "ERROR_EMAIL": "Email valide requis",
+      "ERROR_TYPE": "Veuillez sélectionner un type",
+      "ERROR_MESSAGE": "Message requis (20 caractères minimum)",
+      "SUCCESS_TITLE": "Message envoyé !",
+      "SUCCESS_TEXT": "Merci pour votre message. Nous reviendrons vers vous sous 48 heures pour discuter de votre projet en Bretagne.",
+      "ERROR_SEND": "Une erreur est survenue. Merci de nous écrire directement à levenementpeter@gmail.com",
+      "TYPES": [
+        "Mariage en Bretagne",
+        "Design & Décoration mariage",
+        "Séminaire d'entreprise",
+        "Événement corporate",
+        "Obsèques & cérémonie",
+        "Autre événement"
+      ]
+    },
+    "INFO": {
+      "EYEBROW": "Nous trouver",
+      "TITLE": "L'Événement Peter",
+      "ADDRESS_LABEL": "Adresse",
+      "ADDRESS": "Rennes, Bretagne",
+      "ADDRESS_SUB": "Interventions dans toute la Bretagne",
+      "PHONE_LABEL": "Téléphone",
+      "EMAIL_LABEL": "Email",
+      "HOURS_LABEL": "Horaires",
+      "HOURS": "Lundi – Vendredi : 9h – 18h30<br>Samedi : 10h – 17h",
+      "NOTE": "Nous couvrons toute la Bretagne pour l'organisation de mariages, séminaires et événements à Rennes, Saint-Malo, Brest, Vannes, Lorient et dans toute la région."
+    }
+  },
+  "FOOTER": {
+    "TAGLINE": "Votre partenaire événementiel haut de gamme en Bretagne. Mariages, séminaires, décoration et bien plus encore.",
+    "ENGLISH_SPOKEN": "Services disponibles en anglais",
+    "NAV_TITLE": "Navigation",
+    "SERVICES_TITLE": "Prestations",
+    "CONTACT_TITLE": "Contact",
+    "SERVICE_MARIAGE": "Organisation de mariage",
+    "SERVICE_DECO": "Décoration mariage",
+    "SERVICE_FLORAL": "Design floral",
+    "SERVICE_SEM": "Séminaires d'entreprise",
+    "SERVICE_CORP": "Événements corporate",
+    "SERVICE_OBSEQUES": "Obsèques & cérémonies",
+    "ADDRESS": "Rennes, Bretagne",
+    "HOURS": "Lun–Ven : 9h–18h30 · Sam : 10h–17h",
+    "COPYRIGHT": "© {{year}} L'Événement Peter — Agence événementielle Bretagne & Rennes. Tous droits réservés.",
+    "MENTIONS": "Mentions légales",
+    "CONFIDENTIALITE": "Politique de confidentialité"
+  }
+}

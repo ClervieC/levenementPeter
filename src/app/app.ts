@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LanguageService } from './services/language.service';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +10,10 @@ import { FooterComponent } from './components/footer/footer.component';
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App {}
+export class App implements OnInit {
+  private lang = inject(LanguageService);
+
+  ngOnInit(): void {
+    this.lang.init();
+  }
+}

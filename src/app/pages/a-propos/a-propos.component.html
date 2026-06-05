@@ -1,52 +1,40 @@
 <section class="page-hero">
   <div class="container">
-    <span class="section-eyebrow">Notre histoire · Rennes, Bretagne</span>
-    <h1>L'Événement Peter,<br><em>Votre Partenaire de Confiance</em></h1>
+    <span class="section-eyebrow">{{ 'APROPOS.HERO.EYEBROW' | translate }}</span>
+    <h1>{{ 'APROPOS.HERO.TITLE1' | translate }}<br><em>{{ 'APROPOS.HERO.TITLE2' | translate }}</em></h1>
     <span class="gold-line" style="margin-block:1.5rem"></span>
-    <p>
-      Une agence fondée sur la passion, l'excellence et une connaissance profonde de la Bretagne. Rencontrons-nous.
-    </p>
+    <p>{{ 'APROPOS.HERO.DESC' | translate }}</p>
   </div>
 </section>
 
-<!-- Description principale -->
 <section class="section section--cream">
   <div class="container about-main">
     <div class="about-main__image" aria-hidden="true">
       <div class="image-placeholder tall">
-        <span class="section-eyebrow" style="margin:0">Peter &amp; l'équipe</span>
+        <span class="section-eyebrow" style="margin:0">{{ 'APROPOS.MAIN.IMG_ALT' | translate }}</span>
       </div>
     </div>
     <div class="about-main__text">
-      <span class="section-eyebrow">Qui sommes-nous</span>
-      <h2>Une Agence Dédiée à Vos Événements les Plus Précieux</h2>
+      <span class="section-eyebrow">{{ 'APROPOS.MAIN.EYEBROW' | translate }}</span>
+      <h2>{{ 'APROPOS.MAIN.TITLE' | translate }}</h2>
       <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
-      <p>
-        <strong>L'Événement Peter</strong> est votre partenaire événementiel de confiance pour organiser un mariage inoubliable. L'agence est basée en <strong>Bretagne</strong>, et son activité est entièrement consacrée à la création d'expériences mémorables pour les couples qui nous choisissent pour célébrer leur jour le plus exclusif et unique.
-      </p>
-      <p style="margin-top:1.2rem">
-        Notre équipe travaille avec passion : elle est expérimentée et s'engage à assurer un service haut de gamme et sur mesure. Nous choisir, c'est vous donner la certitude que votre mariage sera non seulement géré à la perfection, mais également à l'origine de souvenirs inoubliables.
-      </p>
-      <p style="margin-top:1.2rem">
-        Au-delà du mariage, L'Événement Peter accompagne aussi les entreprises pour leurs séminaires et événements corporate, ainsi que les familles pour des obsèques et cérémonies organisées avec dignité et soin. Chaque événement, qu'il soit de joie ou de recueillement, mérite la même attention et le même professionnalisme.
-      </p>
-      <p style="margin-top:1.2rem">
-        Découvrez vite notre ample gamme de prestations et laissez-nous vous accompagner pour créer une célébration unique !
-      </p>
+      <p [innerHTML]="'APROPOS.MAIN.P1' | translate"></p>
+      <p style="margin-top:1.2rem">{{ 'APROPOS.MAIN.P2' | translate }}</p>
+      <p style="margin-top:1.2rem">{{ 'APROPOS.MAIN.P3' | translate }}</p>
+      <p style="margin-top:1.2rem">{{ 'APROPOS.MAIN.P4' | translate }}</p>
     </div>
   </div>
 </section>
 
-<!-- Nos valeurs -->
 <section class="section" aria-labelledby="valeurs-title">
   <div class="container">
     <div class="section-header">
-      <span class="section-eyebrow">Ce qui nous anime</span>
-      <h2 id="valeurs-title">Nos Valeurs</h2>
+      <span class="section-eyebrow">{{ 'APROPOS.VALEURS.EYEBROW' | translate }}</span>
+      <h2 id="valeurs-title">{{ 'APROPOS.VALEURS.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="valeurs-grid">
-      @for (v of valeurs; track v.titre) {
+      @for (v of ('APROPOS.VALEURS.ITEMS' | translate); track v.titre) {
         <div class="valeur-card">
           <div class="valeur-card__line"></div>
           <h3>{{ v.titre }}</h3>
@@ -57,38 +45,32 @@
   </div>
 </section>
 
-<!-- Ancrage local -->
 <section class="section section--dark" aria-labelledby="local-title">
   <div class="container local-section">
     <div>
-      <span class="section-eyebrow">Notre territoire</span>
-      <h2 id="local-title">Ancrés en Bretagne, Passionnés par notre Région</h2>
+      <span class="section-eyebrow">{{ 'APROPOS.LOCAL.EYEBROW' | translate }}</span>
+      <h2 id="local-title">{{ 'APROPOS.LOCAL.TITLE' | translate }}</h2>
       <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
-      <p>
-        La Bretagne est bien plus qu'un décor pour nous — c'est notre maison. Cette passion pour notre région se traduit dans chaque événement que nous organisons : nous connaissons les plus beaux lieux, les meilleurs artisans et prestataires locaux, les coins de carte postale qui feront de votre mariage une célébration authentiquement bretonne.
-      </p>
-      <p style="margin-top:1rem">
-        Basée à <strong>Rennes</strong>, notre agence intervient sur toute la Bretagne : Ille-et-Vilaine, Morbihan, Finistère et Côtes-d'Armor. Du château de bord de mer à la demeure de campagne, du centre de congrès rennais au domaine viticole breton, nous connaissons tous les lieux d'exception de la région.
-      </p>
-      <a routerLink="/contact" class="btn btn--gold" style="margin-top:2rem; display:inline-block">
-        Rencontrons-nous
+      <p>{{ 'APROPOS.LOCAL.P1' | translate }}</p>
+      <p style="margin-top:1rem" [innerHTML]="'APROPOS.LOCAL.P2' | translate"></p>
+      <a routerLink="/contact" class="btn btn--gold" style="margin-top:2rem;display:inline-block">
+        {{ 'APROPOS.LOCAL.BTN' | translate }}
       </a>
     </div>
     <div class="image-placeholder dark" aria-hidden="true">
-      <span class="section-eyebrow" style="margin:0;color:rgba(255,255,255,0.4)">Bretagne</span>
+      <span class="section-eyebrow" style="margin:0;color:rgba(255,255,255,0.4)">{{ 'APROPOS.LOCAL.IMG_ALT' | translate }}</span>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
 <section class="section">
   <div class="container" style="text-align:center">
-    <span class="section-eyebrow">Commençons ensemble</span>
-    <h2>Votre événement mérite<br>le meilleur de la Bretagne</h2>
+    <span class="section-eyebrow">{{ 'APROPOS.CTA.EYEBROW' | translate }}</span>
+    <h2>{{ 'APROPOS.CTA.TITLE1' | translate }}<br>{{ 'APROPOS.CTA.TITLE2' | translate }}</h2>
     <span class="gold-line" style="margin-block:1.5rem"></span>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem">
-      <a routerLink="/mariage" class="btn btn--gold">Découvrir nos mariages</a>
-      <a routerLink="/contact" class="btn btn--outline-dark">Nous contacter</a>
+      <a routerLink="/mariage" class="btn btn--gold">{{ 'APROPOS.CTA.BTN1' | translate }}</a>
+      <a routerLink="/contact" class="btn btn--outline-dark">{{ 'APROPOS.CTA.BTN2' | translate }}</a>
     </div>
   </div>
 </section>

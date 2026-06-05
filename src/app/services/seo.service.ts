@@ -9,7 +9,7 @@ export interface SeoConfig {
   ogImage?: string;
 }
 
-const BASE_URL  = 'https://www.levenement-peter.fr';
+const BASE_URL  = 'https://levenement-peter.vercel.app';
 const SITE_NAME = "L'Événement Peter";
 const DEFAULT_IMAGE = `${BASE_URL}/assets/og-image.jpg`;
 

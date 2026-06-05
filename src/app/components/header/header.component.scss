@@ -81,10 +81,78 @@
     }
   }
 
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    @media (max-width: 900px) { display: none; }
+  }
+
+  &__english-badge {
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-gold);
+    border: 1px solid rgba(201,168,68,0.35);
+    padding: 0.25rem 0.65rem;
+    white-space: nowrap;
+  }
+
+  &__lang {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  &__lang-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.45);
+    padding: 0.2rem 0.1rem;
+    transition: color var(--ease);
+
+    &.active, &:hover { color: var(--color-white); }
+    &.active { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--color-gold); }
+  }
+
+  &__lang-sep {
+    color: rgba(255,255,255,0.2);
+    font-size: 0.7rem;
+  }
+
   &__cta {
     padding: 0.65rem 1.5rem;
     font-size: 0.7rem;
-    @media (max-width: 900px) { display: none; }
+  }
+
+  &__mobile-lang {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.08);
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: rgba(255,255,255,0.45);
+      padding: 0;
+      transition: color var(--ease);
+      &.active, &:hover { color: var(--color-gold); }
+    }
+    span { color: rgba(255,255,255,0.2); }
   }
 
   /* Burger */

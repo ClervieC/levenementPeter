@@ -1,38 +1,39 @@
 <header class="header" [class.header--scrolled]="scrolled()">
   <div class="header__inner container">
 
-    <!-- Logo -->
     <a routerLink="/" class="header__logo" (click)="closeMenu()">
       <img src="/logo.jpg" alt="L'Événement Peter – Agence événementielle Bretagne" class="header__logo-img">
     </a>
 
-    <!-- Navigation desktop -->
+    <!-- Nav desktop -->
     <nav class="header__nav" aria-label="Navigation principale">
       @for (item of navItems; track item.path) {
-        <a
-          [routerLink]="item.path"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: item.path === '/' }"
-          class="header__nav-link"
-        >{{ item.label }}</a>
+        <a [routerLink]="item.path" routerLinkActive="active"
+           [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+           class="header__nav-link">
+          {{ item.key | translate }}
+        </a>
       }
     </nav>
 
-    <!-- CTA -->
-    <a routerLink="/contact" class="header__cta btn btn--gold" (click)="closeMenu()">
-      Nous Contacter
-    </a>
+    <!-- Sélecteur de langue + badge + CTA -->
+    <div class="header__actions">
+      <div class="header__lang">
+        <button class="header__lang-btn" [class.active]="lang.current() === 'fr'"
+                (click)="lang.set('fr')" aria-label="Français">FR</button>
+        <span class="header__lang-sep">|</span>
+        <button class="header__lang-btn" [class.active]="lang.current() === 'en'"
+                (click)="lang.set('en')" aria-label="English">EN</button>
+      </div>
+
+      <a routerLink="/contact" class="header__cta btn btn--gold" (click)="closeMenu()">
+        {{ 'NAV.CONTACT' | translate }}
+      </a>
+    </div>
 
     <!-- Burger -->
-    <button
-      class="header__burger"
-      [class.open]="menuOpen()"
-      (click)="toggleMenu()"
-      aria-label="Menu"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
+    <button class="header__burger" [class.open]="menuOpen()" (click)="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
     </button>
   </div>
 
@@ -40,17 +41,21 @@
   <div class="header__mobile" [class.open]="menuOpen()">
     <nav>
       @for (item of navItems; track item.path) {
-        <a
-          [routerLink]="item.path"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: item.path === '/' }"
-          class="header__mobile-link"
-          (click)="closeMenu()"
-        >{{ item.label }}</a>
+        <a [routerLink]="item.path" routerLinkActive="active"
+           [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+           class="header__mobile-link" (click)="closeMenu()">
+          {{ item.key | translate }}
+        </a>
       }
       <a routerLink="/contact" class="btn btn--gold" style="margin-top:1.5rem" (click)="closeMenu()">
-        Nous Contacter
+        {{ 'NAV.CONTACT' | translate }}
       </a>
+
+      <div class="header__mobile-lang">
+        <button [class.active]="lang.current() === 'fr'" (click)="lang.set('fr')">FR</button>
+        <span>|</span>
+        <button [class.active]="lang.current() === 'en'" (click)="lang.set('en')">EN</button>
+      </div>
     </nav>
   </div>
 </header>

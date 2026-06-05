@@ -5,42 +5,42 @@
           http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
-    <loc>https://www.levenement-peter.fr/</loc>
+    <loc>https://levenement-peter.vercel.app/</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://www.levenement-peter.fr/mariage</loc>
+    <loc>https://levenement-peter.vercel.app/mariage</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.levenement-peter.fr/design-decoration</loc>
+    <loc>https://levenement-peter.vercel.app/design-decoration</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.levenement-peter.fr/seminaires</loc>
+    <loc>https://levenement-peter.vercel.app/seminaires</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.levenement-peter.fr/a-propos</loc>
+    <loc>https://levenement-peter.vercel.app/a-propos</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://www.levenement-peter.fr/contact</loc>
+    <loc>https://levenement-peter.vercel.app/contact</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
