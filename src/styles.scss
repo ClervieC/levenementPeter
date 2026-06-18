@@ -1,20 +1,21 @@
 /* ============================================================
-   DESIGN SYSTEM – L'Événement Peter
-   Palette : Noir · Blanc · Or
+   DESIGN SYSTEM – Kalist Événementiel
+   Palette : Noir Chaud · Ivoire · Or Champagne
    ============================================================ */
 
 :root {
-  --color-black:      #0a0a0a;
-  --color-dark:       #1a1a1a;
-  --color-charcoal:   #2d2d2d;
-  --color-gray:       #7a7a7a;
-  --color-gray-light: #e0e0e0;
-  --color-cream:      #f8f5f0;
+  --color-black:      #0c0a08;   /* noir chaud, légère teinte sépia */
+  --color-dark:       #1e1a14;   /* sombre chaud */
+  --color-charcoal:   #3a342c;   /* charbon chaud */
+  --color-gray:       #877f74;   /* gris chaud */
+  --color-gray-light: #e4ddd4;   /* gris clair chaud */
+  --color-cream:      #faf5ec;   /* ivoire chaud */
+  --color-champagne:  #f0e6d0;   /* champagne pour accents */
   --color-white:      #ffffff;
 
-  --color-gold:       #c9a844;
-  --color-gold-light: #e8d5a0;
-  --color-gold-dark:  #9e7c2a;
+  --color-gold:       #c8a84a;   /* or champagne */
+  --color-gold-light: #ead9a6;   /* or clair */
+  --color-gold-dark:  #9a7528;   /* or profond */
 
   --font-heading: 'Cormorant Garamond', Georgia, serif;
   --font-body:    'Raleway', sans-serif;
@@ -73,10 +74,10 @@ p  { font-size: 1rem; font-weight: 300; color: var(--color-charcoal); }
 .section { padding-block: var(--space-xl); }
 
 .section--dark {
-  background: var(--color-black);
+  background: linear-gradient(160deg, #181410 0%, var(--color-black) 100%);
   color: var(--color-white);
   h1, h2, h3, h4 { color: var(--color-white); }
-  p { color: rgba(255,255,255,0.72); }
+  p { color: rgba(255,255,255,0.75); }
 }
 
 .section--cream { background: var(--color-cream); }
@@ -128,21 +129,34 @@ p  { font-size: 1rem; font-weight: 300; color: var(--color-charcoal); }
   background: var(--color-gold);
   color: var(--color-black);
   border-color: var(--color-gold);
-  &:hover { background: var(--color-gold-dark); border-color: var(--color-gold-dark); }
+  &:hover {
+    background: var(--color-gold-dark);
+    border-color: var(--color-gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(200,168,74,0.28);
+  }
 }
 
 .btn--outline {
   background: transparent;
   color: var(--color-white);
-  border-color: rgba(255,255,255,0.5);
-  &:hover { border-color: var(--color-gold); color: var(--color-gold); }
+  border-color: rgba(255,255,255,0.45);
+  &:hover {
+    border-color: var(--color-gold);
+    color: var(--color-gold);
+    transform: translateY(-2px);
+  }
 }
 
 .btn--outline-dark {
   background: transparent;
   color: var(--color-black);
-  border-color: var(--color-black);
-  &:hover { background: var(--color-black); color: var(--color-white); }
+  border-color: rgba(12,10,8,0.5);
+  &:hover {
+    background: var(--color-black);
+    color: var(--color-white);
+    transform: translateY(-2px);
+  }
 }
 
 /* Animations */
@@ -157,7 +171,7 @@ p  { font-size: 1rem; font-weight: 300; color: var(--color-charcoal); }
 
 /* Page hero interne */
 .page-hero {
-  background: var(--color-black);
+  background: linear-gradient(160deg, #181410 0%, var(--color-black) 100%);
   padding-block: 6rem 4rem;
   text-align: center;
   position: relative;
@@ -167,7 +181,9 @@ p  { font-size: 1rem; font-weight: 300; color: var(--color-charcoal); }
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(201,168,68,0.07) 0%, transparent 60%);
+    background:
+      radial-gradient(ellipse at 80% 20%, rgba(200,168,74,0.1) 0%, transparent 55%),
+      radial-gradient(ellipse at 20% 80%, rgba(200,168,74,0.05) 0%, transparent 45%);
     pointer-events: none;
   }
 
@@ -233,4 +249,24 @@ p  { font-size: 1rem; font-weight: 300; color: var(--color-charcoal); }
     --space-xl:  4rem;
     --space-xxl: 6rem;
   }
+}
+
+/* ============================================================
+   ANIMATE ON SCROLL
+   ============================================================ */
+[data-aos] {
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-aos='fade-up']    { opacity: 0; transform: translateY(40px); }
+[data-aos='fade-in']    { opacity: 0; }
+[data-aos='fade-left']  { opacity: 0; transform: translateX(-40px); }
+[data-aos='fade-right'] { opacity: 0; transform: translateX(40px); }
+
+[data-aos].aos--visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] { transition: none; opacity: 1 !important; transform: none !important; }
 }

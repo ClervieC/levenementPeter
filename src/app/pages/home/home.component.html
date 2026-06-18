@@ -13,7 +13,7 @@
       {{ 'HOME.HERO.SUBTITLE2' | translate }}
     </p>
     <div class="hero__cta">
-      <a routerLink="/mariage" class="btn btn--gold">{{ 'HOME.HERO.CTA_MARIAGE' | translate }}</a>
+      <a href="#services" class="btn btn--gold" (click)="scrollToServices($event)">{{ 'HOME.HERO.CTA_MARIAGE' | translate }}</a>
       <a routerLink="/contact" class="btn btn--outline">{{ 'HOME.HERO.CTA_CONTACT' | translate }}</a>
     </div>
   </div>
@@ -26,7 +26,7 @@
 <!-- ===== INTRO ===== -->
 <section class="intro section section--cream">
   <div class="container intro__inner">
-    <div class="intro__text">
+    <div class="intro__text" data-aos="fade-left">
       <span class="section-eyebrow">{{ 'HOME.INTRO.EYEBROW' | translate }}</span>
       <h2>{{ 'HOME.INTRO.TITLE' | translate }}</h2>
       <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
@@ -34,7 +34,7 @@
       <p style="margin-top:1rem">{{ 'HOME.INTRO.P2' | translate }}</p>
       <a routerLink="/a-propos" class="btn btn--outline-dark" style="margin-top:2rem">{{ 'HOME.INTRO.CTA' | translate }}</a>
     </div>
-    <div class="intro__image" aria-hidden="true">
+    <div class="intro__image" aria-hidden="true" data-aos="fade-right" data-aos-delay="150">
       <div class="intro__image-placeholder">
         <span class="section-eyebrow" style="margin:0">{{ 'HOME.INTRO.IMG_ALT' | translate }}</span>
       </div>
@@ -43,16 +43,16 @@
 </section>
 
 <!-- ===== SERVICES ===== -->
-<section class="services section" aria-labelledby="services-title">
+<section id="services" class="services section" aria-labelledby="services-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'HOME.SERVICES.EYEBROW' | translate }}</span>
       <h2 id="services-title">{{ 'HOME.SERVICES.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="services__grid">
       @for (s of ('HOME.SERVICES.ITEMS' | translate); track s.title) {
-        <article class="service-card">
+        <article class="service-card" data-aos="fade-up" [attr.data-aos-delay]="$index * 80">
           <div class="service-card__icon">
             @if (s.icon === 'rings') {
               <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="8" cy="12" r="5"/><circle cx="16" cy="12" r="5"/></svg>
@@ -88,13 +88,13 @@
 <!-- ===== ZONE ===== -->
 <section class="zone section section--dark" aria-labelledby="zone-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'HOME.ZONE.EYEBROW' | translate }}</span>
       <h2 id="zone-title">{{ 'HOME.ZONE.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
-    <p class="zone__intro" [innerHTML]="'HOME.ZONE.INTRO' | translate"></p>
-    <ul class="zone__list" aria-label="{{ 'HOME.ZONE.LIST_ARIA_LABEL' | translate }}">
+    <p class="zone__intro" [innerHTML]="'HOME.ZONE.INTRO' | translate" data-aos="fade-up" data-aos-delay="100"></p>
+    <ul class="zone__list" aria-label="{{ 'HOME.ZONE.LIST_ARIA_LABEL' | translate }}" data-aos="fade-up" data-aos-delay="200">
       @for (z of zones; track z) {
         <li class="zone__item">{{ z }}</li>
       }
@@ -109,14 +109,14 @@
 <!-- ===== WHY ===== -->
 <section class="why section section--cream" aria-labelledby="why-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'HOME.WHY.EYEBROW' | translate }}</span>
       <h2 id="why-title">{{ 'HOME.WHY.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="why__grid">
       @for (item of ('HOME.WHY.ITEMS' | translate); track item.num) {
-        <div class="why__item">
+        <div class="why__item" data-aos="fade-up" [attr.data-aos-delay]="$index * 100">
           <div class="why__number">{{ item.num }}</div>
           <h3>{{ item.title }}</h3>
           <p>{{ item.desc }}</p>
@@ -128,7 +128,7 @@
 
 <!-- ===== CTA ===== -->
 <section class="cta section section--dark">
-  <div class="container cta__inner">
+  <div class="container cta__inner" data-aos="fade-up">
     <span class="section-eyebrow">{{ 'HOME.CTA.EYEBROW' | translate }}</span>
     <h2 class="cta__title">
       {{ 'HOME.CTA.TITLE' | translate }}<br>

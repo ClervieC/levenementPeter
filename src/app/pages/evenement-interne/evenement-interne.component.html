@@ -11,14 +11,14 @@
 <!-- ===== INTRO ===== -->
 <section class="section section--cream">
   <div class="container ev-intro">
-    <div>
+    <div data-aos="fade-left">
       <span class="section-eyebrow">{{ 'EV_INTERNE.INTRO.EYEBROW' | translate }}</span>
       <h2>{{ 'EV_INTERNE.INTRO.TITLE' | translate }}</h2>
       <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
       <p [innerHTML]="'EV_INTERNE.INTRO.P1' | translate"></p>
       <p style="margin-top:1rem">{{ 'EV_INTERNE.INTRO.P2' | translate }}</p>
     </div>
-    <div class="image-placeholder" aria-hidden="true">
+    <div class="image-placeholder" aria-hidden="true" data-aos="fade-right" data-aos-delay="150">
       <span class="section-eyebrow" style="margin:0">{{ 'EV_INTERNE.INTRO.IMG_ALT' | translate }}</span>
     </div>
   </div>
@@ -27,14 +27,14 @@
 <!-- ===== NOS ÉVÉNEMENTS ===== -->
 <section class="section" aria-labelledby="ev-interne-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'EV_INTERNE.EVENTS.EYEBROW' | translate }}</span>
       <h2 id="ev-interne-title">{{ 'EV_INTERNE.EVENTS.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="events-grid">
-      @for (e of ('EV_INTERNE.EVENTS.ITEMS' | translate); track e.title) {
-        <div class="event-card">
+      @for (e of ('EV_INTERNE.EVENTS.ITEMS' | translate); track e.title; let i = $index) {
+        <div class="event-card" data-aos="fade-up" [attr.data-aos-delay]="i * 100">
           <span class="event-card__icon">{{ e.icon }}</span>
           <h3>{{ e.title }}</h3>
           <p>{{ e.desc }}</p>
@@ -47,14 +47,14 @@
 <!-- ===== POURQUOI NOUS ===== -->
 <section class="section section--dark" aria-labelledby="avantages-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'EV_INTERNE.AVANTAGES.EYEBROW' | translate }}</span>
       <h2 id="avantages-title">{{ 'EV_INTERNE.AVANTAGES.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="avantages-grid">
-      @for (a of ('EV_INTERNE.AVANTAGES.ITEMS' | translate); track a.title) {
-        <div class="avantage-card">
+      @for (a of ('EV_INTERNE.AVANTAGES.ITEMS' | translate); track a.title; let i = $index) {
+        <div class="avantage-card" data-aos="fade-up" [attr.data-aos-delay]="i * 100">
           <span class="avantage-card__icon">{{ a.icon }}</span>
           <h3>{{ a.title }}</h3>
           <p>{{ a.desc }}</p>
@@ -72,7 +72,7 @@
 
 <!-- ===== CTA ===== -->
 <section class="section">
-  <div class="container" style="text-align:center">
+  <div class="container" style="text-align:center" data-aos="fade-up">
     <span class="section-eyebrow">{{ 'EV_INTERNE.CTA.EYEBROW' | translate }}</span>
     <h2>{{ 'EV_INTERNE.CTA.TITLE1' | translate }}<br><em>{{ 'EV_INTERNE.CTA.TITLE2' | translate }}</em></h2>
     <span class="gold-line" style="margin-block:1.5rem"></span>

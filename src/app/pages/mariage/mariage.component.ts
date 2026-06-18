@@ -4,6 +4,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { SeoService } from '../../services/seo.service';
 import { PhotoCarouselComponent } from '../../components/photo-carousel/photo-carousel.component';
 
+
 @Component({
   selector: 'app-mariage',
   imports: [RouterLink, TranslateModule, PhotoCarouselComponent],
@@ -16,7 +17,7 @@ export class MariageComponent implements OnInit {
   ngOnInit(): void {
     this.seo.update({
       title: "Organisation Mariage Bretagne Rennes – Wedding Planner",
-      description: "Organisez votre mariage en Bretagne avec L'Événement Peter, wedding planner à Rennes. Coordination complète, Jour J, accompagnement sur mesure.",
+      description: "Organisez votre mariage en Bretagne avec Kalist, wedding planner à Rennes. Coordination complète, Jour J, accompagnement sur mesure.",
       keywords: "organisation mariage bretagne, mariage rennes, wedding planner bretagne, wedding planner rennes",
       canonical: '/mariage'
     });

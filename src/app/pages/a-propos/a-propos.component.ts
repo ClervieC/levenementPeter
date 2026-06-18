@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { SeoService } from '../../services/seo.service';
 
+
 @Component({
   selector: 'app-a-propos',
   imports: [RouterLink, TranslateModule],
@@ -15,7 +16,7 @@ export class AProposComponent implements OnInit {
   ngOnInit(): void {
     this.seo.update({
       title: "Notre Agence Événementielle Bretagne – À Propos",
-      description: "Découvrez L'Événement Peter, agence événementielle passionnée basée à Rennes, Bretagne.",
+      description: "Découvrez Kalist, agence événementielle passionnée basée à Rennes, Bretagne.",
       keywords: "agence événementielle bretagne, wedding planner rennes, agence mariage bretagne",
       canonical: '/a-propos'
     });

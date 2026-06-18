@@ -10,7 +10,7 @@
 
 <!-- ===== INTRO ===== -->
 <section class="section section--cream" aria-labelledby="brand-intro-title">
-  <div class="container brand-intro">
+  <div class="container brand-intro" data-aos="fade-up">
     <span class="section-eyebrow">{{ 'IMAGE_MARQUE.INTRO.EYEBROW' | translate }}</span>
     <h2 id="brand-intro-title">{{ 'IMAGE_MARQUE.INTRO.TITLE' | translate }}</h2>
     <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
@@ -22,14 +22,14 @@
 <!-- ===== NOS ÉVÉNEMENTS ===== -->
 <section class="section" aria-labelledby="brand-events-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'IMAGE_MARQUE.EVENTS.EYEBROW' | translate }}</span>
       <h2 id="brand-events-title">{{ 'IMAGE_MARQUE.EVENTS.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="brand-events-grid">
-      @for (e of ('IMAGE_MARQUE.EVENTS.ITEMS' | translate); track e.title) {
-        <div class="brand-card">
+      @for (e of ('IMAGE_MARQUE.EVENTS.ITEMS' | translate); track e.title; let i = $index) {
+        <div class="brand-card" data-aos="fade-up" [attr.data-aos-delay]="i * 100">
           <span class="brand-card__icon">{{ e.icon }}</span>
           <h3 class="brand-card__title">{{ e.title }}</h3>
           <p class="brand-card__desc">{{ e.desc }}</p>
@@ -42,14 +42,14 @@
 <!-- ===== NOTRE VISION ===== -->
 <section class="section section--dark" aria-labelledby="vision-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'IMAGE_MARQUE.VISION.EYEBROW' | translate }}</span>
       <h2 id="vision-title">{{ 'IMAGE_MARQUE.VISION.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="vision-grid">
-      @for (v of ('IMAGE_MARQUE.VISION.ITEMS' | translate); track v.title) {
-        <div class="vision-item">
+      @for (v of ('IMAGE_MARQUE.VISION.ITEMS' | translate); track v.title; let i = $index) {
+        <div class="vision-item" data-aos="fade-up" [attr.data-aos-delay]="i * 100">
           <div class="vision-item__icon">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
               <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
@@ -72,7 +72,7 @@
 
 <!-- ===== CTA ===== -->
 <section class="section">
-  <div class="container" style="text-align:center">
+  <div class="container" style="text-align:center" data-aos="fade-up">
     <span class="section-eyebrow">{{ 'IMAGE_MARQUE.CTA.EYEBROW' | translate }}</span>
     <h2>{{ 'IMAGE_MARQUE.CTA.TITLE1' | translate }}<br><em>{{ 'IMAGE_MARQUE.CTA.TITLE2' | translate }}</em></h2>
     <span class="gold-line" style="margin-block:1.5rem"></span>

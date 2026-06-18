@@ -11,7 +11,7 @@
 <!-- ===== INTRO ===== -->
 <section class="section section--cream">
   <div class="container off-intro">
-    <div>
+    <div data-aos="fade-left">
       <span class="section-eyebrow">{{ 'OFFICIANTE.INTRO.EYEBROW' | translate }}</span>
       <h2>{{ 'OFFICIANTE.INTRO.TITLE' | translate }}</h2>
       <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
@@ -19,7 +19,7 @@
       <p style="margin-top:1rem">{{ 'OFFICIANTE.INTRO.P2' | translate }}</p>
       <p style="margin-top:1rem">{{ 'OFFICIANTE.INTRO.P3' | translate }}</p>
     </div>
-    <div class="image-placeholder" aria-hidden="true">
+    <div class="image-placeholder" aria-hidden="true" data-aos="fade-right" data-aos-delay="150">
       <span class="section-eyebrow" style="margin:0">{{ 'OFFICIANTE.INTRO.IMG_ALT' | translate }}</span>
     </div>
   </div>
@@ -28,14 +28,14 @@
 <!-- ===== TYPES DE CÉRÉMONIES ===== -->
 <section class="section" aria-labelledby="ceremonies-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'OFFICIANTE.CEREMONIES.EYEBROW' | translate }}</span>
       <h2 id="ceremonies-title">{{ 'OFFICIANTE.CEREMONIES.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="ceremonies-grid">
-      @for (c of ('OFFICIANTE.CEREMONIES.ITEMS' | translate); track c.title) {
-        <div class="ceremony-card">
+      @for (c of ('OFFICIANTE.CEREMONIES.ITEMS' | translate); track c.title; let i = $index) {
+        <div class="ceremony-card" data-aos="fade-up" [attr.data-aos-delay]="i * 100">
           <span class="ceremony-card__icon">{{ c.icon }}</span>
           <h3 class="ceremony-card__title">{{ c.title }}</h3>
           <p class="ceremony-card__desc">{{ c.desc }}</p>
@@ -48,14 +48,14 @@
 <!-- ===== NOTRE MÉTHODE ===== -->
 <section class="section section--dark" aria-labelledby="methode-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'OFFICIANTE.METHODE.EYEBROW' | translate }}</span>
       <h2 id="methode-title">{{ 'OFFICIANTE.METHODE.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="methode-steps">
-      @for (s of ('OFFICIANTE.METHODE.STEPS' | translate); track s.num; let last = $last) {
-        <div class="methode-step">
+      @for (s of ('OFFICIANTE.METHODE.STEPS' | translate); track s.num; let i = $index) {
+        <div class="methode-step" data-aos="fade-up" [attr.data-aos-delay]="i * 120">
           <div class="methode-step__num">{{ s.num }}</div>
           <h3>{{ s.title }}</h3>
           <p>{{ s.desc }}</p>
@@ -73,7 +73,7 @@
 
 <!-- ===== CTA ===== -->
 <section class="section">
-  <div class="container" style="text-align:center">
+  <div class="container" style="text-align:center" data-aos="fade-up">
     <span class="section-eyebrow">{{ 'OFFICIANTE.CTA.EYEBROW' | translate }}</span>
     <h2>{{ 'OFFICIANTE.CTA.TITLE1' | translate }}<br><em>{{ 'OFFICIANTE.CTA.TITLE2' | translate }}</em></h2>
     <span class="gold-line" style="margin-block:1.5rem"></span>

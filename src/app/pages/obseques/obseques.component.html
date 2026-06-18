@@ -10,7 +10,7 @@
 
 <!-- ===== INTRO ===== -->
 <section class="section section--cream" aria-labelledby="obseques-intro-title">
-  <div class="container obseques-intro">
+  <div class="container obseques-intro" data-aos="fade-up">
     <span class="section-eyebrow">{{ 'OBSEQUES.INTRO.EYEBROW' | translate }}</span>
     <h2 id="obseques-intro-title">{{ 'OBSEQUES.INTRO.TITLE' | translate }}</h2>
     <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
@@ -23,14 +23,14 @@
 <!-- ===== NOS SERVICES ===== -->
 <section class="section" aria-labelledby="services-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'OBSEQUES.SERVICES.EYEBROW' | translate }}</span>
       <h2 id="services-title">{{ 'OBSEQUES.SERVICES.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="services-grid">
-      @for (s of ('OBSEQUES.SERVICES.ITEMS' | translate); track s.title) {
-        <div class="service-card">
+      @for (s of ('OBSEQUES.SERVICES.ITEMS' | translate); track s.title; let i = $index) {
+        <div class="service-card" data-aos="fade-up" [attr.data-aos-delay]="i * 90">
           <span class="service-card__icon">{{ s.icon }}</span>
           <h3 class="service-card__title">{{ s.title }}</h3>
           <p class="service-card__desc">{{ s.desc }}</p>
@@ -43,14 +43,14 @@
 <!-- ===== NOS ENGAGEMENTS ===== -->
 <section class="section section--dark" aria-labelledby="engagements-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'OBSEQUES.ENGAGEMENTS.EYEBROW' | translate }}</span>
       <h2 id="engagements-title">{{ 'OBSEQUES.ENGAGEMENTS.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="engagements-list">
-      @for (e of ('OBSEQUES.ENGAGEMENTS.ITEMS' | translate); track e.title) {
-        <div class="engagement-item">
+      @for (e of ('OBSEQUES.ENGAGEMENTS.ITEMS' | translate); track e.title; let i = $index) {
+        <div class="engagement-item" data-aos="fade-left" [attr.data-aos-delay]="i * 100">
           <div class="engagement-item__icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
@@ -75,7 +75,7 @@
 
 <!-- ===== CTA ===== -->
 <section class="section">
-  <div class="container" style="text-align:center">
+  <div class="container" style="text-align:center" data-aos="fade-up">
     <span class="section-eyebrow">{{ 'OBSEQUES.CTA.EYEBROW' | translate }}</span>
     <h2>{{ 'OBSEQUES.CTA.TITLE1' | translate }}<br><em>{{ 'OBSEQUES.CTA.TITLE2' | translate }}</em></h2>
     <span class="gold-line" style="margin-block:1.5rem"></span>

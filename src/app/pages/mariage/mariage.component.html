@@ -9,7 +9,7 @@
 
 <section class="section section--cream">
   <div class="container mariage-intro">
-    <div class="mariage-intro__text">
+    <div class="mariage-intro__text" data-aos="fade-left">
       <span class="section-eyebrow">{{ 'MARIAGE.INTRO.EYEBROW' | translate }}</span>
       <h2>{{ 'MARIAGE.INTRO.TITLE' | translate }}</h2>
       <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
@@ -17,7 +17,7 @@
       <p style="margin-top:1rem" [innerHTML]="'MARIAGE.INTRO.P2' | translate"></p>
       <p style="margin-top:1rem" [innerHTML]="'MARIAGE.INTRO.P3' | translate"></p>
     </div>
-    <div class="image-placeholder" aria-hidden="true">
+    <div class="image-placeholder" aria-hidden="true" data-aos="fade-right" data-aos-delay="150">
       <span class="section-eyebrow" style="margin:0">{{ 'MARIAGE.INTRO.IMG_ALT' | translate }}</span>
     </div>
   </div>
@@ -25,14 +25,14 @@
 
 <section class="section" aria-labelledby="prestations-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'MARIAGE.PRESTATIONS.EYEBROW' | translate }}</span>
       <h2 id="prestations-title">{{ 'MARIAGE.PRESTATIONS.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="prestations-grid">
       @for (p of ('MARIAGE.PRESTATIONS.ITEMS' | translate); track p.title; let i = $index) {
-        <div class="prestation-card">
+        <div class="prestation-card" data-aos="fade-up" [attr.data-aos-delay]="i * 100">
           <div class="prestation-card__number">0{{ i + 1 }}</div>
           <h3>{{ p.title }}</h3>
           <p>{{ p.desc }}</p>
@@ -44,12 +44,12 @@
 
 <section class="section section--cream" aria-labelledby="inclus-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'MARIAGE.INCLUS.EYEBROW' | translate }}</span>
       <h2 id="inclus-title">{{ 'MARIAGE.INCLUS.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
-    <ul class="checklist">
+    <ul class="checklist" data-aos="fade-up" data-aos-delay="100">
       @for (item of ('MARIAGE.INCLUS.ITEMS' | translate); track item) {
         <li>{{ item }}</li>
       }
@@ -60,13 +60,13 @@
 
 <section class="section section--dark" aria-labelledby="zone-title">
   <div class="container zone-section">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'MARIAGE.ZONE.EYEBROW' | translate }}</span>
       <h2 id="zone-title">{{ 'MARIAGE.ZONE.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
-    <p class="zone-section__text" [innerHTML]="'MARIAGE.ZONE.P1' | translate"></p>
-    <p class="zone-section__text" style="margin-top:1rem" [innerHTML]="'MARIAGE.ZONE.P2' | translate"></p>
+    <p class="zone-section__text" [innerHTML]="'MARIAGE.ZONE.P1' | translate" data-aos="fade-up" data-aos-delay="100"></p>
+    <p class="zone-section__text" style="margin-top:1rem" [innerHTML]="'MARIAGE.ZONE.P2' | translate" data-aos="fade-up" data-aos-delay="200"></p>
   </div>
 </section>
 
@@ -77,7 +77,7 @@
 </app-photo-carousel>
 
 <section class="section">
-  <div class="container" style="text-align:center">
+  <div class="container" style="text-align:center" data-aos="fade-up">
     <span class="section-eyebrow">{{ 'MARIAGE.CTA.EYEBROW' | translate }}</span>
     <h2>{{ 'MARIAGE.CTA.TITLE1' | translate }}<br>{{ 'MARIAGE.CTA.TITLE2' | translate }}</h2>
     <span class="gold-line" style="margin-block:1.5rem"></span>

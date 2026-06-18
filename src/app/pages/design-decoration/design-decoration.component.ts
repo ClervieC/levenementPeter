@@ -4,6 +4,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { SeoService } from '../../services/seo.service';
 import { PhotoCarouselComponent } from '../../components/photo-carousel/photo-carousel.component';
 
+
 @Component({
   selector: 'app-design-decoration',
   imports: [RouterLink, TranslateModule, PhotoCarouselComponent],
@@ -16,7 +17,7 @@ export class DesignDecorationComponent implements OnInit {
   ngOnInit(): void {
     this.seo.update({
       title: "Décoration & Design Mariage Bretagne – Fleurs, Scénographie",
-      description: "Design et décoration de mariage en Bretagne avec L'Événement Peter. Création florale, scénographie, mise en scène sur mesure à Rennes.",
+      description: "Design et décoration de mariage en Bretagne avec Kalist. Création florale, scénographie, mise en scène sur mesure à Rennes.",
       keywords: "décoration mariage bretagne, design mariage rennes, fleurs mariage bretagne, scénographie mariage",
       canonical: '/design-decoration'
     });

@@ -10,7 +10,7 @@
 
 <!-- ===== BIENVENUE ===== -->
 <section class="section section--cream" aria-labelledby="welcome-title">
-  <div class="container fetes-welcome">
+  <div class="container fetes-welcome" data-aos="fade-up">
     <span class="section-eyebrow">{{ 'FETES.WELCOME.EYEBROW' | translate }}</span>
     <h2 id="welcome-title">{{ 'FETES.WELCOME.TITLE' | translate }}</h2>
     <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
@@ -23,14 +23,14 @@
 <!-- ===== NOS 3 OFFRES ===== -->
 <section class="section" aria-labelledby="offres-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'FETES.OFFRES.EYEBROW' | translate }}</span>
       <h2 id="offres-title">{{ 'FETES.OFFRES.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="fetes-grid">
-      @for (offer of ('FETES.OFFRES.ITEMS' | translate); track offer.title) {
-        <div class="fete-card">
+      @for (offer of ('FETES.OFFRES.ITEMS' | translate); track offer.title; let i = $index) {
+        <div class="fete-card" data-aos="fade-up" [attr.data-aos-delay]="i * 120">
           <span class="fete-card__icon">{{ offer.icon }}</span>
           <h3 class="fete-card__title">{{ offer.title }}</h3>
           <p class="fete-card__desc">{{ offer.desc }}</p>
@@ -48,7 +48,7 @@
 
 <!-- ===== CTA ===== -->
 <section class="section">
-  <div class="container" style="text-align:center">
+  <div class="container" style="text-align:center" data-aos="fade-up">
     <span class="section-eyebrow">{{ 'FETES.CTA.EYEBROW' | translate }}</span>
     <h2>{{ 'FETES.CTA.TITLE1' | translate }}<br><em>{{ 'FETES.CTA.TITLE2' | translate }}</em></h2>
     <span class="gold-line" style="margin-block:1.5rem"></span>

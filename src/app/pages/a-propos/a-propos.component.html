@@ -10,12 +10,12 @@
 <!-- Intro Alix & Ingrid -->
 <section class="section section--cream">
   <div class="container about-main">
-    <div class="about-main__image" aria-hidden="true">
+    <div class="about-main__image" aria-hidden="true" data-aos="fade-left">
       <div class="image-placeholder tall">
         <span class="section-eyebrow" style="margin:0">{{ 'APROPOS.MAIN.IMG_ALT' | translate }}</span>
       </div>
     </div>
-    <div class="about-main__text">
+    <div class="about-main__text" data-aos="fade-right" data-aos-delay="150">
       <span class="section-eyebrow">{{ 'APROPOS.MAIN.EYEBROW' | translate }}</span>
       <h2>{{ 'APROPOS.MAIN.TITLE' | translate }}</h2>
       <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
@@ -30,13 +30,13 @@
 <!-- Diplômes & formations -->
 <section class="section" aria-labelledby="team-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'APROPOS.TEAM.EYEBROW' | translate }}</span>
       <h2 id="team-title">{{ 'APROPOS.TEAM.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="team-duo">
-      <div class="team-person">
+      <div class="team-person" data-aos="fade-left" data-aos-delay="100">
         <div class="team-person__header">
           <div class="team-person__avatar">I</div>
           <div>
@@ -50,7 +50,7 @@
           }
         </ul>
       </div>
-      <div class="team-person">
+      <div class="team-person" data-aos="fade-right" data-aos-delay="200">
         <div class="team-person__header">
           <div class="team-person__avatar">A</div>
           <div>
@@ -71,14 +71,14 @@
 <!-- Valeurs -->
 <section class="section section--cream" aria-labelledby="valeurs-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'APROPOS.VALEURS.EYEBROW' | translate }}</span>
       <h2 id="valeurs-title">{{ 'APROPOS.VALEURS.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="valeurs-grid">
-      @for (v of ('APROPOS.VALEURS.ITEMS' | translate); track v.titre) {
-        <div class="valeur-card">
+      @for (v of ('APROPOS.VALEURS.ITEMS' | translate); track v.titre; let i = $index) {
+        <div class="valeur-card" data-aos="fade-up" [attr.data-aos-delay]="i * 100">
           <div class="valeur-card__line"></div>
           <h3>{{ v.titre }}</h3>
           <p>{{ v.texte }}</p>
@@ -91,7 +91,7 @@
 <!-- Ancrage local -->
 <section class="section section--dark" aria-labelledby="local-title">
   <div class="container local-section">
-    <div>
+    <div data-aos="fade-left">
       <span class="section-eyebrow">{{ 'APROPOS.LOCAL.EYEBROW' | translate }}</span>
       <h2 id="local-title">{{ 'APROPOS.LOCAL.TITLE' | translate }}</h2>
       <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
@@ -101,7 +101,7 @@
         {{ 'APROPOS.LOCAL.BTN' | translate }}
       </a>
     </div>
-    <div class="image-placeholder dark" aria-hidden="true">
+    <div class="image-placeholder dark" aria-hidden="true" data-aos="fade-right" data-aos-delay="150">
       <span class="section-eyebrow" style="margin:0;color:rgba(255,255,255,0.4)">{{ 'APROPOS.LOCAL.IMG_ALT' | translate }}</span>
     </div>
   </div>
@@ -109,7 +109,7 @@
 
 <!-- CTA -->
 <section class="section">
-  <div class="container" style="text-align:center">
+  <div class="container" style="text-align:center" data-aos="fade-up">
     <span class="section-eyebrow">{{ 'APROPOS.CTA.EYEBROW' | translate }}</span>
     <h2>{{ 'APROPOS.CTA.TITLE1' | translate }}<br>{{ 'APROPOS.CTA.TITLE2' | translate }}</h2>
     <span class="gold-line" style="margin-block:1.5rem"></span>

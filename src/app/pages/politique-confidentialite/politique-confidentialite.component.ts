@@ -13,7 +13,7 @@ export class PolitiqueConfidentialiteComponent implements OnInit {
   ngOnInit(): void {
     this.seo.update({
       title: "Politique de Confidentialité",
-      description: "Politique de confidentialité et protection des données personnelles de L'Événement Peter, conforme au RGPD.",
+      description: "Politique de confidentialité et protection des données personnelles de Kalist, conforme au RGPD.",
       canonical: '/politique-de-confidentialite'
     });
   }

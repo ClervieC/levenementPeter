@@ -11,7 +11,7 @@
 <!-- ===== INTRO ===== -->
 <section class="section section--cream">
   <div class="container sem-intro">
-    <div>
+    <div data-aos="fade-left">
       <span class="section-eyebrow">{{ 'SEMINAIRES.INTRO.EYEBROW' | translate }}</span>
       <h2>{{ 'SEMINAIRES.INTRO.TITLE' | translate }}</h2>
       <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
@@ -19,7 +19,7 @@
       <p style="margin-top:1rem">{{ 'SEMINAIRES.INTRO.P2' | translate }}</p>
       <p style="margin-top:1rem">{{ 'SEMINAIRES.INTRO.P3' | translate }}</p>
     </div>
-    <div class="image-placeholder" aria-hidden="true">
+    <div class="image-placeholder" aria-hidden="true" data-aos="fade-right" data-aos-delay="150">
       <span class="section-eyebrow" style="margin:0">{{ 'SEMINAIRES.INTRO.IMG_ALT' | translate }}</span>
     </div>
   </div>
@@ -28,14 +28,14 @@
 <!-- ===== NOS ÉVÉNEMENTS ===== -->
 <section class="section" aria-labelledby="types-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'SEMINAIRES.TYPES.EYEBROW' | translate }}</span>
       <h2 id="types-title">{{ 'SEMINAIRES.TYPES.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="types-grid">
-      @for (t of ('SEMINAIRES.TYPES.ITEMS' | translate); track t.title) {
-        <div class="type-card">
+      @for (t of ('SEMINAIRES.TYPES.ITEMS' | translate); track t.title; let i = $index) {
+        <div class="type-card" data-aos="fade-up" [attr.data-aos-delay]="i * 100">
           <span class="type-card__icon">{{ t.icon }}</span>
           <h3>{{ t.title }}</h3>
           <p>{{ t.desc }}</p>
@@ -48,14 +48,14 @@
 <!-- ===== LES BÉNÉFICES ===== -->
 <section class="section section--cream" aria-labelledby="pourquoi-ev-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'SEMINAIRES.POURQUOI_EV.EYEBROW' | translate }}</span>
       <h2 id="pourquoi-ev-title">{{ 'SEMINAIRES.POURQUOI_EV.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
     <div class="benefices-grid">
-      @for (b of ('SEMINAIRES.POURQUOI_EV.ITEMS' | translate); track b.title) {
-        <div class="benefice-card">
+      @for (b of ('SEMINAIRES.POURQUOI_EV.ITEMS' | translate); track b.title; let i = $index) {
+        <div class="benefice-card" data-aos="fade-up" [attr.data-aos-delay]="i * 100">
           <span class="benefice-card__icon">{{ b.icon }}</span>
           <h3 class="benefice-card__title">{{ b.title }}</h3>
           <p class="benefice-card__desc">{{ b.desc }}</p>
@@ -68,15 +68,14 @@
 <!-- ===== NOS DIFFÉRENCES ===== -->
 <section class="section section--dark" aria-labelledby="pourquoi-nous-title">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" data-aos="fade-up">
       <span class="section-eyebrow">{{ 'SEMINAIRES.POURQUOI_NOUS.EYEBROW' | translate }}</span>
       <h2 id="pourquoi-nous-title">{{ 'SEMINAIRES.POURQUOI_NOUS.TITLE' | translate }}</h2>
       <span class="gold-line"></span>
     </div>
-
     <div class="groupes-grid">
-      @for (g of ('SEMINAIRES.POURQUOI_NOUS.GROUPES' | translate); track g.label) {
-        <div class="groupe-card">
+      @for (g of ('SEMINAIRES.POURQUOI_NOUS.GROUPES' | translate); track g.label; let i = $index) {
+        <div class="groupe-card" data-aos="fade-up" [attr.data-aos-delay]="i * 100">
           <div class="groupe-card__icon">
             @if (g.icon === 'creative') {
               <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
@@ -112,8 +111,7 @@
         </div>
       }
     </div>
-
-    <p class="pourquoi-nous__closing">{{ 'SEMINAIRES.POURQUOI_NOUS.CLOSING' | translate }}</p>
+    <p class="pourquoi-nous__closing" data-aos="fade-up" data-aos-delay="400">{{ 'SEMINAIRES.POURQUOI_NOUS.CLOSING' | translate }}</p>
   </div>
 </section>
 
@@ -125,7 +123,7 @@
 
 <!-- ===== CTA ===== -->
 <section class="section">
-  <div class="container" style="text-align:center">
+  <div class="container" style="text-align:center" data-aos="fade-up">
     <span class="section-eyebrow">{{ 'SEMINAIRES.CTA.EYEBROW' | translate }}</span>
     <h2>{{ 'SEMINAIRES.CTA.TITLE1' | translate }}<br><em>{{ 'SEMINAIRES.CTA.TITLE2' | translate }}</em></h2>
     <span class="gold-line" style="margin-block:1.5rem"></span>

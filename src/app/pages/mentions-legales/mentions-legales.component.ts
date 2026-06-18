@@ -14,7 +14,7 @@ export class MentionsLegalesComponent implements OnInit {
   ngOnInit(): void {
     this.seo.update({
       title: "Mentions Légales",
-      description: "Mentions légales de L'Événement Peter, agence événementielle SARL basée à Rennes, Bretagne.",
+      description: "Mentions légales de Kalist, agence événementielle SARL basée à Rennes, Bretagne.",
       canonical: '/mentions-legales'
     });
   }

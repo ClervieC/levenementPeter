@@ -1,23 +1,34 @@
 <section class="page-hero">
   <div class="container">
     <span class="section-eyebrow">{{ 'CONTACT.HERO.EYEBROW' | translate }}</span>
-    <h1>{{ 'CONTACT.HERO.TITLE1' | translate }}<br><em>{{ 'CONTACT.HERO.TITLE2' | translate }}</em></h1>
-    <span class="gold-line" style="margin-block:1.5rem"></span>
+    <h1>
+      {{ 'CONTACT.HERO.TITLE1' | translate }}<br /><em>{{ 'CONTACT.HERO.TITLE2' | translate }}</em>
+    </h1>
+    <span class="gold-line" style="margin-block: 1.5rem"></span>
     <p>{{ 'CONTACT.HERO.DESC' | translate }}</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container contact-layout">
-
-    <div class="contact-form-wrap">
+    <div class="contact-form-wrap" data-aos="fade-left">
       <span class="section-eyebrow">{{ 'CONTACT.FORM.EYEBROW' | translate }}</span>
       <h2>{{ 'CONTACT.FORM.TITLE' | translate }}</h2>
-      <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
+      <span class="gold-line gold-line--left" style="margin-block: 1.5rem"></span>
 
       @if (sent()) {
         <div class="success-message" role="alert">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.2"
+          >
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+            <polyline points="22 4 12 14.01 9 11.01" />
+          </svg>
           <h3>{{ 'CONTACT.FORM.SUCCESS_TITLE' | translate }}</h3>
           <p>{{ 'CONTACT.FORM.SUCCESS_TEXT' | translate }}</p>
         </div>
@@ -26,24 +37,39 @@
           <div class="form-row">
             <div class="form-group" [class.has-error]="isInvalid('prenom')">
               <label for="prenom">{{ 'CONTACT.FORM.PRENOM' | translate }} *</label>
-              <input id="prenom" type="text" formControlName="prenom" [placeholder]="'CONTACT.FORM.PRENOM' | translate">
+              <input
+                id="prenom"
+                type="text"
+                formControlName="prenom"
+                [placeholder]="'CONTACT.FORM.PRENOM' | translate"
+              />
               <span class="error-msg">{{ 'CONTACT.FORM.ERROR_PRENOM' | translate }}</span>
             </div>
             <div class="form-group" [class.has-error]="isInvalid('nom')">
               <label for="nom">{{ 'CONTACT.FORM.NOM' | translate }} *</label>
-              <input id="nom" type="text" formControlName="nom" [placeholder]="'CONTACT.FORM.NOM' | translate">
+              <input
+                id="nom"
+                type="text"
+                formControlName="nom"
+                [placeholder]="'CONTACT.FORM.NOM' | translate"
+              />
               <span class="error-msg">{{ 'CONTACT.FORM.ERROR_NOM' | translate }}</span>
             </div>
           </div>
           <div class="form-row">
             <div class="form-group" [class.has-error]="isInvalid('email')">
               <label for="email">{{ 'CONTACT.FORM.EMAIL' | translate }} *</label>
-              <input id="email" type="email" formControlName="email" placeholder="votre@email.fr">
+              <input id="email" type="email" formControlName="email" placeholder="votre@email.fr" />
               <span class="error-msg">{{ 'CONTACT.FORM.ERROR_EMAIL' | translate }}</span>
             </div>
             <div class="form-group">
               <label for="telephone">{{ 'CONTACT.FORM.TELEPHONE' | translate }}</label>
-              <input id="telephone" type="tel" formControlName="telephone" placeholder="06 XX XX XX XX">
+              <input
+                id="telephone"
+                type="tel"
+                formControlName="telephone"
+                placeholder="06 XX XX XX XX"
+              />
             </div>
           </div>
           <div class="form-row">
@@ -59,50 +85,127 @@
             </div>
             <div class="form-group">
               <label for="dateEvenement">{{ 'CONTACT.FORM.DATE' | translate }}</label>
-              <input id="dateEvenement" type="date" formControlName="dateEvenement">
+              <input id="dateEvenement" type="date" formControlName="dateEvenement" />
             </div>
           </div>
           <div class="form-group" [class.has-error]="isInvalid('message')">
             <label for="message">{{ 'CONTACT.FORM.MESSAGE' | translate }} *</label>
-            <textarea id="message" formControlName="message" [placeholder]="'CONTACT.FORM.MESSAGE_PLACEHOLDER' | translate"></textarea>
+            <textarea
+              id="message"
+              formControlName="message"
+              [placeholder]="'CONTACT.FORM.MESSAGE_PLACEHOLDER' | translate"
+            ></textarea>
             <span class="error-msg">{{ 'CONTACT.FORM.ERROR_MESSAGE' | translate }}</span>
           </div>
           <button type="submit" class="btn btn--gold submit-btn" [disabled]="loading()">
-            @if (loading()) { <span>{{ 'CONTACT.FORM.SENDING' | translate }}</span> }
-            @else { <span>{{ 'CONTACT.FORM.SUBMIT' | translate }}</span> }
+            @if (loading()) {
+              <span>{{ 'CONTACT.FORM.SENDING' | translate }}</span>
+            } @else {
+              <span>{{ 'CONTACT.FORM.SUBMIT' | translate }}</span>
+            }
           </button>
-          @if (error()) { <p class="form-error" role="alert">{{ error() }}</p> }
+          @if (error()) {
+            <p class="form-error" role="alert">{{ error() }}</p>
+          }
         </form>
       }
     </div>
 
-    <aside class="contact-info">
+    <aside class="contact-info" data-aos="fade-right" data-aos-delay="200">
       <span class="section-eyebrow">{{ 'CONTACT.INFO.EYEBROW' | translate }}</span>
       <h2>{{ 'CONTACT.INFO.TITLE' | translate }}</h2>
-      <span class="gold-line gold-line--left" style="margin-block:1.5rem"></span>
+      <span class="gold-line gold-line--left" style="margin-block: 1.5rem"></span>
       <ul class="contact-details">
         <li>
-          <div class="contact-details__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div class="contact-details__icon">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
           <div>
             <strong>{{ 'CONTACT.INFO.ADDRESS_LABEL' | translate }}</strong>
-            <p>{{ 'CONTACT.INFO.ADDRESS' | translate }}<br><small>{{ 'CONTACT.INFO.ADDRESS_SUB' | translate }}</small></p>
+            <p>
+              {{ 'CONTACT.INFO.ADDRESS' | translate }}<br /><small>{{
+                'CONTACT.INFO.ADDRESS_SUB' | translate
+              }}</small>
+            </p>
           </div>
         </li>
         <li>
-          <div class="contact-details__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5.1 2 2 0 0 1 3.58 2.93h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.44a16 16 0 0 0 6.29 6.29l.87-1.28a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-          <div><strong>{{ 'CONTACT.INFO.PHONE_LABEL' | translate }}</strong><a href="tel:+33652583724">06 52 58 37 24</a></div>
+          <div class="contact-details__icon">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5.1 2 2 0 0 1 3.58 2.93h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.44a16 16 0 0 0 6.29 6.29l.87-1.28a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
+          </div>
+          <div>
+            <strong>{{ 'CONTACT.INFO.PHONE_LABEL' | translate }}</strong
+            ><a href="tel:+33652583724">+33 6 52 58 37 24</a> ·
+            <a href="tel:+330641666168">+33 6 41 66 61 68</a>
+          </div>
         </li>
         <li>
-          <div class="contact-details__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-          <div><strong>{{ 'CONTACT.INFO.EMAIL_LABEL' | translate }}</strong><a href="mailto:levenementpeter@gmail.com">levenementpeter&#64;gmail.com</a></div>
+          <div class="contact-details__icon">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </div>
+          <div>
+            <strong>{{ 'CONTACT.INFO.EMAIL_LABEL' | translate }}</strong
+            ><a href="mailto:alix@kalist.com">alix&#64;kalist.com</a> ·
+            <a href="mailto:ingrid@kalist.com">ingrid&#64;kalist.com</a>
+          </div>
         </li>
         <li>
-          <div class="contact-details__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-          <div><strong>{{ 'CONTACT.INFO.HOURS_LABEL' | translate }}</strong><p [innerHTML]="'CONTACT.INFO.HOURS' | translate"></p></div>
+          <div class="contact-details__icon">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <div>
+            <strong>{{ 'CONTACT.INFO.HOURS_LABEL' | translate }}</strong>
+            <p [innerHTML]="'CONTACT.INFO.HOURS' | translate"></p>
+          </div>
         </li>
       </ul>
       <div class="contact-note">
-        <p><em>{{ 'CONTACT.INFO.NOTE' | translate }}</em></p>
+        <p>
+          <em>{{ 'CONTACT.INFO.NOTE' | translate }}</em>
+        </p>
       </div>
     </aside>
   </div>

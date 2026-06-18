@@ -2,6 +2,7 @@ import { Component, OnInit, inject, signal } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { SeoService } from '../../services/seo.service';
 
+
 interface GalerieCategory {
   id: string;
   nameKey: string;

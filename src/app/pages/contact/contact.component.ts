@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 import { SeoService } from '../../services/seo.service';
 import { environment } from '../../../environments/environment';
 
+
 @Component({
   selector: 'app-contact',
   imports: [ReactiveFormsModule, TranslateModule],
@@ -54,7 +55,8 @@ export class ContactComponent implements OnInit {
           typeEvenement: v.typeEvenement ?? '',
           dateEvenement: v.dateEvenement ?? 'Non précisée',
           message: v.message ?? '',
-          to_email: 'levenementpeter@gmail.com',
+          to_email: 'alix@kalist.com',
+          cc_email: 'ingrid@kalist.com',
         },
         environment.emailjs.publicKey
       );
@@ -68,8 +70,8 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
     this.seo.update({
-      title: "Contactez L'Événement Peter – Devis Mariage Bretagne Rennes",
-      description: "Contactez L'Événement Peter pour organiser votre mariage, séminaire ou événement en Bretagne. Devis gratuit et personnalisé sous 48 heures.",
+      title: "Contactez Kalist – Devis Mariage Bretagne Rennes",
+      description: "Contactez Kalist pour organiser votre mariage, séminaire ou événement en Bretagne. Devis gratuit et personnalisé sous 48 heures.",
       keywords: "contact wedding planner bretagne, devis mariage bretagne, devis mariage rennes",
       canonical: '/contact'
     });

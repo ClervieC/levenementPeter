@@ -9,8 +9,7 @@
   &__bg {
     position: absolute;
     inset: 0;
-    background:
-      linear-gradient(160deg, #0f0d0a 0%, #1c1710 45%, #0a0a0a 100%);
+    background: linear-gradient(160deg, #181410 0%, #1e1a14 45%, #0c0a08 100%);
     /* Remplacer par une vraie photo :
        background-image: url('/assets/hero-mariage-bretagne.jpg');
        background-size: cover; background-position: center; */
@@ -30,7 +29,7 @@
   &__overlay {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 70% 50%, rgba(201,168,68,0.06) 0%, transparent 65%);
+    background: radial-gradient(ellipse at 70% 50%, rgba(201, 168, 68, 0.06) 0%, transparent 65%);
     z-index: 1;
   }
 
@@ -65,7 +64,7 @@
   &__subtitle {
     font-size: clamp(0.9rem, 1.4vw, 1.05rem);
     font-weight: 300;
-    color: rgba(255,255,255,0.65);
+    color: rgba(255, 255, 255, 0.65);
     line-height: 1.85;
     margin-bottom: 2.5rem;
     animation: fadeUp 0.9s 0.6s both;
@@ -94,7 +93,7 @@
       font-size: 0.65rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.4);
+      color: rgba(255, 255, 255, 0.4);
     }
 
     &-line {
@@ -120,8 +119,12 @@
   }
 
   &__text {
-    h2 { margin-bottom: 0; }
-    p  { line-height: 1.85; }
+    h2 {
+      margin-bottom: 0;
+    }
+    p {
+      line-height: 1.85;
+    }
   }
 
   &__image-placeholder {
@@ -140,21 +143,27 @@
 /* ===== SERVICES ===== */
 .services__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
 
-  @media (max-width: 960px) { grid-template-columns: repeat(2, 1fr); }
-  @media (max-width: 540px) { grid-template-columns: 1fr; }
+  @media (max-width: 960px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 540px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .service-card {
   padding: 2.8rem 2.2rem;
   border: 1px solid var(--color-gray-light);
   margin: -1px 0 0 -1px;
-  transition: box-shadow var(--ease), border-color var(--ease);
+  transition:
+    box-shadow var(--ease),
+    border-color var(--ease);
 
   &:hover {
-    box-shadow: 0 8px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
     border-color: var(--color-gold-light);
     z-index: 1;
     position: relative;
@@ -187,7 +196,9 @@
     color: var(--color-gold);
     transition: gap var(--ease);
 
-    &:hover { gap: 0.8rem; }
+    &:hover {
+      gap: 0.8rem;
+    }
   }
 }
 
@@ -201,7 +212,9 @@
     margin-bottom: 2.5rem;
     font-size: 1.05rem;
 
-    strong { color: var(--color-gold); }
+    strong {
+      color: var(--color-gold);
+    }
   }
 
   &__list {
@@ -217,14 +230,14 @@
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.6);
-    border: 1px solid rgba(201,168,68,0.25);
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(201, 168, 68, 0.25);
     padding: 0.5rem 1.2rem;
   }
 
   &__note {
     font-size: 0.88rem;
-    color: rgba(255,255,255,0.45);
+    color: rgba(255, 255, 255, 0.45);
 
     a {
       color: var(--color-gold);
@@ -237,18 +250,29 @@
 /* ===== WHY ===== */
 .why__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
 
-  @media (max-width: 960px) { grid-template-columns: repeat(2, 1fr); }
-  @media (max-width: 540px) { grid-template-columns: 1fr; }
+  @media (max-width: 960px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 540px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .why__item {
-  &__number { /* see below */ }
+  &__number {
+    /* see below */
+  }
 
-  h3 { margin-bottom: 0.8rem; }
-  p  { font-size: 0.9rem; line-height: 1.75; }
+  h3 {
+    margin-bottom: 0.8rem;
+  }
+  p {
+    font-size: 0.9rem;
+    line-height: 1.75;
+  }
 }
 
 .why__number {

@@ -4,6 +4,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { SeoService } from '../../services/seo.service';
 import { PhotoCarouselComponent } from '../../components/photo-carousel/photo-carousel.component';
 
+
 @Component({
   selector: 'app-seminaires',
   imports: [RouterLink, TranslateModule, PhotoCarouselComponent],
@@ -16,7 +17,7 @@ export class SeminairesComponent implements OnInit {
   ngOnInit(): void {
     this.seo.update({
       title: "Organisation Séminaires & Événements Entreprise Bretagne Rennes",
-      description: "L'Événement Peter organise vos séminaires d'entreprise, team-building et soirées corporate en Bretagne et à Rennes.",
+      description: "Kalist organise vos séminaires d'entreprise, team-building et soirées corporate en Bretagne et à Rennes.",
       keywords: "séminaire bretagne, séminaire rennes, team building bretagne, événement corporate rennes",
       canonical: '/seminaires'
     });

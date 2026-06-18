@@ -8,19 +8,19 @@
   </div>
 </section>
 
-<!-- ===== CATÉGORIES ou GRILLE PHOTOS ===== -->
 @if (!selected()) {
 
   <section class="section" aria-labelledby="cats-title">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header" data-aos="fade-up">
         <span class="section-eyebrow">{{ 'GALERIE.CATS.EYEBROW' | translate }}</span>
         <h2 id="cats-title">{{ 'GALERIE.CATS.TITLE' | translate }}</h2>
         <span class="gold-line"></span>
       </div>
       <div class="categories-grid">
-        @for (cat of categories; track cat.id) {
+        @for (cat of categories; track cat.id; let i = $index) {
           <div class="category-card"
+               data-aos="fade-up" [attr.data-aos-delay]="i * 100"
                (click)="selectCategory(cat)"
                (keydown.enter)="selectCategory(cat)"
                tabindex="0" role="button"
@@ -53,7 +53,6 @@
 
   <section class="section">
     <div class="container">
-
       <button class="gallery-back" (click)="back()">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <polyline points="15 18 9 12 15 6"/>
@@ -61,7 +60,7 @@
         {{ 'GALERIE.BACK' | translate }}
       </button>
 
-      <div class="section-header" style="margin-top:2rem">
+      <div class="section-header" style="margin-top:2rem" data-aos="fade-up">
         <span class="section-eyebrow">{{ selected()!.eyebrowKey | translate }}</span>
         <h2>{{ selected()!.nameKey | translate }}</h2>
         <span class="gold-line"></span>
@@ -69,14 +68,13 @@
 
       <div class="photo-grid">
         @for (i of photos(selected()!.count); track i) {
-          <div class="photo-item" [class.photo-item--featured]="i === 0">
+          <div class="photo-item" [class.photo-item--featured]="i === 0" data-aos="fade-in" [attr.data-aos-delay]="i * 60">
             <div class="photo-placeholder">
               <span class="photo-placeholder__label">{{ 'GALERIE.PHOTO_LABEL' | translate : { num: i + 1 } }}</span>
             </div>
           </div>
         }
       </div>
-
     </div>
   </section>
 

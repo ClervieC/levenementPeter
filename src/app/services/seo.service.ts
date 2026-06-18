@@ -10,7 +10,7 @@ export interface SeoConfig {
 }
 
 const BASE_URL  = 'https://levenement-peter.vercel.app';
-const SITE_NAME = "L'Événement Peter";
+const SITE_NAME = "Kalist";
 const DEFAULT_IMAGE = `${BASE_URL}/assets/og-image.jpg`;
 
 @Injectable({ providedIn: 'root' })

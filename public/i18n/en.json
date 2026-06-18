@@ -20,20 +20,20 @@
   "HOME": {
     "HERO": {
       "EYEBROW": "Event Planning Agency",
-      "TITLE1": "L'Événement",
-      "TITLE2": "Peter",
+      "TITLE1": "Kalist",
+      "TITLE2": "Événementiel",
       "SUBTITLE1": "Wedding · Ceremony Officiant · Design · Seminars · Funerals",
       "SUBTITLE2": "A premium, tailor-made service — available worldwide",
       "CTA_MARIAGE": "Our Services",
       "CTA_CONTACT": "Request an Estimation",
       "SCROLL": "Discover",
-      "ARIA_LABEL": "Welcome to L'Événement Peter"
+      "ARIA_LABEL": "Welcome to Kalist"
     },
     "INTRO": {
       "EYEBROW": "Our Philosophy",
       "TITLE": "An Agency That Brings Your Ideas to Life",
-      "P1": "L'Événement Peter is your trusted event partner. Based in Rennes, our agency operates throughout France and internationally to create memorable experiences for couples, businesses and families who place their trust in us.",
-      "P2": "Our team works with passion, expertise and commitment to offer you a premium, fully personalised service. Choosing L'Événement Peter means you can be certain that every detail will be handled to perfection.",
+      "P1": "Kalist is your trusted event partner. Based in Rennes, our agency operates throughout France and internationally to create memorable experiences for couples, businesses and families who place their trust in us.",
+      "P2": "Our team works with passion, expertise and commitment to offer you a premium, fully personalised service. Choosing Kalist means you can be certain that every detail will be handled to perfection.",
       "IMG_ALT": "The team",
       "CTA": "Our Story"
     },
@@ -52,7 +52,7 @@
           "icon": "ceremony",
           "title": "Ceremony Officiant",
           "desc": "Make your special day unforgettable with our personalised ceremony officiant service. Secular ceremony, vow renewal, baptism… every moment is unique.",
-          "link": "/mariage",
+          "link": "/officiante-ceremonie",
           "label": "Discover"
         },
         {
@@ -88,7 +88,7 @@
     "ZONE": {
       "EYEBROW": "Our Coverage Area",
       "TITLE": "Based in Rennes, Active Worldwide",
-      "INTRO": "Based in <strong>Rennes</strong>, L'Événement Peter operates throughout <strong>France</strong> and <strong>internationally</strong> to organise your weddings, seminars and events. Our agency has no borders.",
+      "INTRO": "Based in <strong>Rennes</strong>, Kalist operates throughout <strong>France</strong> and <strong>internationally</strong> to organise your weddings, seminars and events. Our agency has no borders.",
       "NOTE_PREFIX": "Wherever you are,",
       "NOTE_LINK": "contact us",
       "NOTE_SUFFIX": " — we travel anywhere to be by your side.",
@@ -133,12 +133,12 @@
       "EYEBROW": "Wedding Planning",
       "TITLE1": "Your Wedding",
       "TITLE2": "An Unforgettable Celebration",
-      "DESC": "Wedding planner based in Rennes, L'Événement Peter orchestrates every detail of your wedding with passion and expertise. From the first consultation to the last note, we create the event you have always dreamed of."
+      "DESC": "Wedding planner based in Rennes, Kalist orchestrates every detail of your wedding with passion and expertise. From the first consultation to the last note, we create the event you have always dreamed of."
     },
     "INTRO": {
       "EYEBROW": "Wedding Planner",
       "TITLE": "The Art of Planning a Wedding",
-      "P1": "Planning a <strong>wedding</strong> requires in-depth knowledge of vendors, exceptional venues, trends and the specific logistical subtleties of each destination. That is why L'Événement Peter is your indispensable partner.",
+      "P1": "Planning a <strong>wedding</strong> requires in-depth knowledge of vendors, exceptional venues, trends and the specific logistical subtleties of each destination. That is why Kalist is your indispensable partner.",
       "P2": "From <strong>Rennes</strong>, our agency operates throughout France and internationally to organise weddings worthy of your dreams, whether an intimate ceremony or a grand reception.",
       "P3": "<strong>Wedding planner</strong>, on-the-day coordinator, or simply an expert consultation: we tailor our involvement to your needs and budget.",
       "IMG_ALT": "Wedding planning"
@@ -204,12 +204,12 @@
       "EYEBROW": "Design & Decoration",
       "TITLE1": "Wedding Decoration,",
       "TITLE2": "A Unique Visual World",
-      "DESC": "From floral creation to full staging, L'Événement Peter transforms your spaces into living works of art. A wedding design that reflects who you are."
+      "DESC": "From floral creation to full staging, Kalist transforms your spaces into living works of art. A wedding design that reflects who you are."
     },
     "INTRO": {
       "EYEBROW": "Our Vision",
       "TITLE": "More Than a Décor — A Sensory Experience",
-      "P1": "<strong>Wedding decoration</strong> is far more than aesthetics: it is the art of creating an atmosphere, an emotion, a memory. At L'Événement Peter, every detail is crafted to elevate your celebration.",
+      "P1": "<strong>Wedding decoration</strong> is far more than aesthetics: it is the art of creating an atmosphere, an emotion, a memory. At Kalist, every detail is crafted to elevate your celebration.",
       "P2": "Our designers work on <strong>floral decoration</strong>, spatial staging, furniture, lighting and all the visual elements that shape the visual identity of your wedding in Rennes and beyond.",
       "P3": "Whether you have a precise vision in mind or would like to be guided, we co-create with you the décor that reveals your personality and enchants your guests.",
       "IMG_ALT": "Wedding decoration"
@@ -291,12 +291,12 @@
       "EYEBROW": "Corporate Events",
       "TITLE1": "Corporate & Professional Events",
       "TITLE2": "Worldwide",
-      "DESC": "L'Événement Peter designs and organises your professional events. Internal events, brand image, marketing events: memorable experiences that energise your teams and strengthen your brand."
+      "DESC": "Kalist designs and organises your professional events. Internal events, brand image, marketing events: memorable experiences that energise your teams and strengthen your brand."
     },
     "INTRO": {
       "EYEBROW": "Where innovation meets excellence",
       "TITLE": "Corporate event planning at the service of your success",
-      "P1": "At L'Événement Peter, we understand the crucial importance of your professional events for your brand image, partnerships, teams and overall success. Gala evening, inauguration, award ceremony… every event is an opportunity to stand out, make a bold statement and leave a memorable mark.",
+      "P1": "At Kalist, we understand the crucial importance of your professional events for your brand image, partnerships, teams and overall success. Gala evening, inauguration, award ceremony… every event is an opportunity to stand out, make a bold statement and leave a memorable mark.",
       "P2": "Our experienced and passionate team transforms your ideas into reality through a comprehensive range of premium services, designed to meet your most demanding needs. From finding the ideal venue to on-the-day coordination, we take full responsibility for your event.",
       "P3": "Our commitment to excellence and attention to detail guarantee an unparalleled experience, where every aspect is carefully orchestrated to achieve your objectives and impress your guests.",
       "IMG_ALT": "Corporate event"
@@ -385,46 +385,30 @@
     },
     "POURQUOI_NOUS": {
       "EYEBROW": "Our difference",
-      "TITLE": "Why choose L'Événement Peter?",
+      "TITLE": "Why choose Kalist?",
       "GROUPES": [
         {
           "icon": "creative",
           "label": "Expertise & creativity",
-          "items": [
-            "Innovation",
-            "Boundless creativity",
-            "Proven expertise"
-          ]
+          "items": ["Innovation", "Boundless creativity", "Proven expertise"]
         },
         {
           "icon": "globe",
           "label": "International reach",
-          "items": [
-            "International",
-            "Partner network",
-            "Flexibility & Adaptability"
-          ]
+          "items": ["International", "Partner network", "Flexibility & Adaptability"]
         },
         {
           "icon": "chat",
           "label": "Client relationship",
-          "items": [
-            "Trust",
-            "Unique client service",
-            "Multicultural expertise"
-          ]
+          "items": ["Trust", "Unique client service", "Multicultural expertise"]
         },
         {
           "icon": "home",
           "label": "Family business",
-          "items": [
-            "Stability",
-            "Family business",
-            "Personal commitment"
-          ]
+          "items": ["Stability", "Family business", "Personal commitment"]
         }
       ],
-      "CLOSING": "By choosing L'Événement Peter, you choose competence, innovation and total satisfaction. Trust our expertise to bring your vision to life and propel your company to new heights."
+      "CLOSING": "By choosing Kalist, you choose competence, innovation and total satisfaction. Trust our expertise to bring your vision to life and propel your company to new heights."
     },
     "CTA": {
       "EYEBROW": "Let's Talk About Your Project",
@@ -441,7 +425,7 @@
   "APROPOS": {
     "HERO": {
       "EYEBROW": "Our Story",
-      "TITLE1": "L'Événement Peter,",
+      "TITLE1": "Kalist,",
       "TITLE2": "Your Trusted Partner",
       "DESC": "Alix and Ingrid Peter, mother and daughter, unite their skills to create unique events. An agency built on passion, excellence and deep experience across destinations."
     },
@@ -449,10 +433,10 @@
       "IMG_ALT": "Ingrid & Alix Peter",
       "EYEBROW": "Our Story",
       "TITLE": "Alix and Ingrid Peter, Mother and Daughter",
-      "P1": "<strong>Alix and Ingrid Peter</strong>, mother and daughter, with a close-knit relationship, decided to join forces and combine their skills to create L'Événement Peter — an event agency dedicated to making your events truly unique.",
+      "P1": "<strong>Alix and Ingrid Peter</strong>, mother and daughter, with a close-knit relationship, decided to join forces and combine their skills to create Kalist — an event agency dedicated to making your events truly unique.",
       "P2": "Ingrid, with a career in international commerce, lived many years abroad with her children (USA, Russia, Canada). Back in France, she decided to open a new chapter in her life. Spontaneous, organised and warm-hearted, family values have always been her priority.",
       "P3": "Alix, born in the United States, lived in many countries, developing a great capacity for adaptation. After artistic studies and specialist training in wedding planning, ceremony officiating and wedding design at Breizh Wedding School, she embarked on this adventure alongside her mother.",
-      "P4": "Our agency knows no borders — we will be delighted to assist you in realising your projects in France or in more exotic destinations. Welcome to the world of L'Événement Peter!"
+      "P4": "Our agency knows no borders — we will be delighted to assist you in realising your projects in France or in more exotic destinations. Welcome to the world of Kalist!"
     },
     "TEAM": {
       "EYEBROW": "Our Team",
@@ -545,7 +529,7 @@
       "ERROR_MESSAGE": "Message required (minimum 20 characters)",
       "SUCCESS_TITLE": "Message sent!",
       "SUCCESS_TEXT": "Thank you for your message. We will get back to you within 48 hours to discuss your project.",
-      "ERROR_SEND": "An error occurred. Please write to us directly at levenementpeter@gmail.com",
+      "ERROR_SEND": "An error occurred. Please write to us directly at alix@kalist.com",
       "TYPES": [
         "Wedding & Civil Union",
         "Ceremony Officiant",
@@ -561,20 +545,20 @@
     },
     "INFO": {
       "EYEBROW": "Find Us",
-      "TITLE": "L'Événement Peter",
+      "TITLE": "Kalist",
       "ADDRESS_LABEL": "Address",
       "ADDRESS": "Rennes, France",
       "ADDRESS_SUB": "Services available throughout France & worldwide",
       "PHONE_LABEL": "Phone",
       "EMAIL_LABEL": "Email",
       "HOURS_LABEL": "Opening Hours",
-      "HOURS": "Monday – Friday: 9am – 6:30pm<br>Saturday: 10am – 5pm",
+      "HOURS": "Monday – Friday: 9am – 6pm",
       "NOTE": "Based in Rennes, we operate throughout France and internationally. Our agency has no borders — contact us wherever you are."
     }
   },
   "GALERIE": {
     "HERO": {
-      "EYEBROW": "Portfolio · L'Événement Peter",
+      "EYEBROW": "Portfolio · Kalist",
       "TITLE1": "Our Achievements",
       "TITLE2": "in Pictures",
       "DESC": "Explore our event creations: weddings, seminars, birthdays, themed evenings and much more. Each photo tells a unique story."
@@ -614,8 +598,8 @@
       }
     },
     "SEO": {
-      "TITLE": "Gallery | L'Événement Peter",
-      "DESCRIPTION": "Discover our work: weddings, seminars, birthdays, themed evenings and Divorce Parties. L'Événement Peter brings expertise to your events.",
+      "TITLE": "Gallery | Kalist",
+      "DESCRIPTION": "Discover our work: weddings, seminars, birthdays, themed evenings and Divorce Parties. Kalist brings expertise to your events.",
       "KEYWORDS": "gallery wedding france, event photos rennes, wedding planner portfolio, seminar photos"
     }
   },
@@ -624,12 +608,12 @@
       "EYEBROW": "Funerals & Ceremonies",
       "TITLE1": "A dignified",
       "TITLE2": "and caring farewell",
-      "DESC": "Because every life deserves to be celebrated with respect and emotion, L'Événement Peter supports you in organising personalised funeral ceremonies, worthy of the person you have lost."
+      "DESC": "Because every life deserves to be celebrated with respect and emotion, Kalist supports you in organising personalised funeral ceremonies, worthy of the person you have lost."
     },
     "INTRO": {
       "EYEBROW": "Our approach",
       "TITLE": "Honouring a life, your way",
-      "P1": "Faced with the loss of a loved one, organising a ceremony is an emotionally and logistically demanding experience. At L'Événement Peter, we take this burden from you with gentleness, discretion and professionalism, so you can focus fully on grieving and reflection.",
+      "P1": "Faced with the loss of a loved one, organising a ceremony is an emotionally and logistically demanding experience. At Kalist, we take this burden from you with gentleness, discretion and professionalism, so you can focus fully on grieving and reflection.",
       "P2": "We believe that every ceremony should reflect the uniqueness of the person who has passed: their tastes, passions, and the moments that shaped their life. Whether you wish for an intimate family ceremony, a colourful celebration of life, or a quiet and reflective gathering, we tailor every detail to your wishes.",
       "P3": "You are not alone. We are here, every step of the way."
     },
@@ -705,10 +689,10 @@
   },
   "OFFICIANTE": {
     "HERO": {
-      "EYEBROW": "Ceremony Officiant · Brittany & Worldwide",
+      "EYEBROW": "Ceremony Officiant",
       "TITLE1": "Ceremonies written",
       "TITLE2": "to reflect who you are",
-      "DESC": "L'Événement Peter celebrates your most precious life moments with personalised secular ceremonies, written and hosted with sincerity, emotion and elegance."
+      "DESC": "Kalist celebrates your most precious life moments with personalised secular ceremonies, written and hosted with sincerity, emotion and elegance."
     },
     "INTRO": {
       "EYEBROW": "Our role",
@@ -784,16 +768,16 @@
   },
   "EV_INTERNE": {
     "HERO": {
-      "EYEBROW": "Internal Events · Corporate",
+      "EYEBROW": "Corporate Internal Events",
       "TITLE1": "Internal events that",
       "TITLE2": "bring your teams together",
-      "DESC": "Gala evening, inauguration, awards ceremony, team-building… L'Événement Peter designs exceptional corporate events that unite, motivate and build connection."
+      "DESC": "Gala evening, inauguration, awards ceremony, team-building… Kalist designs exceptional corporate events that unite, motivate and build connection."
     },
     "INTRO": {
       "EYEBROW": "Our approach",
       "TITLE": "An event that reflects your company, for your teams",
       "P1": "A successful internal event is not simply a well-organised evening: it is a <strong>strategic moment</strong> for your company. It strengthens cohesion, recognises your people and conveys your values. It is an investment in your company culture.",
-      "P2": "At L'Événement Peter, we handle the entire organisation: from the creative concept to on-the-day coordination, including supplier selection, decoration and logistics.",
+      "P2": "At Kalist, we handle the entire organisation: from the creative concept to on-the-day coordination, including supplier selection, decoration and logistics.",
       "IMG_ALT": "Corporate event"
     },
     "EVENTS": {
@@ -872,16 +856,16 @@
   },
   "IMAGE_MARQUE": {
     "HERO": {
-      "EYEBROW": "Brand Image · Brand Events",
+      "EYEBROW": "Brand Image Events",
       "TITLE1": "Events that embody",
       "TITLE2": "your identity",
-      "DESC": "Product launch, press evening, brand experience, influencer event… L'Événement Peter creates events that amplify your brand and leave a lasting impression."
+      "DESC": "Product launch, press evening, brand experience, influencer event… Kalist creates events that amplify your brand and leave a lasting impression."
     },
     "INTRO": {
       "EYEBROW": "Our vision",
       "TITLE": "The event as an extension of your brand",
       "P1": "A successful brand event is not simply a beautiful occasion: it is an <strong>immersive experience</strong> that embodies your values, tells your story and creates a deep emotional connection with your audience. Every detail — from the venue to the staging, the speech and the atmosphere — must be the exact reflection of who you are.",
-      "P2": "L'Événement Peter works in total alignment with your brand identity, guidelines and communication objectives to create high-impact events."
+      "P2": "Kalist works in total alignment with your brand identity, guidelines and communication objectives to create high-impact events."
     },
     "EVENTS": {
       "EYEBROW": "Our specialities",
@@ -954,13 +938,13 @@
       "EYEBROW": "Marketing & Communication Events",
       "TITLE1": "Events that generate",
       "TITLE2": "real impact",
-      "DESC": "Trade show, road show, brand activation, conference, client day… L'Événement Peter designs marketing events that meet your objectives and exceed your expectations."
+      "DESC": "Trade show, road show, brand activation, conference, client day… Kalist designs marketing events that meet your objectives and exceed your expectations."
     },
     "INTRO": {
       "EYEBROW": "Our expertise",
       "TITLE": "Events in service of your strategy",
       "P1": "A well-designed marketing event is one of the most powerful levers for <strong>generating leads</strong>, <strong>retaining clients</strong> and <strong>building brand awareness</strong>. But its effectiveness depends entirely on its conception, execution and the measurement of results.",
-      "P2": "L'Événement Peter supports you from strategy to debrief, including production, logistics and communications. We work as an extension of your marketing team.",
+      "P2": "Kalist supports you from strategy to debrief, including production, logistics and communications. We work as an extension of your marketing team.",
       "IMG_ALT": "Marketing event"
     },
     "EVENTS": {
@@ -1000,7 +984,7 @@
       ]
     },
     "IMPACT": {
-      "EYEBROW": "Why L'Événement Peter",
+      "EYEBROW": "Why Kalist",
       "TITLE": "Events that perform",
       "ITEMS": [
         {
@@ -1039,15 +1023,15 @@
   },
   "FETES": {
     "HERO": {
-      "EYEBROW": "Parties & Celebrations · Tailor-made",
+      "EYEBROW": "Parties & Celebrations",
       "TITLE1": "Parties & Celebrations",
       "TITLE2": "Unforgettable Moments",
-      "DESC": "From birthdays to Divorce Parties and themed evenings, L'Événement Peter creates unique and memorable celebrations, entirely personalised to your desires."
+      "DESC": "From birthdays to Divorce Parties and themed evenings, Kalist creates unique and memorable celebrations, entirely personalised to your desires."
     },
     "WELCOME": {
       "EYEBROW": "Our Philosophy",
       "TITLE": "The art of celebrating life, your way",
-      "P1": "Every moment of your life deserves to be celebrated with intention and creativity. At L'Événement Peter, we understand that behind every party lies a story, an emotion, a desire to share something unique with the people you love.",
+      "P1": "Every moment of your life deserves to be celebrated with intention and creativity. At Kalist, we understand that behind every party lies a story, an emotion, a desire to share something unique with the people you love.",
       "P2": "Whether you are planning a memorable birthday, an extravagant Divorce Party to turn the page with flair, or an immersive themed evening, our passionate team is by your side at every step. Tailor-made decoration, entertainment, catering, music… we orchestrate every detail so all you have to do is enjoy the moment.",
       "P3": "Together, let's transform your ideas into an event that is truly yours — one you will remember for the rest of your life."
     },
@@ -1092,7 +1076,7 @@
     }
   },
   "FOOTER": {
-    "TAGLINE": "Your premium event partner, based in Rennes and active worldwide. Weddings, seminars, decoration and much more.",
+    "TAGLINE": "Kalist événementiel · creator of experiences",
     "ENGLISH_SPOKEN": "Services available in English",
     "NAV_TITLE": "Navigation",
     "SERVICES_TITLE": "Services",
@@ -1110,10 +1094,10 @@
     "SERVICE_CORP": "Corporate events",
     "ADDRESS": "Rennes, France",
     "HOURS": "Mon–Fri: 9am–6:30pm · Sat: 10am–5pm",
-    "COPYRIGHT": "© {{year}} L'Événement Peter — Event planning agency based in Rennes. All rights reserved.",
+    "COPYRIGHT": "© {{year}} Kalist événementiel — Rennes. All rights reserved.",
     "MENTIONS": "Legal Notice",
     "CONFIDENTIALITE": "Privacy Policy",
-    "LOGO_ALT": "L'Événement Peter — Event planning agency",
+    "LOGO_ALT": "Kalist événementiel",
     "SOCIAL_INSTAGRAM": "Instagram",
     "SOCIAL_FACEBOOK": "Facebook"
   },
@@ -1123,7 +1107,7 @@
     "CTA": "Back to homepage"
   },
   "HEADER": {
-    "LOGO_ALT": "L'Événement Peter — Event planning agency",
+    "LOGO_ALT": "Kalist événementiel",
     "NAVIGATION_LABEL": "Main navigation",
     "LANG_FR": "FR",
     "LANG_EN": "EN",
@@ -1147,7 +1131,7 @@
       "ITEMS": [
         {
           "label": "Company name:",
-          "value": "L'Événement Peter"
+          "value": "Kalist"
         },
         {
           "label": "Legal form:",
@@ -1179,11 +1163,11 @@
         },
         {
           "label": "Phone:",
-          "value": "<a href=\"tel:+33652583724\">06 52 58 37 24</a>"
+          "value": "<a href=\"tel:+33652583724\">+336 52 58 37 24</a>"
         },
         {
           "label": "Email:",
-          "value": "<a href=\"mailto:levenementpeter@gmail.com\">levenementpeter@gmail.com</a>"
+          "value": "<a href=\"mailto:alix@kalist.com\">alix@kalist.com</a>"
         },
         {
           "label": "Executives:",
@@ -1195,7 +1179,7 @@
       "TITLE": "2. Publication Director",
       "TEXTS": [
         "Clervie CAUSER",
-        "For any question regarding site content: <a href=\"mailto:levenementpeter@gmail.com\">levenementpeter@gmail.com</a>"
+        "For any question regarding site content: <a href=\"mailto:alix@kalist.com\">alix@kalist.com</a>"
       ]
     },
     "SECTION3": {
@@ -1218,20 +1202,20 @@
     "SECTION4": {
       "TITLE": "4. Intellectual Property",
       "TEXTS": [
-        "All content on this site (texts, images, logos, photographs, videos, illustrations, structure) is the exclusive property of L'Événement Peter or its partners and is protected by French and international intellectual property laws.",
-        "Any reproduction, representation, modification, publication or adaptation of all or part of the elements of the site, by any means or process, is prohibited without the prior written authorization of L'Événement Peter, under penalty of legal action."
+        "All content on this site (texts, images, logos, photographs, videos, illustrations, structure) is the exclusive property of Kalist or its partners and is protected by French and international intellectual property laws.",
+        "Any reproduction, representation, modification, publication or adaptation of all or part of the elements of the site, by any means or process, is prohibited without the prior written authorization of Kalist, under penalty of legal action."
       ]
     },
     "SECTION5": {
       "TITLE": "5. Hyperlinks",
       "TEXTS": [
-        "The site may contain links to third-party websites. L'Événement Peter cannot be held responsible for the content of these external sites or their privacy policies. Creating links to the L'Événement Peter site requires prior authorization."
+        "The site may contain links to third-party websites. Kalist cannot be held responsible for the content of these external sites or their privacy policies. Creating links to the Kalist site requires prior authorization."
       ]
     },
     "SECTION6": {
       "TITLE": "6. Limitation of Liability",
       "TEXTS": [
-        "L'Événement Peter strives to ensure that the information published on this site is accurate and up to date. However, it cannot guarantee the accuracy, precision or completeness of the information provided and declines all responsibility for any damage resulting from inaccurate or incomplete information."
+        "Kalist strives to ensure that the information published on this site is accurate and up to date. However, it cannot guarantee the accuracy, precision or completeness of the information provided and declines all responsibility for any damage resulting from inaccurate or incomplete information."
       ]
     },
     "SECTION7": {
